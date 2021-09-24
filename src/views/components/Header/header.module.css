@@ -1,0 +1,27 @@
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary-color);
+  height: 4.5rem;
+  padding: .2rem .5rem;
+}
+
+.logo {
+  height: inherit;
+  display: flex;
+  align-items: center;
+}
+
+.logo > img {
+  width: auto;
+  height: 100%;
+}
+
+.text-logo {
+  color: #fff;
+  font-size: xx-large;
+  font-weight: 700;
+  margin-left: -2rem;
+}
+
