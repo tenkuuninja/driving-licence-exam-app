@@ -8,6 +8,7 @@ export interface IQuestion {
   explain: string
   isCritical: boolean
   answer: IAnswer[]
+  yourAnswer?: number
 }
 
 export interface IAnswer {
@@ -21,5 +22,11 @@ export interface ISign {
   title: string
   description: string
   image: string
+}
+
+export interface IResult {
+  isPass: boolean
+  score: number
+  text: string
 }
 

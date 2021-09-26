@@ -1,0 +1,111 @@
+.container {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.list-item {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  
+}
+
+.list-item > li {
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  padding: 1rem;
+  transition: all ease-in-out 100ms;
+}
+
+.list-item > li:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+.icon {
+  font-size: 3.5rem;
+}
+
+.paper {
+  display: block;
+  background-color: white;
+  padding: 1rem;
+  opacity: .9;
+}
+
+.paper:hover {
+  opacity: 1;
+}
+
+.banner {
+  position: relative;
+  display: none;
+}
+
+.banner > div.mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+
+
+@media (min-width: 992px) {
+  .container {
+    background: #fff;
+    width: 62rem;
+    margin: auto;
+  }
+  .list-item {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    background: #fff;
+    width: 75rem;
+    margin: auto;
+    padding: 0;
+  }
+  .list-item {
+    height: 0;
+    grid-template-columns: repeat(6, 1fr);
+    border-radius: 1rem;
+    transform: translateY(-13rem);
+    padding: 0;
+  }
+
+  .banner {
+    display: block;
+    background-image: url("https://danviet.mediacdn.vn/2020/5/31/dua-xe-may-1590927983936836721904.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: calc(100vh - 4.5rem);
+    width: 100%;
+  }
+
+  .banner > .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: white;
+    width: 75rem;
+    height: 70%;
+    font-size: 4rem;
+    font-weight: 800;
+    opacity: .8;
+  }
+
+  h3 {
+    margin: 0 -1rem;
+  }
+
+}

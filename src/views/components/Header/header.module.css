@@ -25,3 +25,19 @@
   margin-left: -2rem;
 }
 
+.header-right {
+  margin-right: 1rem;
+  color: white;
+}
+
+.header-right > div {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 2rem;
+}
+
+.header-right > div > span {
+  padding: 1.5rem 0;
+  cursor: pointer;
+}
+
