@@ -111,7 +111,7 @@ const Menupage = function() {
     let oneHit = false
     let failId: number[] = JSON.parse(localStorage.getItem('fail-id-test') || '[]');
     for (let question of questions) {
-      if (question.yourAnswer && question.answer[question.yourAnswer].isCorrect) {
+      if (question.yourAnswer !== undefined && question.answer[question.yourAnswer].isCorrect) {
         score++;
         if (failId.indexOf(question.id) !== -1) {
           failId = failId.filter(i => i !== question.id)
@@ -131,7 +131,7 @@ const Menupage = function() {
     if (oneHit) {
       setResult({ isPass: false, score, text: 'Bạn đã sai câu điểm liệt, Bạn đã lạc lúi' })
     } else if (score < 21) {
-      setResult({ isPass: false, score, text: 'Bạn đã lạc lúi' })
+      setResult({ isPass: false, score, text: 'Bạn đã thiếu điểm rồi' })
     } else {
       setResult({ isPass: true, score, text: 'Bạn đã vượt qua bài thi' })
     }
@@ -195,7 +195,6 @@ const Menupage = function() {
 
   const handleDragStart = (e: React.MouseEvent | React.TouchEvent) => {
     e.persist();
-    e.preventDefault();
     let clientX = getPageX(e);
     isDragRef.current = true;
     
