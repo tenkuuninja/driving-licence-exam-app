@@ -1,56 +1,64 @@
 import React from'react';
 import { Link } from 'react-router-dom';
+import { GiPencilRuler } from 'react-icons/gi';
+import { AiOutlineSmile, AiOutlineCar } from 'react-icons/ai';
+import { BiWrench, BiTime } from 'react-icons/bi';
+import { IoTrailSignOutline } from 'react-icons/io5';
+import { RiErrorWarningLine } from 'react-icons/ri';
 import st from './menu.module.css';
 
 const menu = [
   {
     text: 'Khái Niệm và quy tắc',
     url: '/hoc-ly-thuyet-chu-de-khai-niem-va-quy-tac.html',
-    color: '',
-    icon: ''
+    color: '#fd9644',
+    icon: <GiPencilRuler />
   },
   {
     text: 'Văn hoá đạo đức lái xe',
     url: '/hoc-ly-thuyet-chu-de-van-hoa-dao-duc-lai-xe.html',
-    color: '',
-    icon: ''
+    color: '#0fb9b1',
+    icon: <AiOutlineSmile />
   },
   {
     text: 'Kỹ thuật lái xe',
     url: '/hoc-ly-thuyet-chu-de-ky-thuat-lai-xe.html',
-    color: '',
-    icon: ''
+    color: '#fc5c65',
+    icon: <BiWrench />
   },
   {
     text: 'Biển báo đường bộ',
     url: '/hoc-ly-thuyet-chu-de-bien-bao-duong-bo.html',
-    color: '',
-    icon: ''
+    color: '#a55eea',
+    icon: <IoTrailSignOutline />
   },
   {
     text: 'Sa hình',
     url: '/hoc-ly-thuyet-chu-de-sa-hinh.html',
-    color: '',
-    icon: ''
+    color: '#2d98da',
+    icon: <AiOutlineCar />
   },
   {
     text: 'Các câu điểm liệt',
     url: '/cac-cau-diem-liet',
-    color: '',
-    icon: ''
+    color: '#eb3b5a',
+    icon: <RiErrorWarningLine />
   },
 ]
 
 export const LearnMenu = () => {
   return(
-    <ul className={st['list-item']}>
-      {menu.map((item, i) => <li key={i}>
-        <Link to={item.url} className={st.paper}  style={{ color: item.color }}>
-          <div className={`${st.icon}`}>{item.icon}</div>
-          <h3>{item.text}</h3>
-        </Link>
-      </li>)}
-    </ul>
+    <>
+      <p className={st.title}>Học lý thuyết</p>
+      <ul className={st['list-topic']}>
+        {menu.map((item, i) => <li key={i}>
+          <Link to={item.url} className={st.paper}  style={{ color: item.color }}>
+            <span className={`${st.icon}`}>{item.icon}</span>
+            <p>{item.text}</p>
+          </Link>
+        </li>)}
+      </ul>
+    </>
   );
 }
 
@@ -59,14 +67,17 @@ export const ExamMenu = () => {
   for (let i=1; i<=8; i++) {
     items.push(<li key={i}>
       <Link to={`/thi-sat-hach-de-so-${i}.html`} className={st.paper} >
-        {/* <div className={`${st.icon}`}>{item.icon}</div> */}
-        <h3>Đề số {i}</h3>
+        <div className={`${st.icon}`}>{<BiTime />}</div>
+        <p>Đề số {i}</p>
       </Link>
     </li>)
   }
   return(
-    <ul className={st['list-item']}>
-      {items}
-    </ul>
+    <>
+      <p className={st.title}>Thi sát hạch</p>
+      <ul className={st['list-item']}>
+        {items}
+      </ul>
+    </>
   );
 }

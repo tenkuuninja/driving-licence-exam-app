@@ -1,66 +1,37 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Link, useRouteMatch } from 'react-router-dom';
 import Header from '../components/Header'
-import { GiBlackBook } from 'react-icons/gi';
-import { AiOutlineWarning } from 'react-icons/ai';
-import { GoLaw } from 'react-icons/go';
-import { DiCssTricks } from 'react-icons/di';
-import { BiTestTube } from 'react-icons/bi';
-import { TiTimes } from 'react-icons/ti';
+import { LearnMenu, ExamMenu } from '../components/Menu';
+import { BiHomeAlt } from 'react-icons/bi';
 import st from './menu.module.css';
 
-const menu = [
-  { 
-    text: 'Học lý thuyết', 
-    url: '/hoc-ly-thuyet.html', 
-    icon: <GiBlackBook />, 
-    color: '#e67e22' 
-  },
-  { 
-    text: 'Thi sát hạch', 
-    url: '/thi-sat-hach.html', 
-    icon: <BiTestTube />, 
-    color: '#3498db' 
-  },
-  { 
-    text: 'Biển báo', 
-    url: '/bien-bao-giao-thong.html', 
-    icon: <AiOutlineWarning />, 
-    color: '#e74c3c' 
-  },
-  { 
-    text: 'Thục hành', 
-    url: '/', 
-    icon: <DiCssTricks />, 
-    color: '#f39c12' 
-  },
-  { 
-    text: 'Luật đường bộ', 
-    url: '/luat-duong-bo.html', 
-    icon: <GoLaw />, 
-    color: '#9b59b6' 
-  },
-  { 
-    text: 'Ôn tập câu sai', 
-    url: '/on-tap-cau-sai.html', 
-    icon: <TiTimes />, 
-    color: '#1abc9c' 
-  },
-]
-
 const MenuPage = function() {
+  const match = useRouteMatch();
+  const [element, setElement] = useState<JSX.Element>(<></>);
+  const [title, setTitle] = useState<string>('');
+
+  useEffect(function() {
+    if (match.path === '/hoc-ly-thuyet.html') {
+      setElement(<LearnMenu />);
+      setTitle('Học Lý thuyết')
+    } else {
+      setElement(<ExamMenu />);
+      setTitle('Thi sát hạch')
+    }
+  }, [match.path]);
+
   return(
-    <React.Fragment>
+    <React.Fragment> 
       <Header />
-      <div className={`${st.container}`}>
-        <ul className={st['list-item']}>
-        {menu.map((item, i) => <li key={i}>
-          <Link to={item.url} className={st.paper}  style={{ color: item.color }}>
-            <div className={`${st.icon}`}>{item.icon}</div>
-            <h3>{item.text}</h3>
+      <div className={st.wrapper}>
+        <div className={st.bc}>
+          <Link to="/" >
+            <BiHomeAlt className={st.icon} />
+            <span>Trang chủ</span>
           </Link>
-        </li>)}
-        </ul>
+          <div>{title}</div>
+        </div>
+        {element}
       </div>
     </React.Fragment>
   );

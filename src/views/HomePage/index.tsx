@@ -53,7 +53,7 @@ const MenuPage = function() {
     },
     { 
       text: 'Thục hành', 
-      url: '/', 
+      url: '/thuc-hanh.html', 
       icon: <DiCssTricks />, 
       color: '#f39c12' ,
       screen: ''
@@ -79,8 +79,8 @@ const MenuPage = function() {
       <div className={`${st.banner}`}>
         <div className={`${st.mask}`}></div>
         <div className={`${st.content}`}>
-          <p>Chữ gì đấy viết dài dài tí</p>
-          <p style={{textAlign: 'right'}}>Còn đây thì thêm chữ gì gì đó</p>
+          <p>Lorem ipsum dolor sit amet</p>
+          <p style={{textAlign: 'right'}}>consectetur adipiscing elit</p>
         </div>
         {/* <img src="http://media.baophutho.vn/dataimages/2021/04/07/123-1617762316.jpg" alt="" /> */}
       </div>
@@ -106,12 +106,12 @@ const MenuPage = function() {
         isOpen={isOpenLearnMenuModal}
         handleOutsideClick={() => setOpenLearnMenuModal(false)}
       >
-        <div className={`${st.paper}`}>
+        <div className={`${st['modal-paper']}`}>
           <div className={st['modal-content']}>
             <LearnMenu />
           </div>
-          <div className={st['modal-action']}>
-            <span onClick={() => setOpenLearnMenuModal(false)}>
+          <div className={st['modal-action']} style={{paddingRight: '3rem'}}>
+            <span className={st.close} onClick={() => setOpenLearnMenuModal(false)}>
               Đóng
             </span>
             {/* <span onClick={handleSubmit}>
@@ -124,12 +124,12 @@ const MenuPage = function() {
         isOpen={isOpenExamMenuModal}
         handleOutsideClick={() => setOpenExamMenuModal(false)}
       >
-        <div className={`${st.paper}`}>
+        <div className={`${st['modal-paper']}`}>
           <div className={st['modal-content']}>
             <ExamMenu />
           </div>
           <div className={st['modal-action']}>
-            <span onClick={() => setOpenExamMenuModal(false)}>
+            <span className={st.close} onClick={() => setOpenExamMenuModal(false)}>
               Đóng
             </span>
             {/* <span onClick={handleSubmit}>

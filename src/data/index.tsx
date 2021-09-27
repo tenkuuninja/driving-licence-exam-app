@@ -13,7 +13,7 @@ export const getQuestionsByTopicId = (id: number): IQuestion[] => {
 }
 
 export const getQuestionsByCode = (id: number): IQuestion[] => {
-  return questionsData.filter((item: IQuestion) => item.setNumber === id)
+  return questionsData.filter((item: IQuestion) => item.setNumber === id).map(i => ({...i, yourAnswer: undefined}))
 }
 
 export const getOneHitQuestions = (): IQuestion[] => {

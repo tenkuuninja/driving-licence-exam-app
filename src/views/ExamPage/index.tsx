@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { 
   useRouteMatch,
   useHistory
@@ -45,7 +45,7 @@ const Menupage = function() {
   const [currnetQuestion, setCurrentQuestion] = useState<number>(0);
   const [timeRemaining, setTimeRemaining] = useState<number>(TIME);
   const [title, setTitle] = useState<string>('');
-  const [isExam, setIsExam] = useState<boolean>(true);
+  const [isExam, setIsExam] = useState<boolean>(false);
   const [isSubmitted, setSubmitted] = useState<boolean>(false);
   const [isOpenConfirmSubmidModal, setOpenConfirmSubmidModal] = useState<boolean>(false);
   const [isOpenResultModal, setOpenResultModal] = useState<boolean>(false);
@@ -54,8 +54,15 @@ const Menupage = function() {
   const [isOpenAsideDrawer, setOpenAsideDrawer] = useState<boolean>(false);
   const [result, setResult] = useState<IResult>({ isPass: false, score: 0, text: '' });
   const [is404, set404] = useState<boolean>(false);
+  // slider
+  const contentRef = useRef<HTMLDivElement>(null);
+  const galleryRef = useRef<HTMLUListElement>(null);
+  const isDragRef = useRef<boolean>(false);
+  const clientXStart = useRef<number>(0);
+  const startPosition = useRef<number>(0);
+  const currentPosition = useRef<number>(0);
   // console.log('current question', currnetQuestion, currnetQuestion*100) 
-  console.log('questions', questions) 
+  
   
   
   const gotoQuesttion = (arg: number | 'prev' | 'next') => {
@@ -63,18 +70,27 @@ const Menupage = function() {
       case 'prev':
         if (currnetQuestion > 0) {
           setCurrentQuestion(currnetQuestion-1)
+          setPositionByQuestionId(currnetQuestion-1)
         }
         break;
         case 'next':
           if (currnetQuestion < questions.length-1) {
             setCurrentQuestion(currnetQuestion+1)
+            setPositionByQuestionId(currnetQuestion+1)
         }
         break;
       default:
-        if (currnetQuestion >= 0 && currnetQuestion <= questions.length-1) {
-          setCurrentQuestion(arg)
-          setOpenAsideDrawer(false);
+        if (arg < 0) {
+          setCurrentQuestion(0);
+          setPositionByQuestionId(0);
+        } else if (arg > questions.length-1) {
+          setCurrentQuestion(questions.length-1)
+          setPositionByQuestionId(questions.length-1)
+        } else {
+          setCurrentQuestion(Math.round(arg))
+          setPositionByQuestionId(Math.round(arg))
         }
+        setOpenAsideDrawer(false);
         break;
     }
   }
@@ -93,13 +109,25 @@ const Menupage = function() {
   const handleSubmit = () => {
     let score = 0
     let oneHit = false
+    let failId: number[] = JSON.parse(localStorage.getItem('fail-id-test') || '[]');
     for (let question of questions) {
       if (question.yourAnswer && question.answer[question.yourAnswer].isCorrect) {
         score++;
-      } else if (question.isCritical) {
+        if (failId.indexOf(question.id) !== -1) {
+          failId = failId.filter(i => i !== question.id)
+        }
+        continue;
+      }
+      if (question.isCritical) {
         oneHit = true
       }
+      if (!failId.includes(question.id)) {
+        failId.push(question.id)
+      }
     }
+    failId.sort((a, b) => a-b)
+    localStorage.setItem('fail-id-test', JSON.stringify(failId));
+
     if (oneHit) {
       setResult({ isPass: false, score, text: 'Bạn đã sai câu điểm liệt, Bạn đã lạc lúi' })
     } else if (score < 21) {
@@ -165,7 +193,84 @@ const Menupage = function() {
     countDownInterval = setInterval(timer, 1000);
   }
 
-  
+  const handleDragStart = (e: React.MouseEvent | React.TouchEvent) => {
+    e.persist();
+    e.preventDefault();
+    let clientX = getPageX(e);
+    isDragRef.current = true;
+    
+    clientXStart.current = clientX;
+    startPosition.current = currentPosition.current;
+
+    if (galleryRef.current !== null) {
+      galleryRef.current.style.cursor = 'grabbing';
+    }
+  }
+
+  const handleDragMove = (e: React.MouseEvent | React.TouchEvent) => {
+    e.persist();
+    e.preventDefault();
+    if (isDragRef.current) {
+      let clientX = getPageX(e);
+      let move = clientX - clientXStart.current;
+      currentPosition.current = startPosition.current + move;
+      updateCurrentPosition();
+    }
+  }
+
+  const handleDragEnd = (e: React.MouseEvent | React.TouchEvent) => {
+    e.persist();
+    e.preventDefault();
+    if (!isDragRef.current) return;
+    let moved = currentPosition.current - startPosition.current
+    let currentIndex = currnetQuestion;
+    let movedRequire = 300; // px
+    if (getWidthSlider() > 1000) movedRequire = 200
+    if (getWidthSlider() > 1200) movedRequire = 120
+    if (moved < -movedRequire && currnetQuestion < questions.length-1) {
+      currentIndex++
+    }
+    if (moved > movedRequire && currnetQuestion > 0) {
+      currentIndex--
+    }
+
+    setPositionByQuestionId(currentIndex);
+    gotoQuesttion(currentIndex)
+    isDragRef.current = false;
+
+    if (galleryRef.current !== null) {
+      galleryRef.current.style.cursor = 'grab';
+    }
+  }
+
+  const getPageX = (e: React.MouseEvent | React.TouchEvent) => {
+    let x: number;
+    if (e.nativeEvent instanceof MouseEvent) {
+      x = e.nativeEvent.clientX || 0
+    } else {
+      x = e.nativeEvent.touches[0]?.clientX || 0
+    }
+    return x;
+  }
+
+  const getWidthSlider = () => {
+    return contentRef.current?.clientWidth || 1
+  }
+
+  const updateCurrentPosition = () => {
+    if (galleryRef.current !== null) {
+      galleryRef.current.style.left = `${currentPosition.current}px`;
+    }
+  }
+
+  const setPositionByQuestionId = (id: number) => {
+    if (galleryRef.current !== null) {
+      currentPosition.current = -id*getWidthSlider();
+      updateCurrentPosition();
+    }
+  }
+
+
  
   useEffect(function() {
     setOpenHelpModal(false);
@@ -174,9 +279,9 @@ const Menupage = function() {
     switch (match.path) {
       case '/thi-sat-hach-de-so-(\\d).html':
         if ((+match.params[0]) >= 1 && (+match.params[0]) <= 8) {
+          setIsExam(true);
           setOpenHelpModal(true)
           setQuestions(getQuestionsByCode(+match.params[0]))
-          setIsExam(true);
           setSubmitted(false);
           setTitle('Đề thi thử số '+match.params[0])
         }
@@ -187,9 +292,9 @@ const Menupage = function() {
       case '/hoc-ly-thuyet-chu-de-([a-z-]+).html':
         let topicSlug = match.params[0]
         if (slug.indexOf(topicSlug) !== -1) {
+          setIsExam(false);
           setQuestions(getQuestionsByTopicId(slug.indexOf(topicSlug)+1))
           setTitle(topicTitle[slug.indexOf(topicSlug)])
-          setIsExam(false);
         }
         else {
           set404(true);
@@ -197,11 +302,14 @@ const Menupage = function() {
         break;
       case '/on-tap-cau-diem-liet.html':
         setIsExam(false);
+        setTitle('Ôn tập câu điểm liệt')
         setQuestions(getOneHitQuestions())
         break;
       case '/on-tap-cau-sai.html':
         setIsExam(false);
-        setQuestions(getQuestionsByIds([1,2,3,4,5,6]))
+        setTitle('Ôn tập câu hay sai')
+        const failId = JSON.parse(localStorage.getItem('fail-id-test') || '[]')
+        setQuestions(getQuestionsByIds(failId))
         break;
     
       default:
@@ -218,7 +326,13 @@ const Menupage = function() {
   }, [timeRemaining]);
 
   useEffect(function() {
-    
+    const handleResize = () => {
+      setPositionByQuestionId(currnetQuestion)
+    }
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    }
   }, []);
 
   if (is404) {
@@ -230,7 +344,7 @@ const Menupage = function() {
       <div className={`${st.header}`}>
         <div className="desktop-only">
           <div className={`${st.title}`} onClick={() => {
-            if (isExam)
+            if (isExam && !isSubmitted)
               setOpenConfirmExitModal(true);
             else
               history.push('/')
@@ -271,17 +385,24 @@ const Menupage = function() {
               <GrNext />
             </span>
           </div>
-          <div className={`${st.content}`}>
-            <ul 
-              className={`${st.galery}`} 
-              style={{ left: `-${currnetQuestion*100}%` }}
-            >
+          <div 
+            ref={contentRef} 
+            className={`${st.content}`}
+            onMouseDown={handleDragStart}
+            onMouseMove={handleDragMove}
+            onMouseUp={handleDragEnd}
+            onMouseLeave={handleDragEnd}
+            onTouchStart={handleDragStart}
+            onTouchMove={handleDragMove}
+            onTouchEnd={handleDragEnd}
+          >
+            <ul ref={galleryRef} className={`${st.galery}`} >
               {questions.map((question: IQuestion) => <li key={question.id}>
                 <div className={`${st['question-box']}`}>
                   <p className={st['question-text']}>
                     {question.text}
                   </p>
-                  {question.image.length !== 0 && <img src={question.image} className={`${st['question-image']}`} />}
+                  {question.image.length !== 0 && <img src={question.image} className={`${st['question-image']}`} draggable={false} />}
                   <ul className={`${st['choice-box']}`}>
                     {question.answer.map((choice: IAnswer, i: number) => <li key={i}>
                       <div 

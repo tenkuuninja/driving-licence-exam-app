@@ -17,6 +17,7 @@
   border-radius: 1rem;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   padding: 1rem;
+  cursor: pointer;
   transition: all ease-in-out 100ms;
 }
 
@@ -54,6 +55,10 @@
   background-color: rgba(0, 0, 0, 0.6);
 }
 
+.modal-paper {
+  display: none;
+}
+
 
 
 @media (min-width: 992px) {
@@ -64,6 +69,28 @@
   }
   .list-item {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .modal-paper {
+    display: block;
+    padding: 1rem;
+    width: 44rem;
+    background-color: #fff;
+    border-radius: 1rem;
+  }
+  .modal-action {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: .5rem;
+  }
+  .modal-action > .close {
+    padding: .8rem 2rem;
+    cursor: pointer;
+    background-color: #e74c3c;
+    color: white;
+    border-radius: .8rem;
+    font-size: large;
+    font-weight: 600;
   }
 }
 
@@ -106,6 +133,12 @@
 
   h3 {
     margin: 0 -1rem;
+  }
+
+
+  .modal-paper {
+    padding: 1rem;
+    width: 48rem;
   }
 
 }

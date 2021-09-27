@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import './App.css';
 import Routes from '../routes';
+import Loading from '../views/components/Loading';
 
 function App() {
   return (
     <React.Fragment>
-      <Routes />
+      <Suspense fallback={<Loading />}>
+        <Routes />
+      </Suspense>
     </React.Fragment>
   );
 }

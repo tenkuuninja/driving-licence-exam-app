@@ -1,14 +1,15 @@
+import { lazy } from 'react';
 import { RouteProps } from 'react-router-dom';
-import HomePage from '../views/HomePage';
-import ExamPage from '../views/ExamPage';
-import MenuMobliePage from '../views/MenuMobliePage';
-import NoMatchPage from '../views/NoMatchPage';
+const HomePageComponent = lazy(() => import('../views/HomePage'));
+const ExamPageComponent = lazy(() => import('../views/ExamPage'));
+const MenuMobliePageComponent = lazy(() => import('../views/MenuMobliePage'));
+const NoMatchPageComponent = lazy(() => import('../views/NoMatchPage'));
 
 const navigation: RouteProps[] =  [
   {
     path: '/',
     exact: true,
-    component: HomePage
+    component: HomePageComponent
   },
   {
     path: [
@@ -17,19 +18,19 @@ const navigation: RouteProps[] =  [
       '/hoc-ly-thuyet-chu-de-([a-z-]+).html'
     ],
     exact: true,
-    component: ExamPage
+    component: ExamPageComponent
   },
   {
     path: [
       '/thi-sat-hach.html',
-      '/hoc-theo-chu-de.html'
+      '/hoc-ly-thuyet.html'
     ],
     exact: true,
-    component: MenuMobliePage
+    component: MenuMobliePageComponent
   },
   {
     path: '*',
-    component: NoMatchPage
+    component: NoMatchPageComponent
   }
 ]
 
