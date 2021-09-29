@@ -180,6 +180,10 @@
 }
 
 .question-image {
+  position: relative;
+}
+
+.question-image > img {
   display: block;
   margin: auto;
   padding-bottom: .5rem;
@@ -192,6 +196,15 @@
   -o-user-select: none;
   user-select: none;
   -webkit-user-drag: none;
+}
+
+.question-image > .image-mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
 }
 
 .question-explain {

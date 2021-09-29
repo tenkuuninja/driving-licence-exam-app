@@ -194,7 +194,8 @@ const Menupage = function() {
   }
 
   const handleDragStart = (e: React.MouseEvent | React.TouchEvent) => {
-    e.persist();
+    // e.persist();
+    // e.preventDefault();
     let clientX = getPageX(e);
     isDragRef.current = true;
     
@@ -207,8 +208,8 @@ const Menupage = function() {
   }
 
   const handleDragMove = (e: React.MouseEvent | React.TouchEvent) => {
-    e.persist();
-    e.preventDefault();
+    // e.persist();
+    // e.preventDefault();
     if (isDragRef.current) {
       let clientX = getPageX(e);
       let move = clientX - clientXStart.current;
@@ -218,14 +219,12 @@ const Menupage = function() {
   }
 
   const handleDragEnd = (e: React.MouseEvent | React.TouchEvent) => {
-    e.persist();
-    e.preventDefault();
+    // e.persist();
+    // e.preventDefault();
     if (!isDragRef.current) return;
     let moved = currentPosition.current - startPosition.current
     let currentIndex = currnetQuestion;
-    let movedRequire = 300; // px
-    if (getWidthSlider() > 1000) movedRequire = 200
-    if (getWidthSlider() > 1200) movedRequire = 120
+    let movedRequire = 120; // px
     if (moved < -movedRequire && currnetQuestion < questions.length-1) {
       currentIndex++
     }
@@ -401,7 +400,11 @@ const Menupage = function() {
                   <p className={st['question-text']}>
                     {question.text}
                   </p>
-                  {question.image.length !== 0 && <img src={question.image} className={`${st['question-image']}`} draggable={false} />}
+                  {/* {question.image.length !== 0 && <img src={question.image} className={`${st['question-image']}`} draggable={false} />} */}
+                  {question.image.length !== 0 && <div className={`${st['question-image']}`}>
+                    <img src={question.image} alt="" />
+                    <div className={st['image-mask']}></div>
+                  </div>}
                   <ul className={`${st['choice-box']}`}>
                     {question.answer.map((choice: IAnswer, i: number) => <li key={i}>
                       <div 
