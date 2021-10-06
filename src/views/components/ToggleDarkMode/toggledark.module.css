@@ -5,3 +5,7 @@
   line-height: 1;
   font-size: 1.2rem;
 }
+
+.toggle svg * {
+  stroke: white;
+}

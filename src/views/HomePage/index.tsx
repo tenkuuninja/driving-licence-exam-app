@@ -80,8 +80,8 @@ const MenuPage = function() {
       <div className={`${st.banner}`}>
         <div className={`${st.mask}`}></div>
         <div className={`${st.content}`}>
-          <p>Lorem ipsum dolor sit amet</p>
-          <p style={{textAlign: 'right'}}>consectetur adipiscing elit</p>
+          <p>Đường tình anh thua</p>
+          <p style={{textAlign: 'right'}}>Đường đua anh chấp</p>
         </div>
         {/* <img src="http://media.baophutho.vn/dataimages/2021/04/07/123-1617762316.jpg" alt="" /> */}
       </div>
