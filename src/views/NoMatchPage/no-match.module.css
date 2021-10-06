@@ -1,15 +1,23 @@
 .wrapper {
+  width: 100vw;
+  height: 100vh;
+  min-height: 100vh;
+}
+
+.content {
   position: fixed;
   top: 50vh;
   left: 50vw;
   transform: translateX(-50%) translateY(-50%);
   width: 100vw;
   text-align: center;
+  background-color: var(--primary-background-color);
 }
 
 .title {
   font-size: 1.5rem;
   font-weight: 600;
+  color: var(--text-color);
 }
 
 .image {
@@ -29,11 +37,11 @@
 }
 
 .btn:hover {
-  background-color: #27ae60;
+  background-color: var(--click-color,#27ae60);
 }
 
 @media (min-width: 992px) {
-  .wrapper {
+  .content {
     width: 90vw;
   }
   .title {
@@ -43,7 +51,7 @@
 }
 
 @media (min-width: 1200px) {
-  .wrapper {
+  .content {
     width: 80vw;
   }
   .title {
