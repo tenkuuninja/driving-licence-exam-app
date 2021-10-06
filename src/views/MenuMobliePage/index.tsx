@@ -4,6 +4,7 @@ import Header from '../components/Header'
 import { LearnMenu, ExamMenu } from '../components/Menu';
 import { BiHomeAlt } from 'react-icons/bi';
 import st from './menu.module.css';
+import Footer from '../components/Footer';
 
 const MenuPage = function() {
   const match = useRouteMatch();
@@ -33,6 +34,7 @@ const MenuPage = function() {
         </div>
         {element}
       </div>
+      <Footer />
     </React.Fragment>
   );
 }

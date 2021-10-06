@@ -16,6 +16,7 @@ import { ImInfo } from 'react-icons/im';
 import { FaChevronLeft } from 'react-icons/fa';
 import Modal from '../components/Modal';
 import NoMatchPage from '../NoMatchPage';
+import ToggleDarkMode from '../components/ToggleDarkMode';
 
 type Params = {
   [index: string]: string
@@ -164,18 +165,18 @@ const Menupage = function() {
 
   const getColorClassNameOfButton = (question: IQuestion): keyof typeof st | '' => {
     if (!isExam) {
-      return question.isCritical ? st['bg-sunfolower'] : st['bg-emerald'];
+      return question.isCritical ? st['bg-warning'] : st['bg-success'];
     }
     if (isSubmitted) {
       if (question.yourAnswer === undefined) {
-        return st['bg-alizarin']
+        return st['bg-error']
       }
       if (question.answer[question.yourAnswer].isCorrect) {
-        return  st['bg-emerald']
+        return  st['bg-success']
       }
-      return st['bg-alizarin']
+      return st['bg-error']
     } 
-    return question.yourAnswer === undefined ? st['bg-asbestos'] : st['bg-emerald']
+    return question.yourAnswer === undefined ? st['bg-empty'] : st['bg-success']
   }
 
   const getHumanTimeString = (seconds: number): string => {
@@ -339,9 +340,8 @@ const Menupage = function() {
 
   return(
     <div className={`${st.wrapper}`}>
-      <div className={`${st.header}`}>
-        <div className="desktop-only">
-          <div className={`${st.title}`} onClick={() => {
+      <div className={`${st.header} desktop-only`}>
+        <div className={`${st.title}`} onClick={() => {
             if (isExam && !isSubmitted)
               setOpenConfirmExitModal(true);
             else
@@ -349,30 +349,32 @@ const Menupage = function() {
           }}>
             {<FaChevronLeft />}  
             <p>{title}</p>
-          </div>
         </div>
-        <div className={`mobile-only ${st.title} ${isExam ? 'hidden' : ''}`} onClick={() => history.push('/')}>
+        <ToggleDarkMode />
+      </div>
+      <div className={`${st.header} mobile-only`}>
+        <div className={`${st.title} ${isExam ? 'hidden' : ''}`} onClick={() => history.push('/')}>
           {<FaChevronLeft />}  
           <p>{title}</p>
         </div>
-        <div className={`mobile-only ${isExam ? '' : 'hidden'} ${st.btn}`} style={{textAlign: 'left'}} onClick={() => setOpenConfirmExitModal(true)}>
+        <div className={`${isExam ? '' : 'hidden'} ${st.btn}`} style={{textAlign: 'left'}} onClick={() => setOpenConfirmExitModal(true)}>
           Quay lại
         </div>
-        <div className={`mobile-only ${isExam ? '' : 'hidden'} ${st.timer}`}>
+        <div className={`${isExam ? '' : 'hidden'} ${st.timer}`}>
           {getHumanTimeString(timeRemaining)}
         </div>
         {isSubmitted ?
-          <div className={`mobile-only ${isExam ? '' : 'hidden'} ${st['btn']}`} onClick={handleReset}>
+          <div className={`${isExam ? '' : 'hidden'} ${st['btn']}`} onClick={handleReset}>
             LÀM LẠI
           </div>  : 
-          <div className={`mobile-only ${isExam ? '' : 'hidden'} ${st['btn']}`} onClick={() => setOpenConfirmSubmidModal(true)}>
+          <div className={`${isExam ? '' : 'hidden'} ${st['btn']}`} onClick={() => setOpenConfirmSubmidModal(true)}>
             NỘP BÀI
           </div>
         }
       </div>
       <div className={`${st.paper}`}>
         <div className={`${st.main}`}>
-          <div className={`${st['control-bar']}`}>
+          <div className={`${st['control-bar']} desktop-only`}>
             <span className={`${st.prev}`} onClick={() => gotoQuesttion('prev')}>
               <GrPrevious />
             </span>
@@ -457,8 +459,16 @@ const Menupage = function() {
           onClick={() => setOpenAsideDrawer(false)}
         ></div>
         <div className={`${st['aside-mobile']} ${isOpenAsideDrawer ? st.active : ''}`}>
-          <div className={`${st.trigger}`} onClick={() => setOpenAsideDrawer(!isOpenAsideDrawer)}>
-            
+          <div className={`${st['aside-trigger']}`} >
+            <span onClick={() => gotoQuesttion('prev')}>
+              <GrPrevious />
+            </span>
+            <span className={st.trigger} onClick={() => setOpenAsideDrawer(!isOpenAsideDrawer)}>
+              Câu {Math.round(currnetQuestion+1)}/{questions.length}
+            </span>
+            <span onClick={() => gotoQuesttion('next')}>
+              <GrNext />
+            </span>
           </div>
           <div className={`${st['aside-paper']}`}>
             <ul className={st['list-btn']}>
@@ -478,10 +488,10 @@ const Menupage = function() {
             <p>Bạn muốn nộp bài?</p>
           </div>
           <div className={st['modal-action']}>
-            <span onClick={() => setOpenConfirmSubmidModal(false)}>
+            <span className={st.cancel} onClick={() => setOpenConfirmSubmidModal(false)}>
               Huỷ
             </span>
-            <span onClick={handleSubmit}>
+            <span className={st.confirm} onClick={handleSubmit}>
               Đồng ý
             </span>
           </div>
@@ -496,10 +506,10 @@ const Menupage = function() {
             diem {result.score}/25, {result.isPass ? 'qua': 'truot'}, ly do: {result.text}
           </div>
           <div className={st['modal-action']}>
-            <span onClick={() => history.push('/')}>
+            <span className={st.cancel}  onClick={() => history.push('/')}>
               Quay về trang chủ
             </span>
-            <span onClick={() => setOpenResultModal(false)}>
+            <span className={st.confirm}  onClick={() => setOpenResultModal(false)}>
               Xem kết quả
             </span>
           </div>
@@ -513,7 +523,7 @@ const Menupage = function() {
             Thong bao khi bat dau lam bai
           </div>
           <div className={st['modal-action']}>
-            <span onClick={startTheExam}>
+            <span className={st.confirm} onClick={startTheExam}>
               Bắt đầu
             </span>
           </div>
@@ -528,10 +538,10 @@ const Menupage = function() {
             Bạn có chắc mún thoát?
           </div>
           <div className={st['modal-action']}>
-            <span onClick={() => setOpenConfirmExitModal(false)}>
+            <span className={st.cancel}  onClick={() => setOpenConfirmExitModal(false)}>
               Thôi
             </span>
-            <span onClick={() => history.push('/')}>
+            <span className={st.confirm}  onClick={() => history.push('/')}>
               Ừh
             </span>
           </div>

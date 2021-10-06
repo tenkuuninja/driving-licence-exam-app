@@ -4,7 +4,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: white;
+  background-color: var(--primary-background-color, #fff);
 }
 
 .wrapper > div {
@@ -12,7 +12,7 @@
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
-  color: black;
+  color: var(--text-color, #000);
 }
 
 .lds-roller {
@@ -32,7 +32,7 @@
   width: 7px;
   height: 7px;
   border-radius: 50%;
-  background: #000;
+  background: var(--text-color, #000);
   margin: -4px 0 0 -4px;
 }
 .lds-roller div:nth-child(1) {

@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "text": "Biển báo cấm"
+  },
+  {
+    "id": 2,
+    "text": "Biển hiệu lệnh"
+  },
+  {
+    "id": 3,
+    "text": "Biển chỉ dẫn"
+  },
+  {
+    "id": 4,
+    "text": "Biển báo nguy hiểm và cảnh báo"
+  },
+  {
+    "id": 5,
+    "text": "Biển phụ"
+  }
+]

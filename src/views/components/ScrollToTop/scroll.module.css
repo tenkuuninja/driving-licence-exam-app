@@ -1,0 +1,19 @@
+.button {
+  position: fixed;
+  right: 3rem;
+  bottom: 3rem;
+  padding: .5rem;
+  cursor: pointer;
+  border-radius: .5rem;
+  color: white;
+  background-color: var(--primary-color);
+  font-size: 2rem;
+  line-height: 1;
+  opacity: .8;
+  transition: all ease-in-out 100ms;
+}
+
+.button:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}

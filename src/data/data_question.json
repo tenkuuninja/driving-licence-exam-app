@@ -2,7 +2,7 @@
   {
     "id": 1,
     "topicId": 1,
-    "setNumber": 1,
+    "testCode": 1,
     "order": 1,
     "text": "Phần của đường bộ được sử dụng cho các phương tiện giao thông qua lại là gì?",
     "image": "",
@@ -26,7 +26,7 @@
   {
     "id": 2,
     "topicId": 1,
-    "setNumber": 1,
+    "testCode": 1,
     "order": 2,
     "text": "“Phương tiện tham gia giao thông đường bộ” gồm những loại nào?",
     "image": "",
@@ -50,7 +50,7 @@
   {
     "id": 3,
     "topicId": 1,
-    "setNumber": 1,
+    "testCode": 1,
     "order": 3,
     "text": "Sử dụng rượu bia khi lái xe, nếu bị phát hiện thì bị xử lý như thế nào?",
     "image": "",
@@ -74,7 +74,7 @@
   {
     "id": 4,
     "topicId": 1,
-    "setNumber": 1,
+    "testCode": 1,
     "order": 4,
     "text": "Bạn đang lái xe phía trước có một xe cứu thương đang phát tín hiệu ưu tiên bạn có được phép vượt hay không?",
     "image": "",
@@ -102,7 +102,7 @@
   {
     "id": 5,
     "topicId": 1,
-    "setNumber": 1,
+    "testCode": 1,
     "order": 5,
     "text": "Hành vi sử dụng xe mô tô để kéo, đẩy xe mô tô khác bị hết xăng đến trạm mua xăng có được phép hay không?",
     "image": "",
@@ -126,7 +126,7 @@
   {
     "id": 6,
     "topicId": 1,
-    "setNumber": 1,
+    "testCode": 1,
     "order": 6,
     "text": "Biển báo hiệu hình tròn có nền xanh lam có hình vẽ màu trắng là loại biển gì dưới đây?",
     "image": "https://i.ibb.co/rQ3mjb2/41.jpg",
@@ -154,7 +154,7 @@
   {
     "id": 7,
     "topicId": 1,
-    "setNumber": 1,
+    "testCode": 1,
     "order": 7,
     "text": "Bạn đang lái xe trong khu vực đô thị từ 22 giờ đến 5 giờ sáng hôm sau và cần vượt một xe khác, bạn cần báo hiệu như thế nào để đảm bảo an toàn giao thông?",
     "image": "",
@@ -182,7 +182,7 @@
   {
     "id": 8,
     "topicId": 1,
-    "setNumber": 1,
+    "testCode": 1,
     "order": 8,
     "text": "Người điều khiển phương tiện tham gia giao thông trong hầm đường bộ ngoài việc phải tuân thủ các quy tắc giao thông còn phải thực hiện những quy định nào dưới đây?",
     "image": "",
@@ -206,7 +206,7 @@
   {
     "id": 9,
     "topicId": 1,
-    "setNumber": 1,
+    "testCode": 1,
     "order": 9,
     "text": "Trên đoạn đường hai chiều không có giải phân cách giữa, người lái xe không được vượt xe khác trong các trường hợp nào dưới đây?",
     "image": "",
@@ -234,7 +234,7 @@
   {
     "id": 10,
     "topicId": 1,
-    "setNumber": 1,
+    "testCode": 1,
     "order": 10,
     "text": "Khi điều khiển xe chạy với tốc độ dưới 60 km/h, để đảm bảo khoảng cách an toàn giữa hai xe, người lái xe phải điều khiển xe như thế nào?",
     "image": "",
@@ -258,7 +258,7 @@
   {
     "id": 11,
     "topicId": 1,
-    "setNumber": 1,
+    "testCode": 1,
     "order": 11,
     "text": "Để báo hiệu cho xe phía trước biết xe mô tô của bạn muốn vượt, bạn phải có tín hiệu như thế nào dưới đây?",
     "image": "",
@@ -282,7 +282,7 @@
   {
     "id": 12,
     "topicId": 1,
-    "setNumber": 1,
+    "testCode": 1,
     "order": 12,
     "text": "Khi điều khiển xe mô tô tay ga xuống đường dốc dài, độ dốc cao, người lái xe cần thực hiện các thao tác nào dưới đây để đảm bảo an toàn?",
     "image": "",
@@ -306,7 +306,7 @@
   {
     "id": 13,
     "topicId": 1,
-    "setNumber": 1,
+    "testCode": 1,
     "order": 13,
     "text": "Tay ga trên xe mô tô hai bánh có tác dụng gì trong các trường hợp dưới đây?",
     "image": "",
@@ -334,7 +334,7 @@
   {
     "id": 14,
     "topicId": 1,
-    "setNumber": 1,
+    "testCode": 1,
     "order": 14,
     "text": "Biển nào cấm xe rẽ trái?",
     "image": "https://i.ibb.co/1dZGHKr/105.jpg",
@@ -358,7 +358,7 @@
   {
     "id": 15,
     "topicId": 1,
-    "setNumber": 1,
+    "testCode": 1,
     "order": 15,
     "text": "Biển nào dưới đây các phương tiện không được phép đi vào?",
     "image": "https://i.ibb.co/Gvw0gkn/113.jpg",
@@ -382,7 +382,7 @@
   {
     "id": 16,
     "topicId": 1,
-    "setNumber": 1,
+    "testCode": 1,
     "order": 16,
     "text": "Biển nào xe mô tô hai bánh không được đi vào?",
     "image": "https://i.ibb.co/Nmf113m/121.jpg",
@@ -406,7 +406,7 @@
   {
     "id": 17,
     "topicId": 1,
-    "setNumber": 1,
+    "testCode": 1,
     "order": 17,
     "text": "Biển nào báo hiệu nguy hiểm giao nhau với đường sắt?",
     "image": "https://i.ibb.co/cgG98Lt/128.jpg",
@@ -434,7 +434,7 @@
   {
     "id": 18,
     "topicId": 1,
-    "setNumber": 1,
+    "testCode": 1,
     "order": 18,
     "text": "Biển nào báo hiệu “Đường giao nhau” của các tuyến đường cùng cấp?",
     "image": "https://i.ibb.co/sCvVyqy/137.jpg",
@@ -458,7 +458,7 @@
   {
     "id": 19,
     "topicId": 1,
-    "setNumber": 1,
+    "testCode": 1,
     "order": 19,
     "text": "Biển nào chỉ dẫn nơi bắt đầu đoạn đường dành cho người đi bộ?",
     "image": "https://i.ibb.co/tb4bThX/145.jpg",
@@ -482,7 +482,7 @@
   {
     "id": 20,
     "topicId": 1,
-    "setNumber": 1,
+    "testCode": 1,
     "order": 20,
     "text": "Biển nào dưới đây báo hiệu hết cấm vượt?",
     "image": "https://i.ibb.co/9p1Zq3Z/153.jpg",
@@ -510,7 +510,7 @@
   {
     "id": 21,
     "topicId": 1,
-    "setNumber": 1,
+    "testCode": 1,
     "order": 21,
     "text": "Vạch kẻ đường nào dưới đây là vạch phân chia hai chiều xe chạy (vạch tim đường), xe không được lấn làn, không được đè lên vạch?",
     "image": "https://i.ibb.co/Wkcw3bj/161.jpg",
@@ -538,7 +538,7 @@
   {
     "id": 22,
     "topicId": 1,
-    "setNumber": 1,
+    "testCode": 1,
     "order": 22,
     "text": "Xe nào được quyền đi trước trong trường hợp này?",
     "image": "https://i.ibb.co/thnZc9k/169.jpg",
@@ -558,7 +558,7 @@
   {
     "id": 23,
     "topicId": 1,
-    "setNumber": 1,
+    "testCode": 1,
     "order": 23,
     "text": "Xe tải kéo mô tô ba bánh như hình này có đúng quy tắc giao thông không?",
     "image": "https://i.ibb.co/dk3NKWL/177.jpg",
@@ -578,7 +578,7 @@
   {
     "id": 24,
     "topicId": 1,
-    "setNumber": 1,
+    "testCode": 1,
     "order": 24,
     "text": "Theo hướng mũi tên, những hướng nào xe mô tô được phép đi?",
     "image": "https://i.ibb.co/XxPwYVx/185.jpg",
@@ -606,7 +606,7 @@
   {
     "id": 25,
     "topicId": 1,
-    "setNumber": 1,
+    "testCode": 1,
     "order": 25,
     "text": "Các xe đi theo hướng mũi tên, xe nào vi phạm quy tắc giao thông?",
     "image": "https://i.ibb.co/Wn8n0Tx/193.jpg",
@@ -634,7 +634,7 @@
   {
     "id": 26,
     "topicId": 1,
-    "setNumber": 2,
+    "testCode": 2,
     "order": 1,
     "text": "“Làn đường” là gì?",
     "image": "",
@@ -658,7 +658,7 @@
   {
     "id": 27,
     "topicId": 1,
-    "setNumber": 2,
+    "testCode": 2,
     "order": 2,
     "text": "“Người tham gia giao thông đường bộ” gồm những đối tượng nào?",
     "image": "",
@@ -682,7 +682,7 @@
   {
     "id": 28,
     "topicId": 1,
-    "setNumber": 2,
+    "testCode": 2,
     "order": 3,
     "text": "Theo Luật phòng chống tác hại của rượu, bia, đối tượng nào dưới đây bị cấm sử dụng rượu bia khi tham gia giao thông?",
     "image": "",
@@ -710,7 +710,7 @@
   {
     "id": 29,
     "topicId": 1,
-    "setNumber": 2,
+    "testCode": 2,
     "order": 4,
     "text": "Người điều khiển xe mô tô hai bánh, ba bánh, xe gắn máy có được phép sử dụng xe để kéo hoặc đẩy các phương tiện khác khi tham gia giao thông không?",
     "image": "",
@@ -738,7 +738,7 @@
   {
     "id": 30,
     "topicId": 1,
-    "setNumber": 2,
+    "testCode": 2,
     "order": 5,
     "text": "Hành vi vận chuyển đồ vật cồng kềnh bằng xe mô tô, xe gắn máy khi tham gia giao thông có được phép hay không?",
     "image": "",
@@ -762,7 +762,7 @@
   {
     "id": 31,
     "topicId": 1,
-    "setNumber": 2,
+    "testCode": 2,
     "order": 6,
     "text": "Biển báo hiệu hình chữ nhật hoặc hình vuông hoặc hình mũi tên nền xanh lam là loại biển gì dưới đây?",
     "image": "https://i.ibb.co/k5s2fry/42.jpg",
@@ -790,7 +790,7 @@
   {
     "id": 32,
     "topicId": 1,
-    "setNumber": 2,
+    "testCode": 2,
     "order": 7,
     "text": "Khi điều khiển xe chạy trên đường biết có xe sau  xin vượt nếu đủ điều kiện an toàn người lái xe phải làm gì?",
     "image": "",
@@ -814,7 +814,7 @@
   {
     "id": 33,
     "topicId": 1,
-    "setNumber": 2,
+    "testCode": 2,
     "order": 8,
     "text": "Người ngồi trên xe mô tô 2 bánh, xe gắn máy phải đội mũ bảo hiểm có cài quai đúng quy cách khi nào?",
     "image": "",
@@ -838,7 +838,7 @@
   {
     "id": 34,
     "topicId": 1,
-    "setNumber": 2,
+    "testCode": 2,
     "order": 9,
     "text": "Người lái xe mô tô xử lý như thế nào khi cho xe mô tô phía sau vượt?",
     "image": "",
@@ -862,7 +862,7 @@
   {
     "id": 35,
     "topicId": 1,
-    "setNumber": 2,
+    "testCode": 2,
     "order": 10,
     "text": "Người lái xe phải giảm tốc độ thấp hơn tốc độ tối đa cho phép đến mức cần thiết, chú ý quan sát và chuẩn bị sẵn sàng những tình huống có thế xảy ra để phòng ngừa tai nạn trong các trường hợp nào dưới đây?",
     "image": "",
@@ -890,7 +890,7 @@
   {
     "id": 36,
     "topicId": 1,
-    "setNumber": 2,
+    "testCode": 2,
     "order": 11,
     "text": "Người điều khiển xe mô tô phải giảm tốc độ và hết sức thận trọng khi qua những đoạn đường nào dưới đây?",
     "image": "",
@@ -918,7 +918,7 @@
   {
     "id": 37,
     "topicId": 1,
-    "setNumber": 2,
+    "testCode": 2,
     "order": 12,
     "text": "Khi quay đầu xe, người lái xe cần phải quan sát và thực hiện các thao tác nào để đảm bảo an toàn giao thông?",
     "image": "",
@@ -938,7 +938,7 @@
   {
     "id": 38,
     "topicId": 1,
-    "setNumber": 2,
+    "testCode": 2,
     "order": 13,
     "text": "Gương chiếu hậu của xe mô tô hai bánh, có tác dụng gì trong các trường hợp dưới đây?",
     "image": "",
@@ -966,7 +966,7 @@
   {
     "id": 39,
     "topicId": 1,
-    "setNumber": 2,
+    "testCode": 2,
     "order": 14,
     "text": "Khi gặp biển nào xe được rẽ trái?",
     "image": "https://i.ibb.co/NLqZmcW/106.jpg",
@@ -990,7 +990,7 @@
   {
     "id": 40,
     "topicId": 1,
-    "setNumber": 2,
+    "testCode": 2,
     "order": 15,
     "text": "Khi gặp biển nào xe ưu tiên theo luật định vẫn phải dừng lại?",
     "image": "https://i.ibb.co/d0bBs1m/114.jpg",
@@ -1014,7 +1014,7 @@
   {
     "id": 41,
     "topicId": 1,
-    "setNumber": 2,
+    "testCode": 2,
     "order": 16,
     "text": "Biển báo nào báo hiệu bắt đầu đoạn đường vào phạm vi khu dân cư, các phương tiện tham gia giao thông phải tuân theo các quy định đi đường được áp dụng ở khu đông dân cư?",
     "image": "https://i.ibb.co/k89pKdj/122.jpg",
@@ -1034,7 +1034,7 @@
   {
     "id": 42,
     "topicId": 1,
-    "setNumber": 2,
+    "testCode": 2,
     "order": 17,
     "text": "Biển nào báo hiệu Đường sắt giao nhau với đường bộ không có rào chắn?",
     "image": "https://i.ibb.co/J5bybyW/130.jpg",
@@ -1062,7 +1062,7 @@
   {
     "id": 43,
     "topicId": 1,
-    "setNumber": 2,
+    "testCode": 2,
     "order": 18,
     "text": "Biển nào báo hiệu “Đường đôi”?",
     "image": "https://i.ibb.co/9t47Xmf/138.jpg",
@@ -1086,7 +1086,7 @@
   {
     "id": 44,
     "topicId": 1,
-    "setNumber": 2,
+    "testCode": 2,
     "order": 19,
     "text": "Biển báo này có ý nghĩa gì",
     "image": "https://i.ibb.co/rZWY3Wb/146.jpg",
@@ -1106,7 +1106,7 @@
   {
     "id": 45,
     "topicId": 1,
-    "setNumber": 2,
+    "testCode": 2,
     "order": 20,
     "text": "Trong các biển dưới đây biển nào là biển “Hết mọi lệnh cấm”?",
     "image": "https://i.ibb.co/v1s5pjW/154.jpg",
@@ -1134,7 +1134,7 @@
   {
     "id": 46,
     "topicId": 1,
-    "setNumber": 2,
+    "testCode": 2,
     "order": 21,
     "text": "Vạch kẻ đường nào dưới đây là vạch phân chia hai chiều xe chạy (vạch tim đường)?",
     "image": "https://i.ibb.co/48CSDqd/162.jpg",
@@ -1162,7 +1162,7 @@
   {
     "id": 47,
     "topicId": 1,
-    "setNumber": 2,
+    "testCode": 2,
     "order": 22,
     "text": "Theo tín hiệu đèn, xe nào được phép đi?",
     "image": "https://i.ibb.co/89cs5NN/170.jpg",
@@ -1182,7 +1182,7 @@
   {
     "id": 48,
     "topicId": 1,
-    "setNumber": 2,
+    "testCode": 2,
     "order": 23,
     "text": "Xe nào được quyền đi trước trong trường hợp này?",
     "image": "https://i.ibb.co/ZNWpKKZ/178.jpg",
@@ -1202,7 +1202,7 @@
   {
     "id": 49,
     "topicId": 1,
-    "setNumber": 2,
+    "testCode": 2,
     "order": 24,
     "text": "Trong trường hợp này, thứ tự xe đi như thế nào là đúng quy tắc giao thông?",
     "image": "https://i.ibb.co/jRDr15V/186.jpg",
@@ -1226,7 +1226,7 @@
   {
     "id": 50,
     "topicId": 1,
-    "setNumber": 2,
+    "testCode": 2,
     "order": 25,
     "text": "Các xe đi theo hướng mũi tên, xe nào chấp hành đúng quy tắc giao thông?",
     "image": "https://i.ibb.co/yR5Y55D/194.jpg",
@@ -1254,7 +1254,7 @@
   {
     "id": 51,
     "topicId": 1,
-    "setNumber": 3,
+    "testCode": 3,
     "order": 1,
     "text": "Trong các khái niệm dưới đây,  “dải phân cách”  được hiểu như thế nào là đúng?",
     "image": "",
@@ -1278,7 +1278,7 @@
   {
     "id": 52,
     "topicId": 1,
-    "setNumber": 3,
+    "testCode": 3,
     "order": 2,
     "text": "“Người điều khiển phương tiện tham gia giao thông đường bộ” gồm những đối tượng nào dưới đây?",
     "image": "",
@@ -1302,7 +1302,7 @@
   {
     "id": 53,
     "topicId": 1,
-    "setNumber": 3,
+    "testCode": 3,
     "order": 3,
     "text": "Hành vi điều khiển xe cơ giới chạy quá tốc độ quy định, giành đường, vượt ẩu có bị nghiêm cấm hay không?",
     "image": "",
@@ -1326,7 +1326,7 @@
   {
     "id": 54,
     "topicId": 1,
-    "setNumber": 3,
+    "testCode": 3,
     "order": 4,
     "text": "Khi điều khiển xe mô tô hai bánh, xe mô tô ba  bánh, xe gắn máy, những hành vi buông cả hai tay; sử dụng xe để kéo, đẩy xe khác, vật khác; sử dụng chân chống của xe quệt xuống đường khi xe đang chạy có được phép hay không?",
     "image": "",
@@ -1350,7 +1350,7 @@
   {
     "id": 55,
     "topicId": 1,
-    "setNumber": 3,
+    "testCode": 3,
     "order": 5,
     "text": "Người đủ bao nhiêu tuổi trở lên thì được điều khiển xe mô tô hai bánh, xe mô tô ba bánh có dung tích xi lanh từ 50 cm3 trở lên và các loại xe có kết cấu tương tự; xe ô tô tải, máy kéo có trọng tải dưới 3,5 tấn; xe ô tô chở người đến 9 chỗ ngồi",
     "image": "",
@@ -1374,7 +1374,7 @@
   {
     "id": 56,
     "topicId": 1,
-    "setNumber": 3,
+    "testCode": 3,
     "order": 6,
     "text": "Khi sử dụng giấy phép lái xe đã khai báo mất để điều khiển phương tiện cơ giới đường bộ, ngoài việc bị thu hồi giấy phép lái xe, chịu trách nhiệm trước pháp luật, người lái xe không được cấp giấy phép lái xe trong thời gian bao nhiêu năm?",
     "image": "",
@@ -1402,7 +1402,7 @@
   {
     "id": 57,
     "topicId": 1,
-    "setNumber": 3,
+    "testCode": 3,
     "order": 7,
     "text": "Khi muốn chuyển hướng, người lái xe phải thực hiện như thế nào để đảm bảo an toàn giao thông?",
     "image": "",
@@ -1426,7 +1426,7 @@
   {
     "id": 58,
     "topicId": 1,
-    "setNumber": 3,
+    "testCode": 3,
     "order": 8,
     "text": "Người điểu khiển xe mô tô hai bánh, xe gắn máy được phép chở tối đa 2 người trong những trường hợp nào?",
     "image": "",
@@ -1450,7 +1450,7 @@
   {
     "id": 59,
     "topicId": 1,
-    "setNumber": 3,
+    "testCode": 3,
     "order": 9,
     "text": "Trong các trường hợp dưới đây, để đảm bảo an toàn khi tham gia giao thông, người lái xe mô tô cần thực hiện như thế nào?",
     "image": "",
@@ -1474,7 +1474,7 @@
   {
     "id": 60,
     "topicId": 1,
-    "setNumber": 3,
+    "testCode": 3,
     "order": 10,
     "text": "Các phương tiện tham gia giao thông đường bộ (kể cả những xe có quyền ưu tiên) đều phải dừng lại bên phải đường của mình và trước vạch “dừng xe” tại các điểm giao cắt giữa đường bộ và đường sắt khi có báo hiệu dừng nào dưới đây?",
     "image": "",
@@ -1502,7 +1502,7 @@
   {
     "id": 61,
     "topicId": 1,
-    "setNumber": 3,
+    "testCode": 3,
     "order": 11,
     "text": "Khi gặp xe buýt đang đang dừng đón, trả khách, người điều khiển xe mô tô phải xử lý như thế nào dưới đây để đảm bảo an toàn giao thông?",
     "image": "",
@@ -1526,7 +1526,7 @@
   {
     "id": 62,
     "topicId": 1,
-    "setNumber": 3,
+    "testCode": 3,
     "order": 12,
     "text": "Khi tránh nhau trên đường hẹp, người lái xe cần phải chú ý những điểm nào để đảm bảo an toàn giao thông?",
     "image": "",
@@ -1554,7 +1554,7 @@
   {
     "id": 63,
     "topicId": 1,
-    "setNumber": 3,
+    "testCode": 3,
     "order": 13,
     "text": "Để đảm bảo an toàn khi tham gia giao thông, người lái xe mô tô hai bánh cần điều khiển tay ga như thế nào trong các trường hợp dưới đây?",
     "image": "",
@@ -1582,7 +1582,7 @@
   {
     "id": 64,
     "topicId": 1,
-    "setNumber": 3,
+    "testCode": 3,
     "order": 14,
     "text": "Biển nào cấm các phương tiện giao thông đường bộ rẽ phải?",
     "image": "https://i.ibb.co/frJj6cv/107.jpg",
@@ -1610,7 +1610,7 @@
   {
     "id": 65,
     "topicId": 1,
-    "setNumber": 3,
+    "testCode": 3,
     "order": 15,
     "text": "Biển nào cấm tất cả các loại xe cơ giới và thô sơ đi lại trên đường, trừ xe ưu tiên theo luật định (nếu đường vẫn cho xe chạy được)?",
     "image": "https://i.ibb.co/B2ZB9Tw/115.jpg",
@@ -1634,7 +1634,7 @@
   {
     "id": 66,
     "topicId": 1,
-    "setNumber": 3,
+    "testCode": 3,
     "order": 16,
     "text": "Gặp biển nào người lái xe phải nhường đường cho người đi bộ?",
     "image": "https://i.ibb.co/9Txv9Py/123.jpg",
@@ -1662,7 +1662,7 @@
   {
     "id": 67,
     "topicId": 1,
-    "setNumber": 3,
+    "testCode": 3,
     "order": 17,
     "text": "Biển nào báo hiệu sắp đến chỗ giao nhau giữa đường bộ và đường sắt?",
     "image": "https://i.ibb.co/Gxn2K30/131.jpg",
@@ -1690,7 +1690,7 @@
   {
     "id": 68,
     "topicId": 1,
-    "setNumber": 3,
+    "testCode": 3,
     "order": 18,
     "text": "Biển nào báo hiệu “Đường đôi”?",
     "image": "https://i.ibb.co/c6djPWG/139.jpg",
@@ -1714,7 +1714,7 @@
   {
     "id": 69,
     "topicId": 1,
-    "setNumber": 3,
+    "testCode": 3,
     "order": 19,
     "text": "Biển nào (đặt trước ngã ba, ngã tư) cho phép xe được rẽ sang hướng khác?",
     "image": "https://i.ibb.co/SNb9WVH/147.jpg",
@@ -1738,7 +1738,7 @@
   {
     "id": 70,
     "topicId": 1,
-    "setNumber": 3,
+    "testCode": 3,
     "order": 20,
     "text": "Biển nào chỉ dẫn cho người đi bộ sử dụng cầu vượt qua đường?",
     "image": "https://i.ibb.co/6Fg3swQ/155.jpg",
@@ -1766,7 +1766,7 @@
   {
     "id": 71,
     "topicId": 1,
-    "setNumber": 3,
+    "testCode": 3,
     "order": 21,
     "text": "Các vạch dưới đây có tác dụng gì?",
     "image": "https://i.ibb.co/6WcbxxL/163.jpg",
@@ -1786,7 +1786,7 @@
   {
     "id": 72,
     "topicId": 1,
-    "setNumber": 3,
+    "testCode": 3,
     "order": 22,
     "text": "Các xe đi theo hướng mũi tên, xe nào vi phạm quy tắc giao thông?",
     "image": "https://i.ibb.co/vPpz5R6/171.jpg",
@@ -1810,7 +1810,7 @@
   {
     "id": 73,
     "topicId": 1,
-    "setNumber": 3,
+    "testCode": 3,
     "order": 23,
     "text": "Thứ tự các xe đi như thế nào là đúng quy tắc giao thông?",
     "image": "https://i.ibb.co/gFdqW5F/179.jpg",
@@ -1838,7 +1838,7 @@
   {
     "id": 74,
     "topicId": 1,
-    "setNumber": 3,
+    "testCode": 3,
     "order": 24,
     "text": "Trong hình dưới, những xe nào vi phạm quy tắc giao thông?",
     "image": "https://i.ibb.co/hRpcKT0/187.jpg",
@@ -1866,7 +1866,7 @@
   {
     "id": 75,
     "topicId": 1,
-    "setNumber": 3,
+    "testCode": 3,
     "order": 25,
     "text": "Các xe đi theo thứ tự nào là đúng quy tắc giao thông đường bộ?",
     "image": "https://i.ibb.co/4dTKS6w/195.jpg",
@@ -1890,7 +1890,7 @@
   {
     "id": 76,
     "topicId": 1,
-    "setNumber": 4,
+    "testCode": 4,
     "order": 1,
     "text": "“Dải phân cách” trên đường bộ gồm những loại nào?",
     "image": "",
@@ -1914,7 +1914,7 @@
   {
     "id": 77,
     "topicId": 1,
-    "setNumber": 4,
+    "testCode": 4,
     "order": 2,
     "text": "Khái niệm “người điều khiển giao thông” được hiểu như thế nào là đúng?",
     "image": "",
@@ -1938,7 +1938,7 @@
   {
     "id": 78,
     "topicId": 1,
-    "setNumber": 4,
+    "testCode": 4,
     "order": 3,
     "text": "Khi lái xe trong khu đô thị và đông dân cư trừ các khu vực có biển cấm sử dụng còi, người lái xe được sử dụng còi như thế nào trong các trường hợp dưới đây?",
     "image": "",
@@ -1962,7 +1962,7 @@
   {
     "id": 79,
     "topicId": 1,
-    "setNumber": 4,
+    "testCode": 4,
     "order": 4,
     "text": "Khi điều khiển xe mô tô hai bánh, xe mô tô ba bánh, xe gắn máy, những hành vi nào không được phép?",
     "image": "",
@@ -1990,7 +1990,7 @@
   {
     "id": 80,
     "topicId": 1,
-    "setNumber": 4,
+    "testCode": 4,
     "order": 5,
     "text": "Người đủ 16 tuổi được điều khiển các loại xe nào dưới đây?",
     "image": "",
@@ -2018,7 +2018,7 @@
   {
     "id": 81,
     "topicId": 1,
-    "setNumber": 4,
+    "testCode": 4,
     "order": 6,
     "text": "Khi gặp hiệu lệnh như dưới đây của cảnh sát giao thông thì người tham gia giao thông phải đi như thế nào là đúng quy tắc giao thông?",
     "image": "https://i.ibb.co/wQ2ycnt/44.jpg",
@@ -2046,7 +2046,7 @@
   {
     "id": 82,
     "topicId": 1,
-    "setNumber": 4,
+    "testCode": 4,
     "order": 7,
     "text": "Khi tránh xe đi ngược chiều, các xe phải nhường đường như thế nào là đúng quy tắc giao thông?",
     "image": "",
@@ -2074,7 +2074,7 @@
   {
     "id": 83,
     "topicId": 1,
-    "setNumber": 4,
+    "testCode": 4,
     "order": 8,
     "text": "Người điều khiển xe mô tô hai bánh, xe gắn máy không được thực hiện những hành vi nào dưới đây?",
     "image": "",
@@ -2098,7 +2098,7 @@
   {
     "id": 84,
     "topicId": 1,
-    "setNumber": 4,
+    "testCode": 4,
     "order": 9,
     "text": " Đường bộ trong khu vực đông dân cư gồm những đoạn đường nào dưới đây?",
     "image": "",
@@ -2122,7 +2122,7 @@
   {
     "id": 85,
     "topicId": 1,
-    "setNumber": 4,
+    "testCode": 4,
     "order": 10,
     "text": "Tác  dụng  của mũ  bảo hiểm đối với  người  ngồi  trên xe mô tô hai bánh trong trường hợp xảy ra tai nạn giao thông là gì?",
     "image": "",
@@ -2150,7 +2150,7 @@
   {
     "id": 86,
     "topicId": 1,
-    "setNumber": 4,
+    "testCode": 4,
     "order": 11,
     "text": " Khái niệm về văn hóa giao thông được hiểu như thế nào là đúng?",
     "image": "",
@@ -2174,7 +2174,7 @@
   {
     "id": 87,
     "topicId": 1,
-    "setNumber": 4,
+    "testCode": 4,
     "order": 12,
     "text": " Khi điều khiển xe trên đường vòng người lái xe cần phải làm gì để đảm bảo an toàn?",
     "image": "",
@@ -2194,7 +2194,7 @@
   {
     "id": 88,
     "topicId": 1,
-    "setNumber": 4,
+    "testCode": 4,
     "order": 13,
     "text": "Kỹ thuật cơ bản để giữ thăng bằng khi điều khiển xe mô tô đi trên đường gồ ghề như thế nào trong các trường hợp dưới đây?",
     "image": "",
@@ -2218,7 +2218,7 @@
   {
     "id": 89,
     "topicId": 1,
-    "setNumber": 4,
+    "testCode": 4,
     "order": 14,
     "text": " Biển nào cấm các phương tiện giao thông đường bộ rẽ trái?",
     "image": "https://i.ibb.co/z6XSZNY/108.jpg",
@@ -2246,7 +2246,7 @@
   {
     "id": 90,
     "topicId": 1,
-    "setNumber": 4,
+    "testCode": 4,
     "order": 15,
     "text": "Gặp biển nào xe xích lô được phép đi vào?",
     "image": "https://i.ibb.co/xGz9sDr/116.jpg",
@@ -2274,7 +2274,7 @@
   {
     "id": 91,
     "topicId": 1,
-    "setNumber": 4,
+    "testCode": 4,
     "order": 16,
     "text": "Biển nào chỉ đường dành cho người đi bộ, các loại xe không được đi vào khi gặp biển này?",
     "image": "https://i.ibb.co/mhH971d/124.jpg",
@@ -2302,7 +2302,7 @@
   {
     "id": 92,
     "topicId": 1,
-    "setNumber": 4,
+    "testCode": 4,
     "order": 17,
     "text": " Biển nào báo hiệu, chỉ dẫn xe đi trên đường này được quyền ưu tiên qua nơi giao nhau?",
     "image": "https://i.ibb.co/zhYyK4R/132.jpg",
@@ -2330,7 +2330,7 @@
   {
     "id": 93,
     "topicId": 1,
-    "setNumber": 4,
+    "testCode": 4,
     "order": 18,
     "text": " Biển nào báo hiệu “Giao nhau với đường hai chiều”?",
     "image": "https://i.ibb.co/KGCKLrx/140.jpg",
@@ -2354,7 +2354,7 @@
   {
     "id": 94,
     "topicId": 1,
-    "setNumber": 4,
+    "testCode": 4,
     "order": 19,
     "text": "Biển nào báo hiệu “Hướng đi thẳng phải theo”?",
     "image": "https://i.ibb.co/L99mn1h/148.jpg",
@@ -2374,7 +2374,7 @@
   {
     "id": 95,
     "topicId": 1,
-    "setNumber": 4,
+    "testCode": 4,
     "order": 20,
     "text": "Biển nào chỉ dẫn cho người đi bộ sử dụng hầm chui qua đường?",
     "image": "https://i.ibb.co/CvDB08c/156.jpg",
@@ -2402,7 +2402,7 @@
   {
     "id": 96,
     "topicId": 1,
-    "setNumber": 4,
+    "testCode": 4,
     "order": 21,
     "text": " Khi gặp vạch kẻ đường nào các xe được phép đè vạch?",
     "image": "https://i.ibb.co/3kJ9zmD/164.jpg",
@@ -2430,7 +2430,7 @@
   {
     "id": 97,
     "topicId": 1,
-    "setNumber": 4,
+    "testCode": 4,
     "order": 22,
     "text": "Thứ tự các xe đi như thế nào là đúng quy tắc giao thông?",
     "image": "https://i.ibb.co/pz2Dbvz/172.jpg",
@@ -2458,7 +2458,7 @@
   {
     "id": 98,
     "topicId": 1,
-    "setNumber": 4,
+    "testCode": 4,
     "order": 23,
     "text": "Xe nào được quyền đi trước trong trường hợp này?",
     "image": "https://i.ibb.co/KmVYNRZ/180.jpg",
@@ -2478,7 +2478,7 @@
   {
     "id": 99,
     "topicId": 1,
-    "setNumber": 4,
+    "testCode": 4,
     "order": 24,
     "text": "Trong hình dưới, những xe nào vi phạm quy tắc giao thông?",
     "image": "https://i.ibb.co/vq2WbyL/188.jpg",
@@ -2506,7 +2506,7 @@
   {
     "id": 100,
     "topicId": 1,
-    "setNumber": 4,
+    "testCode": 4,
     "order": 25,
     "text": "Các xe đi theo thứ tự nào là đúng quy tắc giao thông đường bộ?",
     "image": "https://i.ibb.co/vYQ88PL/196.jpg",
@@ -2530,7 +2530,7 @@
   {
     "id": 101,
     "topicId": 1,
-    "setNumber": 5,
+    "testCode": 5,
     "order": 1,
     "text": "Người lái xe được hiểu như thế nào trong các khái niệm dưới đây?",
     "image": "",
@@ -2554,7 +2554,7 @@
   {
     "id": 102,
     "topicId": 1,
-    "setNumber": 5,
+    "testCode": 5,
     "order": 2,
     "text": "Trong các khái niệm dưới đây khái niệm “dừng xe” được hiểu như thế nào là đúng?",
     "image": "",
@@ -2578,7 +2578,7 @@
   {
     "id": 103,
     "topicId": 1,
-    "setNumber": 5,
+    "testCode": 5,
     "order": 3,
     "text": " Người lái xe sử dụng đèn như thế nào khi lái xe trong khu đô thị và đông dân cư vào ban đêm?",
     "image": "",
@@ -2606,7 +2606,7 @@
   {
     "id": 104,
     "topicId": 1,
-    "setNumber": 5,
+    "testCode": 5,
     "order": 4,
     "text": "Người ngồi trên xe mô tô hai bánh, ba bánh, xe gắn máy khi tham gia giao thông có được mang, vác vật cồng kềnh hay không?",
     "image": "",
@@ -2634,7 +2634,7 @@
   {
     "id": 105,
     "topicId": 1,
-    "setNumber": 5,
+    "testCode": 5,
     "order": 5,
     "text": "Người có GPLX mô tô hạng A1 không được phép điều khiển loại xe nào dưới đây?",
     "image": "",
@@ -2658,7 +2658,7 @@
   {
     "id": 106,
     "topicId": 1,
-    "setNumber": 5,
+    "testCode": 5,
     "order": 6,
     "text": "Khi gặp hiệu lệnh như dưới đây của cảnh sát giao thông thì người tham gia giao thông phải đi như thế nào là đúng quy tắc giao thông?",
     "image": "https://i.ibb.co/Gtd3yvB/45.jpg",
@@ -2686,7 +2686,7 @@
   {
     "id": 107,
     "topicId": 1,
-    "setNumber": 5,
+    "testCode": 5,
     "order": 7,
     "text": "Bạn đang lái xe trên đường hẹp, xuống dốc và gặp một xe đang đi lên dốc, bạn cần làm gì?",
     "image": "",
@@ -2710,7 +2710,7 @@
   {
     "id": 108,
     "topicId": 1,
-    "setNumber": 5,
+    "testCode": 5,
     "order": 8,
     "text": "Người điều khiển xe mô tô hai bánh, xe gắn máy có được đi xe dàn hàng ngang; đi xe vào phần đường dành cho người đi bộ và phương tiện khác; sử dụng ô, điện thoại di động, thiết bị âm thanh (trừ thiết bị trợ thính) hay không?",
     "image": "",
@@ -2734,7 +2734,7 @@
   {
     "id": 109,
     "topicId": 1,
-    "setNumber": 5,
+    "testCode": 5,
     "order": 9,
     "text": "Tốc độ tối đa cho phép đối với xe máy chuyên dùng, xe gắn máy (kể cả xe máy điện) và các loại xe tương tự trên đường bộ (trừ đường cao tốc) không được vượt quá bao nhiêu km/h?",
     "image": "",
@@ -2758,7 +2758,7 @@
   {
     "id": 110,
     "topicId": 1,
-    "setNumber": 5,
+    "testCode": 5,
     "order": 10,
     "text": "Tại nơi đường giao nhau, người lái xe đang đi trên đường không ưu tiên phải xử lý như thế nào là đúng quy tắc giao thông?",
     "image": "",
@@ -2782,7 +2782,7 @@
   {
     "id": 111,
     "topicId": 1,
-    "setNumber": 5,
+    "testCode": 5,
     "order": 11,
     "text": "Trong các hành vi dưới đây, người lái xe mô tô có văn hóa giao thông phải ứng xử như thế nào?",
     "image": "",
@@ -2806,7 +2806,7 @@
   {
     "id": 112,
     "topicId": 1,
-    "setNumber": 5,
+    "testCode": 5,
     "order": 12,
     "text": "Để đạt được hiệu quả phanh cao nhất, người lái xe mô tô phải sử dụng các kỹ năng như thế nào dưới đây?",
     "image": "",
@@ -2830,7 +2830,7 @@
   {
     "id": 113,
     "topicId": 1,
-    "setNumber": 5,
+    "testCode": 5,
     "order": 13,
     "text": "Biển nào dưới đây xe gắn máy được phép đi vào?",
     "image": "https://i.ibb.co/pP12j4F/101.jpg",
@@ -2854,7 +2854,7 @@
   {
     "id": 114,
     "topicId": 1,
-    "setNumber": 5,
+    "testCode": 5,
     "order": 14,
     "text": "Biển nào cho phép xe rẽ trái?",
     "image": "https://i.ibb.co/kXYgJJq/109.jpg",
@@ -2878,7 +2878,7 @@
   {
     "id": 115,
     "topicId": 1,
-    "setNumber": 5,
+    "testCode": 5,
     "order": 15,
     "text": "Gặp biển nào xe lam, xe xích lô máy được phép đi vào?",
     "image": "https://i.ibb.co/Dr12trL/117.jpg",
@@ -2902,7 +2902,7 @@
   {
     "id": 116,
     "topicId": 1,
-    "setNumber": 5,
+    "testCode": 5,
     "order": 16,
     "text": "Biển nào báo hiệu “Đường dành cho xe thô sơ”?",
     "image": "https://i.ibb.co/3sQZxrR/125.jpg",
@@ -2926,7 +2926,7 @@
   {
     "id": 117,
     "topicId": 1,
-    "setNumber": 5,
+    "testCode": 5,
     "order": 17,
     "text": "Biển nào báo hiệu “Giao nhau với đường không ưu tiên”?",
     "image": "https://i.ibb.co/V35wTnJ/133.jpg",
@@ -2954,7 +2954,7 @@
   {
     "id": 118,
     "topicId": 1,
-    "setNumber": 5,
+    "testCode": 5,
     "order": 18,
     "text": "Biển nào báo hiệu “Đường hai chiều”?",
     "image": "https://i.ibb.co/02n1LMt/141.jpg",
@@ -2978,7 +2978,7 @@
   {
     "id": 119,
     "topicId": 1,
-    "setNumber": 5,
+    "testCode": 5,
     "order": 19,
     "text": "Biển nào báo hiệu “Đường một chiều”?",
     "image": "https://i.ibb.co/vd121TS/149.jpg",
@@ -3002,7 +3002,7 @@
   {
     "id": 120,
     "topicId": 1,
-    "setNumber": 5,
+    "testCode": 5,
     "order": 20,
     "text": "Biển nào báo hiệu “Nơi đỗ xe dành cho người tàn tật”?",
     "image": "https://i.ibb.co/Jjvs1Yf/157.jpg",
@@ -3026,7 +3026,7 @@
   {
     "id": 121,
     "topicId": 1,
-    "setNumber": 5,
+    "testCode": 5,
     "order": 21,
     "text": "Vạch dưới đây có ý nghĩa gì?",
     "image": "https://i.ibb.co/n82bQzq/165.jpg",
@@ -3050,7 +3050,7 @@
   {
     "id": 122,
     "topicId": 1,
-    "setNumber": 5,
+    "testCode": 5,
     "order": 22,
     "text": "Trong trường hợp này xe nào đỗ vi phạm quy tắc giao thông?",
     "image": "https://i.ibb.co/zG9pXdr/173.jpg",
@@ -3078,7 +3078,7 @@
   {
     "id": 123,
     "topicId": 1,
-    "setNumber": 5,
+    "testCode": 5,
     "order": 23,
     "text": "Xe nào vi phạm quy tắc giao thông?",
     "image": "https://i.ibb.co/4RBBYQ8/181.jpg",
@@ -3106,7 +3106,7 @@
   {
     "id": 124,
     "topicId": 1,
-    "setNumber": 5,
+    "testCode": 5,
     "order": 24,
     "text": "Bạn có được phép vượt xe mô tô phía trước không?",
     "image": "https://i.ibb.co/ykYM2DB/189.jpg",
@@ -3126,7 +3126,7 @@
   {
     "id": 125,
     "topicId": 1,
-    "setNumber": 5,
+    "testCode": 5,
     "order": 25,
     "text": "Bạn xử lý như thế nào trong trường hợp này?",
     "image": "https://i.ibb.co/nPyFqy0/197.jpg",
@@ -3150,7 +3150,7 @@
   {
     "id": 126,
     "topicId": 1,
-    "setNumber": 6,
+    "testCode": 6,
     "order": 1,
     "text": "Đường mà trên đó phương tiện tham gia giao thông được các phương tiện giao thông đến từ hướng khác nhường đường khi qua nơi đường giao nhau, được cắm biển báo hiệu đường ưu tiên là loại đường gì?",
     "image": "",
@@ -3178,7 +3178,7 @@
   {
     "id": 127,
     "topicId": 1,
-    "setNumber": 6,
+    "testCode": 6,
     "order": 2,
     "text": "Khái niệm “đỗ xe” được hiểu như thế nào là đúng?",
     "image": "",
@@ -3198,7 +3198,7 @@
   {
     "id": 128,
     "topicId": 1,
-    "setNumber": 6,
+    "testCode": 6,
     "order": 3,
     "text": "Trong trường hợp đặc biệt, để được lắp đặt, sử dụng còi, đèn không đúng với thiết kế của nhà sản xuất đối với từng loại xe cơ giới bạn phải đảm bảo yêu cầu nào dưới đây?",
     "image": "",
@@ -3222,7 +3222,7 @@
   {
     "id": 129,
     "topicId": 1,
-    "setNumber": 6,
+    "testCode": 6,
     "order": 4,
     "text": "Người ngồi trên xe mô tô hai bánh, xe mô tô ba bánh, xe gắn máy khi tham gia giao thông có được bám, kéo hoặc đẩy các phương tiện khác không?",
     "image": "",
@@ -3250,7 +3250,7 @@
   {
     "id": 130,
     "topicId": 1,
-    "setNumber": 6,
+    "testCode": 6,
     "order": 5,
     "text": "Người có GPLX mô tô hạng A1 được phép điều khiển loại xe nào dưới đây?",
     "image": "",
@@ -3274,7 +3274,7 @@
   {
     "id": 131,
     "topicId": 1,
-    "setNumber": 6,
+    "testCode": 6,
     "order": 6,
     "text": "Tại nơi có biển báo hiệu cố định lại có báo hiệu tạm thời thì người tham gia giao thông phải chấp hành hiệu lệnh của báo hiệu nào?",
     "image": "",
@@ -3294,7 +3294,7 @@
   {
     "id": 132,
     "topicId": 1,
-    "setNumber": 6,
+    "testCode": 6,
     "order": 7,
     "text": "Tại nơi đường giao nhau, người lái xe đang đi trên đường không ưu tiên phải nhường đường như thế nào là đúng quy tắc giao thông?",
     "image": "",
@@ -3318,7 +3318,7 @@
   {
     "id": 133,
     "topicId": 1,
-    "setNumber": 6,
+    "testCode": 6,
     "order": 8,
     "text": "Người lái xe phải giảm tốc độ thấp hơn tốc độ tối đa cho phép (có thể dừng lại một cách an toàn) trong trường hợp nào dưới đây?",
     "image": "",
@@ -3346,7 +3346,7 @@
   {
     "id": 134,
     "topicId": 1,
-    "setNumber": 6,
+    "testCode": 6,
     "order": 9,
     "text": "Trên đường bộ (trừ đường cao tốc) trong khu vực đông dân cư, đường đôi có dải phân cách giữa, xe mô tô hai bánh, ô tô chở người đến 30 chỗ tham gia giao thông với tốc độ tối đa cho phép là bao nhiêu?",
     "image": "",
@@ -3370,7 +3370,7 @@
   {
     "id": 135,
     "topicId": 1,
-    "setNumber": 6,
+    "testCode": 6,
     "order": 10,
     "text": "Người lái xe phải xử lý như thế nào khi quan sát phía trước thấy người đi bộ đang sang đường tại nơi có vạch đường dành cho người đi bộ để đảm bảo an toàn?",
     "image": "",
@@ -3394,7 +3394,7 @@
   {
     "id": 136,
     "topicId": 1,
-    "setNumber": 6,
+    "testCode": 6,
     "order": 11,
     "text": "Trong các hành vi dưới đây, người lái xe ô tô, mô tô có văn hóa giao thông phải ứng xử như thế nào?",
     "image": "",
@@ -3418,7 +3418,7 @@
   {
     "id": 137,
     "topicId": 1,
-    "setNumber": 6,
+    "testCode": 6,
     "order": 12,
     "text": "Khi đang lái xe mô tô và ô tô, nếu có nhu cầu sử dụng điện thoại để nhắn tin hoặc gọi điện, người lái xe phải thực hiện như thế nào trong các tình huống nêu dưới đây?",
     "image": "",
@@ -3442,7 +3442,7 @@
   {
     "id": 138,
     "topicId": 1,
-    "setNumber": 6,
+    "testCode": 6,
     "order": 13,
     "text": "Biển nào báo hiệu cấm xe mô tô hai bánh đi vào?",
     "image": "https://i.ibb.co/82SjBWs/102.jpg",
@@ -3466,7 +3466,7 @@
   {
     "id": 139,
     "topicId": 1,
-    "setNumber": 6,
+    "testCode": 6,
     "order": 14,
     "text": "Biển nào xe quay đầu không bị cấm?",
     "image": "https://i.ibb.co/h7RN2NT/110.jpg",
@@ -3490,7 +3490,7 @@
   {
     "id": 140,
     "topicId": 1,
-    "setNumber": 6,
+    "testCode": 6,
     "order": 15,
     "text": "Biển báo này có ý nghĩa như thế nào?",
     "image": "https://i.ibb.co/41p8pTx/118.jpg",
@@ -3510,7 +3510,7 @@
   {
     "id": 141,
     "topicId": 1,
-    "setNumber": 6,
+    "testCode": 6,
     "order": 16,
     "text": "Biển nào báo hiệu sắp đến chỗ giao nhau nguy hiểm?",
     "image": "https://i.ibb.co/9yYgvbn/126.jpg",
@@ -3538,7 +3538,7 @@
   {
     "id": 142,
     "topicId": 1,
-    "setNumber": 6,
+    "testCode": 6,
     "order": 17,
     "text": " Biển nào báo hiệu “Giao nhau với đường ưu tiên”?",
     "image": "https://i.ibb.co/r3Vk7J2/134.jpg",
@@ -3562,7 +3562,7 @@
   {
     "id": 143,
     "topicId": 1,
-    "setNumber": 6,
+    "testCode": 6,
     "order": 18,
     "text": "Biển nào báo hiệu “Giao nhau với đường hai chiều”?",
     "image": "https://i.ibb.co/jJ8cCcr/142.jpg",
@@ -3586,7 +3586,7 @@
   {
     "id": 144,
     "topicId": 1,
-    "setNumber": 6,
+    "testCode": 6,
     "order": 19,
     "text": "Trong các biển dưới đây biển nào là biển “Hết tốc độ tối đa cho phép”?",
     "image": "https://i.ibb.co/m6HW6gr/150.jpg",
@@ -3614,7 +3614,7 @@
   {
     "id": 145,
     "topicId": 1,
-    "setNumber": 6,
+    "testCode": 6,
     "order": 20,
     "text": "Gặp biển báo này, người tham gia giao thông phải xử lý như thế nào?",
     "image": "https://i.ibb.co/tqZpKfz/158.jpg",
@@ -3638,7 +3638,7 @@
   {
     "id": 146,
     "topicId": 1,
-    "setNumber": 6,
+    "testCode": 6,
     "order": 21,
     "text": "Thứ tự các xe đi như thế nào là đúng quy tắc giao thông?",
     "image": "https://i.ibb.co/p0zntdP/166.jpg",
@@ -3666,7 +3666,7 @@
   {
     "id": 147,
     "topicId": 1,
-    "setNumber": 6,
+    "testCode": 6,
     "order": 22,
     "text": "Theo hướng mũi tên, những hướng nào xe gắn máy đi được?",
     "image": "https://i.ibb.co/7pGNp4y/174.jpg",
@@ -3690,7 +3690,7 @@
   {
     "id": 148,
     "topicId": 1,
-    "setNumber": 6,
+    "testCode": 6,
     "order": 23,
     "text": "Các xe đi như thế nào là đúng quy tắc giao thông?",
     "image": "https://i.ibb.co/ftw11rj/182.jpg",
@@ -3714,7 +3714,7 @@
   {
     "id": 149,
     "topicId": 1,
-    "setNumber": 6,
+    "testCode": 6,
     "order": 24,
     "text": "Theo tín hiệu đèn của xe cơ giới, xe nào vi phạm quy tắc giao thông?",
     "image": "https://i.ibb.co/MhC6vwP/190.jpg",
@@ -3742,7 +3742,7 @@
   {
     "id": 150,
     "topicId": 1,
-    "setNumber": 6,
+    "testCode": 6,
     "order": 25,
     "text": "Xe nào dừng đúng theo quy tắc giao thông?",
     "image": "https://i.ibb.co/bPJXXzP/198.jpg",
@@ -3766,7 +3766,7 @@
   {
     "id": 151,
     "topicId": 1,
-    "setNumber": 7,
+    "testCode": 7,
     "order": 1,
     "text": "Khái niệm “phương tiện giao thông cơ giới đường bộ” được hiểu thế nào là đúng?",
     "image": "",
@@ -3786,7 +3786,7 @@
   {
     "id": 152,
     "topicId": 1,
-    "setNumber": 7,
+    "testCode": 7,
     "order": 2,
     "text": "Cuộc đua xe chỉ được thực hiện khi nào?",
     "image": "",
@@ -3810,7 +3810,7 @@
   {
     "id": 153,
     "topicId": 1,
-    "setNumber": 7,
+    "testCode": 7,
     "order": 3,
     "text": "Ở phần đường dành cho người đi bộ qua đường, trên cầu, đầu cầu, đường cao tốc, đường hẹp, đường dốc, tại nơi đường bộ giao nhau cùng mức với đường sắt có được quay đầu xe hay không?",
     "image": "",
@@ -3834,7 +3834,7 @@
   {
     "id": 154,
     "topicId": 1,
-    "setNumber": 7,
+    "testCode": 7,
     "order": 4,
     "text": "Người ngồi trên xe mô tô hai bánh, xe mô tô ba bánh, xe gắn máy khi tham gia giao thông có được sử dụng ô khi trời mưa hay không?",
     "image": "",
@@ -3862,7 +3862,7 @@
   {
     "id": 155,
     "topicId": 1,
-    "setNumber": 7,
+    "testCode": 7,
     "order": 5,
     "text": "Biển báo hiệu có dạng hình tròn, viền đỏ, nền trắng, trên nền có hình vẽ hoặc chữ số, chữ viết màu đen là loại biển gì dưới đây?",
     "image": "https://i.ibb.co/BgL2TLD/39.jpg",
@@ -3890,7 +3890,7 @@
   {
     "id": 156,
     "topicId": 1,
-    "setNumber": 7,
+    "testCode": 7,
     "order": 6,
     "text": "Trên đường có nhiều làn đường cho xe đi cùng chiều được phân biệt bằng vạch kẻ phân làn đường, người điều khiển phương tiện phải cho xe đi như thế nào?",
     "image": "",
@@ -3914,7 +3914,7 @@
   {
     "id": 157,
     "topicId": 1,
-    "setNumber": 7,
+    "testCode": 7,
     "order": 7,
     "text": "Tại nơi đường giao nhau không có báo hiệu đi theo vòng xuyến, người điều khiển phương tiện phải nhường đường như thế nào là đúng quy tắc giao thông?",
     "image": "",
@@ -3938,7 +3938,7 @@
   {
     "id": 158,
     "topicId": 1,
-    "setNumber": 7,
+    "testCode": 7,
     "order": 8,
     "text": "Tại ngã ba hoặc ngã tư không có đảo an toàn, người lái xe phải nhường đường như thế nào là đúng trong các trường hợp dưới đây?",
     "image": "",
@@ -3962,7 +3962,7 @@
   {
     "id": 159,
     "topicId": 1,
-    "setNumber": 7,
+    "testCode": 7,
     "order": 9,
     "text": "Trên đường bộ (trừ đường cao tốc) trong khu vực đông dân cư, đường hai chiều không có dải phân cách giữa, xe mô tô hai bánh, ô tô chở người đến 30 chỗ tham gia giao thông với tốc độ tối đa cho phép là bao nhiêu?",
     "image": "",
@@ -3986,7 +3986,7 @@
   {
     "id": 160,
     "topicId": 1,
-    "setNumber": 7,
+    "testCode": 7,
     "order": 10,
     "text": " Theo Luật Giao thông đường bộ, tín hiệu đèn giao thông gồm 3 màu nào dưới đây?",
     "image": "",
@@ -4014,7 +4014,7 @@
   {
     "id": 161,
     "topicId": 1,
-    "setNumber": 7,
+    "testCode": 7,
     "order": 11,
     "text": "Khi xảy ra tai nạn giao thông, có người bị thương nghiêm trọng, người lái xe và người có mặt tại hiện trường vụ tai nạn phải thực hiện các công việc gì dưới đây?",
     "image": "",
@@ -4038,7 +4038,7 @@
   {
     "id": 162,
     "topicId": 1,
-    "setNumber": 7,
+    "testCode": 7,
     "order": 12,
     "text": "Những thói quen nào dưới đây khi điều khiển xe mô tô tay ga tham gia giao thông dễ gây tai nạn nguy hiểm?",
     "image": "",
@@ -4062,7 +4062,7 @@
   {
     "id": 163,
     "topicId": 1,
-    "setNumber": 7,
+    "testCode": 7,
     "order": 13,
     "text": "Khi gặp biển nào thì xe mô tô hai bánh được đi vào?",
     "image": "https://i.ibb.co/YZvx17T/103.jpg",
@@ -4090,7 +4090,7 @@
   {
     "id": 164,
     "topicId": 1,
-    "setNumber": 7,
+    "testCode": 7,
     "order": 14,
     "text": "Biển nào xe được phép quay đầu nhưng không được rẽ trái?",
     "image": "https://i.ibb.co/PGGG4s9/111.jpg",
@@ -4114,7 +4114,7 @@
   {
     "id": 165,
     "topicId": 1,
-    "setNumber": 7,
+    "testCode": 7,
     "order": 15,
     "text": "Chiều dài đoạn đường 500 m từ nơi đặt biển này, người lái xe có được phép bấm còi không?",
     "image": "https://i.ibb.co/4pq7YKc/119.jpg",
@@ -4134,7 +4134,7 @@
   {
     "id": 166,
     "topicId": 1,
-    "setNumber": 7,
+    "testCode": 7,
     "order": 16,
     "text": "Biển nào báo hiệu “Giao nhau với đường sắt có rào chắn”?",
     "image": "https://i.ibb.co/Ctt7gpQ/127.jpg",
@@ -4158,7 +4158,7 @@
   {
     "id": 167,
     "topicId": 1,
-    "setNumber": 7,
+    "testCode": 7,
     "order": 17,
     "text": "Biển nào báo hiệu “Đường bị thu hẹp”?",
     "image": "https://i.ibb.co/nRXBxYq/135.jpg",
@@ -4186,7 +4186,7 @@
   {
     "id": 168,
     "topicId": 1,
-    "setNumber": 7,
+    "testCode": 7,
     "order": 18,
     "text": "Biển nào báo hiệu “Chú ý chướng ngại vật”?",
     "image": "https://i.ibb.co/8c1mRBG/143.jpg",
@@ -4210,7 +4210,7 @@
   {
     "id": 169,
     "topicId": 1,
-    "setNumber": 7,
+    "testCode": 7,
     "order": 19,
     "text": "Hiệu lực của biển “Tốc độ tối đa cho phép” hết tác dụng khi gặp biển nào dưới đây?",
     "image": "https://i.ibb.co/nkpMCjv/151.jpg",
@@ -4238,7 +4238,7 @@
   {
     "id": 170,
     "topicId": 1,
-    "setNumber": 7,
+    "testCode": 7,
     "order": 20,
     "text": "Biển số 1 có ý nghĩa gì?",
     "image": "https://i.ibb.co/LJjbHD4/159.jpg",
@@ -4262,7 +4262,7 @@
   {
     "id": 171,
     "topicId": 1,
-    "setNumber": 7,
+    "testCode": 7,
     "order": 21,
     "text": "Thứ tự các xe đi như thế nào là đúng quy tắc giao thông?",
     "image": "https://i.ibb.co/FJFQfrW/167.jpg",
@@ -4290,7 +4290,7 @@
   {
     "id": 172,
     "topicId": 1,
-    "setNumber": 7,
+    "testCode": 7,
     "order": 22,
     "text": "Xe nào đỗ vi phạm quy tắc giao thông?",
     "image": "https://i.ibb.co/yRFMLNc/175.jpg",
@@ -4318,7 +4318,7 @@
   {
     "id": 173,
     "topicId": 1,
-    "setNumber": 7,
+    "testCode": 7,
     "order": 23,
     "text": "Theo hướng mũi tên, xe nào được phép đi?",
     "image": "https://i.ibb.co/FXD8bQs/183.jpg",
@@ -4346,7 +4346,7 @@
   {
     "id": 174,
     "topicId": 1,
-    "setNumber": 7,
+    "testCode": 7,
     "order": 24,
     "text": "Các xe đi theo hướng mũi tên, xe nào vi phạm quy tắc giao thông?",
     "image": "https://i.ibb.co/TtQysyW/191.jpg",
@@ -4370,7 +4370,7 @@
   {
     "id": 175,
     "topicId": 1,
-    "setNumber": 7,
+    "testCode": 7,
     "order": 25,
     "text": "Xe của bạn đang di chuyển gần đến khu vực giao cắt với đường sắt, khi rào chắn đang dịch chuyển, bạn điều khiển xe như thế nào là đứng quy tắc giao thông?",
     "image": "https://i.ibb.co/71q7p33/199.jpg",
@@ -4394,7 +4394,7 @@
   {
     "id": 176,
     "topicId": 1,
-    "setNumber": 8,
+    "testCode": 8,
     "order": 1,
     "text": "Khái niệm “phương tiện giao thông thô sơ đường bộ” được hiểu thế nào là đúng?",
     "image": "",
@@ -4418,7 +4418,7 @@
   {
     "id": 177,
     "topicId": 1,
-    "setNumber": 8,
+    "testCode": 8,
     "order": 2,
     "text": "Người điều khiển phương tiện giao thông đường bộ mà trong cơ thể có chất ma tuý có bị nghiêm cấm hay không?",
     "image": "",
@@ -4442,7 +4442,7 @@
   {
     "id": 178,
     "topicId": 1,
-    "setNumber": 8,
+    "testCode": 8,
     "order": 3,
     "text": "Bạn đang lái xe phía trước có một xe cảnh sát giao thông không phát tín hiệu ưu tiên bạn có được phép vượt hay không?",
     "image": "",
@@ -4470,7 +4470,7 @@
   {
     "id": 179,
     "topicId": 1,
-    "setNumber": 8,
+    "testCode": 8,
     "order": 4,
     "text": "Khi đang lên dốc người ngồi trên xe mô tô có được kéo theo người đang điều khiển xe đạp hay không?",
     "image": "",
@@ -4498,7 +4498,7 @@
   {
     "id": 180,
     "topicId": 1,
-    "setNumber": 8,
+    "testCode": 8,
     "order": 5,
     "text": "Biển báo hiệu có dạng tam giác đều, viền đỏ, viền màu vàng, trên có hình vẽ màu đen là loại biển gì dưới đây?",
     "image": "https://i.ibb.co/qBk3SGL/40.jpg",
@@ -4526,7 +4526,7 @@
   {
     "id": 181,
     "topicId": 1,
-    "setNumber": 8,
+    "testCode": 8,
     "order": 6,
     "text": "Trên đường một chiều có vạch kẻ phân làn đường, xe thô sơ và xe cơ giới phải đi như thế nào là đúng quy tắc giao thông?",
     "image": "",
@@ -4550,7 +4550,7 @@
   {
     "id": 182,
     "topicId": 1,
-    "setNumber": 8,
+    "testCode": 8,
     "order": 7,
     "text": "Tại nơi đường bộ giao nhau cùng mức với đường sắt chỉ có đèn tín hiệu hoặc chuông báo hiệu, khi đèn tín hiệu màu đỏ đã bật sáng hoặc có tiếng chuông báo hiệu, người tham gia giao thông phải dừng lại ngay và giữ khoảng cách tối thiểu bao nhiêu mét tính từ ray gần nhất?",
     "image": "",
@@ -4574,7 +4574,7 @@
   {
     "id": 183,
     "topicId": 1,
-    "setNumber": 8,
+    "testCode": 8,
     "order": 8,
     "text": "Khi điều khiển xe cơ giới, người lái xe phải bật đèn tín hiệu báo rẽ trong trường hợp nào sau đây?",
     "image": "",
@@ -4598,7 +4598,7 @@
   {
     "id": 184,
     "topicId": 1,
-    "setNumber": 8,
+    "testCode": 8,
     "order": 9,
     "text": "Trên đường bộ (trừ đường cao tốc) trong khu vực đông dân cư, đường hai chiều hoặc đường một chiều có một làn xe cơ giới, loại xe nào dưới đây được tham gia giao thông với tốc độ tối đa cho phép là 50 km/h?",
     "image": "",
@@ -4622,7 +4622,7 @@
   {
     "id": 185,
     "topicId": 1,
-    "setNumber": 8,
+    "testCode": 8,
     "order": 10,
     "text": "Tại nơi giao nhau, khi đèn điều khiển giao thông có tín hiệu màu vàng, người điều khiển giao thông phải chấp hành như thế nào là đúng quy tắc giao thông?",
     "image": "",
@@ -4650,7 +4650,7 @@
   {
     "id": 186,
     "topicId": 1,
-    "setNumber": 8,
+    "testCode": 8,
     "order": 11,
     "text": "Trên đường đang xảy ra ùn tắc những hành vi nào sau đây là thiếu văn hóa khi tham gia giao thông?",
     "image": "",
@@ -4678,7 +4678,7 @@
   {
     "id": 187,
     "topicId": 1,
-    "setNumber": 8,
+    "testCode": 8,
     "order": 12,
     "text": "Khi điều khiển xe mô tô quay đầu người lái xe cần thực hiện như thế nào để đảm bảo an toàn?",
     "image": "",
@@ -4706,7 +4706,7 @@
   {
     "id": 188,
     "topicId": 1,
-    "setNumber": 8,
+    "testCode": 8,
     "order": 13,
     "text": "Biển nào cấm quay đầu xe?",
     "image": "https://i.ibb.co/HCdgXpQ/104.jpg",
@@ -4734,7 +4734,7 @@
   {
     "id": 189,
     "topicId": 1,
-    "setNumber": 8,
+    "testCode": 8,
     "order": 14,
     "text": "Biển nào là biển “Cấm đi ngược chiều”?",
     "image": "https://i.ibb.co/Vvsg4V8/112.jpg",
@@ -4758,7 +4758,7 @@
   {
     "id": 190,
     "topicId": 1,
-    "setNumber": 8,
+    "testCode": 8,
     "order": 15,
     "text": "Biển nào xe mô tô hai bánh được đi vào?",
     "image": "https://i.ibb.co/0Vwk4Zn/120.jpg",
@@ -4782,7 +4782,7 @@
   {
     "id": 191,
     "topicId": 1,
-    "setNumber": 8,
+    "testCode": 8,
     "order": 16,
     "text": "Biển nào báo hiệu nguy hiểm giao nhau với đường sắt?",
     "image": "https://i.ibb.co/cgG98Lt/128.jpg",
@@ -4810,7 +4810,7 @@
   {
     "id": 192,
     "topicId": 1,
-    "setNumber": 8,
+    "testCode": 8,
     "order": 17,
     "text": "Khi gặp biển nào, người lái xe phải giảm tốc độ, chú ý xe đi ngược chiều, xe đi ở phía đường bị hẹp phải nhường đường cho xe đi ngược chiều?",
     "image": "https://i.ibb.co/v4T5w3p/136.jpg",
@@ -4838,7 +4838,7 @@
   {
     "id": 193,
     "topicId": 1,
-    "setNumber": 8,
+    "testCode": 8,
     "order": 18,
     "text": "Gặp biển nào người tham gia giao thông phải đi chậm và thận trọng đề phòng khả năng xuất hiện và di chuyển bất ngờ của trẻ em trên mặt đường?",
     "image": "https://i.ibb.co/pL0T599/144.jpg",
@@ -4858,7 +4858,7 @@
   {
     "id": 194,
     "topicId": 1,
-    "setNumber": 8,
+    "testCode": 8,
     "order": 19,
     "text": "Trong các biển dưới đây biển nào là biển “Hết hạn chế tốc độ tối thiểu” ?",
     "image": "https://i.ibb.co/LkCS8jk/152.jpg",
@@ -4886,7 +4886,7 @@
   {
     "id": 195,
     "topicId": 1,
-    "setNumber": 8,
+    "testCode": 8,
     "order": 20,
     "text": "Vạch kẻ đường nào dưới đây là vạch phân chia các làn xe cùng chiều?",
     "image": "https://i.ibb.co/K2rQZTD/160.jpg",
@@ -4914,7 +4914,7 @@
   {
     "id": 196,
     "topicId": 1,
-    "setNumber": 8,
+    "testCode": 8,
     "order": 21,
     "text": "Trường hợp này xe nào được quyền đi trước?",
     "image": "https://i.ibb.co/3Sw7jmM/168.jpg",
@@ -4934,7 +4934,7 @@
   {
     "id": 197,
     "topicId": 1,
-    "setNumber": 8,
+    "testCode": 8,
     "order": 22,
     "text": "Xe nào đỗ vi phạm quy tắc giao thông?",
     "image": "https://i.ibb.co/WkCgB71/176.jpg",
@@ -4962,7 +4962,7 @@
   {
     "id": 198,
     "topicId": 1,
-    "setNumber": 8,
+    "testCode": 8,
     "order": 23,
     "text": "Trong hình dưới đây, xe nào chấp hành đúng quy tắc giao thông?",
     "image": "https://i.ibb.co/2WjqqWC/184.jpg",
@@ -4986,7 +4986,7 @@
   {
     "id": 199,
     "topicId": 1,
-    "setNumber": 8,
+    "testCode": 8,
     "order": 24,
     "text": "Các xe đi theo hướng mũi tên, xe nào vi phạm quy tắc giao thông?",
     "image": "https://i.ibb.co/hBg4Rr5/192.jpg",
@@ -5010,7 +5010,7 @@
   {
     "id": 200,
     "topicId": 1,
-    "setNumber": 8,
+    "testCode": 8,
     "order": 25,
     "text": "Trong tình huống dưới đây, xe đầu kéo kéo rơ moóc (xe container) đang rẽ phải, xe con màu xanh và xe máy phía sau xe container đi như thế nào để đảm bảo an toàn?",
     "image": "https://i.ibb.co/DkdmCW4/200.jpg",

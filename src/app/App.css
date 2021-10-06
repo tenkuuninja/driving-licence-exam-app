@@ -5,23 +5,43 @@
   appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none;
+  transition: color ease-out 300ms;
   --primary-color: #2ecc71;
   --secondary-color: #2980b9;
+  --success-color: #2ecc71;
+  --error-color: #e74c3c;
+  --warning-color: #f1c40f;
+  --info-color: #2980b9;
+  --empty-color: #7f8c8d;
+  --confirm-color: #2ecc71;
+  --cancel-color: #e74c3c;
+  --primary-background-color: #fff;
+  --secondary-background-color: #fff;
+  --text-color: #000;
+  --divider-color: rgba(0, 0, 0, .3);
 }
 
-*::-webkit-scrollbar {
-  display: none;
+.dark-mode,
+.dark-mode * {
+  --primary-color: #242526;
+  --secondary-color: #2980b9;
+  --confirm-color: #242526;
+  --cancel-color: #242526;
+  --click-color: rgba(0, 0, 0, .2);
+  --primary-background-color: #18191a;
+  --secondary-background-color: #242526;
+  --text-color: #fff;
+  --divider-color: rgba(255, 255, 255, .3)
 }
 
-/* Hide scrollbar for IE, Edge and Firefox */
-* {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+.dark-mode {
+  background-color: var(--primary-background-color);
+  color: var(--text-color);
 }
 
 a {
   text-decoration-line: none;
-  color: black;
+  color: var(--text-color);
 }
 
 ul {
@@ -35,6 +55,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 code {
@@ -42,7 +63,11 @@ code {
     monospace;
 }
 
-
+.container {
+  display: block;
+  padding: 1rem;
+  margin: auto;
+}
 
 .hidden {
   display: none !important;
@@ -60,12 +85,21 @@ code {
 
 
 @media (min-width: 992px) {
+  .container {
+    width: 65rem;
+  }
   .mobile-only {
     display: none !important;
   }
   
   .desktop-only {
     display: block;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 72rem;
   }
 }
 

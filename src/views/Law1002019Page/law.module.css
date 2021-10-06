@@ -1,0 +1,32 @@
+.header {
+  font-size: 2rem;
+  font-weight: 700;
+  cursor: pointer;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--primary-color);
+}
+
+.header > p {
+  display: inline-block;
+}
+
+.wrapper {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.2rem;
+  margin-top: 4.5rem;
+}
+
+.wrapper > p {
+  margin-top: .6rem;
+}
+
+.center {
+  text-align: center;
+}
+
+.active {
+  color: green;
+}

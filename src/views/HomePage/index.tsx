@@ -10,6 +10,7 @@ import { TiTimes } from 'react-icons/ti';
 import st from './home.module.css';
 import Modal from '../components/Modal';
 import { ExamMenu, LearnMenu } from '../components/Menu';
+import Footer from '../components/Footer';
 
 
 const MenuPage = function() {
@@ -52,8 +53,8 @@ const MenuPage = function() {
       screen: ''
     },
     { 
-      text: 'Thục hành', 
-      url: '/thuc-hanh.html', 
+      text: 'Mẹo thi', 
+      url: '/meo-thi-ket-qua-cao.html', 
       icon: <DiCssTricks />, 
       color: '#f39c12' ,
       screen: ''
@@ -84,7 +85,7 @@ const MenuPage = function() {
         </div>
         {/* <img src="http://media.baophutho.vn/dataimages/2021/04/07/123-1617762316.jpg" alt="" /> */}
       </div>
-      <div className={`${st.container}`}>
+      <div className={`container ${st.container}`}>
         <ul className={st['list-item']}>
           {menu.map((item, i) => <li key={i} className={item.screen}>
             {item.url !== undefined &&
@@ -102,6 +103,7 @@ const MenuPage = function() {
           </li>)}
         </ul>
       </div>
+      <Footer />
       <Modal 
         isOpen={isOpenLearnMenuModal}
         handleOutsideClick={() => setOpenLearnMenuModal(false)}

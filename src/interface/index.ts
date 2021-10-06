@@ -1,7 +1,7 @@
 export interface IQuestion {
   id: number
   topicId: number
-  setNumber: number
+  testCode: number
   order: number
   text: string
   image: string
@@ -18,10 +18,33 @@ export interface IAnswer {
 
 export interface ISign {
   id: number
-  typeId: number
+  topicId: number
   title: string
   description: string
   image: string
+}
+
+export interface ILaw {
+  id: number,
+  violation: string,
+  entities: string,
+  penalties: string,
+  additionalPenalties: string,
+  remedial: string,
+  note: string,
+  vehicleCode: number,
+  topicId: number,
+  bookmarks: ILawBookmark[]
+}
+
+export interface ILawBookmark {
+  code: string
+  text: string
+}
+
+export interface ITopic {
+  id: number,
+  text: string
 }
 
 export interface IResult {
