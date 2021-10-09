@@ -20,7 +20,7 @@
 
 .wrapper h3::after {
   content: '';
-  margin-top: .2rem;
+  margin: .2rem 0 0 0;
   display: block;
   background-color: #2ecc71;
   width: 5rem;

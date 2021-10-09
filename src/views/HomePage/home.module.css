@@ -127,4 +127,8 @@
     width: 48rem;
   }
 
+  .footer-wrapper {
+    display: none !important;
+  }
+
 }

@@ -18,6 +18,7 @@ const data = [
     title: 'Liên hệ',
     items: [
       { text: '(+84) XXXXXXXXXX', url: '#' },
+      { text: 'vjppro@gmail.com', url: '#' },
       { text: 'Haloi, Dong Lao', url: '#' },
     ]
   },
@@ -35,17 +36,19 @@ const data = [
 const Footer = function() {
   return(
     <div className={st['dash-border']}>
-      <div className={`container ${st.wrapper}`}>
-        <div>
-          <h3>Về chúng tôi</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem fugiat tempore, ipsa, modi facilis porro quasi neque nemo rerum pariatur suscipit quae consectetur! Soluta illo, nisi consequuntur praesentium quam omnis?</p>
+      <div className="container">
+        <div className={`${st.wrapper}`}>
+          <div>
+            <h3>Về chúng tôi</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem fugiat tempore, ipsa, modi facilis porro quasi neque nemo rerum pariatur suscipit quae consectetur! Soluta illo, nisi consequuntur praesentium quam omnis?</p>
+          </div>
+          {data.map((child, i) => <div key={i}>
+            <h3>{child.title}</h3>
+            {child.items.map((item: any, j: number) => <Link to={item.url} key={j}>
+              {item.text}
+            </Link>)}
+          </div>)}
         </div>
-        {data.map((child, i) => <div key={i}>
-          <h3>{child.title}</h3>
-          {child.items.map((item: any, j: number) => <Link to={item.url} key={j}>
-            {item.text}
-          </Link>)}
-        </div>)}
       </div>
       <div className={`container ${st.copyright}`}>
         copyright @ {(new Date()).getFullYear()}

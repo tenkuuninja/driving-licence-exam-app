@@ -103,7 +103,7 @@ const MenuPage = function() {
           </li>)}
         </ul>
       </div>
-      <div className="mobile-only">
+      <div className={st['footer-wrapper']}>
         <Footer />
       </div>
       <Modal 

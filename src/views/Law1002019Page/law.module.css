@@ -11,8 +11,11 @@
 }
 
 .content > p {
-  font-family: "Times New Roman", Times, serif;
   margin-top: .6rem;
+}
+
+.content p {
+  font-family: "Times New Roman", Times, serif;
 }
 
 .center {

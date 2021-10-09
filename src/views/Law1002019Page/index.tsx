@@ -6,6 +6,8 @@ import st from './law.module.css';
 import Header from '../components/Header';
 import Breadcrumb from '../components/Breadcrumb';
 import { BiHomeAlt } from 'react-icons/bi';
+import Footer from '../components/Footer';
+import { Link } from 'react-router-dom';
 
 interface DataLaw {
   code: string
@@ -123,6 +125,7 @@ export default function () {
             </tbody>
           </table>
         </div>
+        <Footer />
       </div>
       <ScrollToTop />
     </React.Fragment>

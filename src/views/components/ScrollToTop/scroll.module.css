@@ -11,6 +11,7 @@
   line-height: 1;
   opacity: .8;
   transition: all ease-in-out 100ms;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .button:hover {
