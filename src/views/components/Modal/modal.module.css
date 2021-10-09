@@ -8,6 +8,8 @@
   background-color: black;
   opacity: 0;
   z-index: 2;
+  -webkit-transition: all ease-in-out 50ms;
+  -o-transition: all ease-in-out 50ms;
   transition: all ease-in-out 50ms;
   pointer-events: none;
 }
@@ -24,16 +26,25 @@
   left: 50%;
   z-index: 2;
   opacity: 0;
-  transform: translateX(-50%) translateY(-50%) scale(.9);
+  -webkit-transform: translateX(-50%) translateY(-50%) scale(.9);
+      -ms-transform: translateX(-50%) translateY(-50%) scale(.9);
+          transform: translateX(-50%) translateY(-50%) scale(.9);
+  -webkit-transition: all ease-in-out 50ms;
+  -o-transition: all ease-in-out 50ms;
   transition: all ease-in-out 50ms;
-  transition-delay: 50ms;
+  -webkit-transition-delay: 50ms;
+       -o-transition-delay: 50ms;
+          transition-delay: 50ms;
   pointer-events: none;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .content.active {
   opacity: 1;
-  transform: translateX(-50%) translateY(-50%) scale(1);
+  -webkit-transform: translateX(-50%) translateY(-50%) scale(1);
+      -ms-transform: translateX(-50%) translateY(-50%) scale(1);
+          transform: translateX(-50%) translateY(-50%) scale(1);
   pointer-events: all
 }
 

@@ -8,7 +8,9 @@
   position: fixed;
   top: 50vh;
   left: 50vw;
-  transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+      -ms-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
   width: 100vw;
   text-align: center;
   background-color: var(--primary-background-color);
@@ -32,6 +34,8 @@
   padding: 1rem 5rem;
   font-size: x-large;
   font-weight: 600;
+  -webkit-transition: all ease-in-out 150ms;
+  -o-transition: all ease-in-out 150ms;
   transition: all ease-in-out 150ms;
   border-radius: .5rem;
 }

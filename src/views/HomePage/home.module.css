@@ -1,6 +1,8 @@
 .list-item {
   padding: 1rem;
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 1fr 1rem 1fr;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
   
@@ -9,15 +11,22 @@
 .list-item > li {
   background-color: var(--secondary-background-color, #fff);
   border-radius: 1rem;
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+          box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   padding: 1rem;
   cursor: pointer;
+  -webkit-transition: -webkit-transform ease-in-out 100ms;
+  transition: -webkit-transform ease-in-out 100ms;
+  -o-transition: transform ease-in-out 100ms;
   transition: transform ease-in-out 100ms;
+  transition: transform ease-in-out 100ms, -webkit-transform ease-in-out 100ms;
 }
 
 .list-item > li:hover {
   opacity: 1;
-  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .icon {
@@ -56,6 +65,7 @@
 
 @media (min-width: 992px) {
   .list-item {
+    -ms-grid-columns: (1fr)[3];
     grid-template-columns: repeat(3, 1fr);
   }
 
@@ -68,8 +78,12 @@
     border-radius: 1rem;
   }
   .modal-action {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     padding-top: .5rem;
   }
   .modal-action > .close {
@@ -89,9 +103,12 @@
   }
   .list-item {
     height: 0;
+    -ms-grid-columns: (1fr)[6];
     grid-template-columns: repeat(6, 1fr);
     border-radius: 1rem;
-    transform: translateY(-13rem);
+    -webkit-transform: translateY(-13rem);
+        -ms-transform: translateY(-13rem);
+            transform: translateY(-13rem);
     padding: 0;
   }
 
@@ -108,7 +125,9 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+        -ms-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
     color: white;
     width: 75rem;
     height: 70%;

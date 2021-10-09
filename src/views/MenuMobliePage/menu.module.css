@@ -3,9 +3,14 @@
 }
 
 .bc {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   clear: both;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .bc > *:not(:last-child) {

@@ -15,8 +15,12 @@
 }
 
 .list-topic .paper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   padding: .2rem 2rem ;
   margin: 1rem 0;
@@ -26,6 +30,8 @@
   font-size: 1.5rem;
   opacity: .8;
   background-color: var(--secondary-background-color);
+  -webkit-transition: all ease-in-out 150;
+  -o-transition: all ease-in-out 150;
   transition: all ease-in-out 150
 }
 
@@ -45,7 +51,9 @@
 
 
 .list-item {
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 1fr 1rem 1fr;
   grid-template-columns: repeat(2, 1fr);
   margin-bottom: .5rem;
   gap: 1rem;
@@ -66,6 +74,8 @@
   font-weight: 600;
   font-size: 1.2rem;
   opacity: .8;
+  -webkit-transition: all ease-in-out 150ms;
+  -o-transition: all ease-in-out 150ms;
   transition: all ease-in-out 150ms;
 }
 
@@ -77,6 +87,7 @@
 
 @media (min-width: 992px) {
   .list-item {
+    -ms-grid-columns: (1fr)[4];
     grid-template-columns: repeat(4, 1fr);
   }
 }
