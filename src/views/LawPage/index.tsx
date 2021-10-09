@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
+import { BiHomeAlt } from 'react-icons/bi';
 import { Link } from 'react-router-dom';
 import Select from 'react-select';
 import { getLawByVehicleCodeAndTopicId, getLawTopic } from '../../data';
 import { ILaw, ILawBookmark, ITopic } from '../../interface';
+import Breadcrumb from '../components/Breadcrumb';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import ScrollToTop from '../components/ScrollToTop';
@@ -33,6 +35,12 @@ const LawPage = function() {
     <React.Fragment>
       <Header />
       <div className="container">
+        <Breadcrumb
+          item={[
+            { label: 'Trang chủ', icon: <BiHomeAlt />, url: '/' },
+            { label: 'Luật giao thông' },
+          ]}
+        />
         <h1 className={`${st.title}`}>Luật giao thông</h1>
         <div className={`${st.select}`}>
           <Select 
@@ -52,14 +60,14 @@ const LawPage = function() {
         </div>
         <ul className={`${st['list-item']}`}>
           {laws.map((law: ILaw) => <li key={law.id}>
-            <p>Hành vi: {law.violation}</p>
-            <p>Đối tượng: {law.entities}</p>
-            <p>Hình phạt: {law.penalties}</p>
-            {law.additionalPenalties && <p>Hình phạt bổ sung: {law.additionalPenalties}</p>}
-            {law.remedial && <p>Khắc phục hậu quả: {law.remedial}</p>}
-            {law.note && <p>Ghi chú: {law.note}</p>}
+            <p><span className={st.label}>Hành vi:</span> {law.violation}</p>
+            <p><span className={st.label}>Đối tượng:</span> {law.entities}</p>
+            <p><span className={st.label}>Hình phạt:</span> {law.penalties}</p>
+            {law.additionalPenalties && <p><span className={st.label}>Hình phạt bổ sung:</span> {law.additionalPenalties}</p>}
+            {law.remedial && <p><span className={st.label}>Khắc phục hậu quả:</span> {law.remedial}</p>}
+            {law.note && <p><span className={st.label}>Ghi chú:</span> {law.note}</p>}
             {law.bookmarks.map((bookmark: ILawBookmark, i) => <Link to={`/can-cu-phap-ly.html#${bookmark.code}`} key={i}>
-              <p><i>{bookmark.text}</i></p>
+              <p className={st.bookmark}><i>{bookmark.text}</i></p>
             </Link>)}
           </li>)}
         </ul>

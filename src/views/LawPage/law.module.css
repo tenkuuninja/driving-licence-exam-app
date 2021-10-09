@@ -1,6 +1,7 @@
 .title {
   padding: 2rem 0;
-  font-size: 3rem;
+  font-size: 2rem;
+  color: var(--title-color);
 }
 
 .select {
@@ -10,12 +11,12 @@
 
 .select > div {
   display: inline-block;
-  width: 10rem;
+  width: 20rem;
 }
 
-.select > div:nth-child(2) {
-  width: 20rem;
-  margin-left: 1rem;
+.select > div:nth-child(1) {
+  width: 10rem;
+  margin-right: 1rem;
 }
 
 .list-item {
@@ -26,6 +27,10 @@
 
 .list-item > li {
   padding: 1rem;
+}
+
+.list-item p {
+  text-align: justify;
 }
 
 .item-image {
@@ -44,13 +49,24 @@
   margin: .5rem 0;
 }
 
-.item-title {
-  
+.label {
+  font-weight: 600;
+  color: var(--title-color);
+  opacity: .8;
+}
+
+.bookmark {
+  font-size: .9rem;
+  padding-left: .5rem;
+  color: var(--secondary-color);
 }
 
 @media (min-width: 992px) {
   .list-item {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .title {
+    font-size: 3rem;
   }
   
 }

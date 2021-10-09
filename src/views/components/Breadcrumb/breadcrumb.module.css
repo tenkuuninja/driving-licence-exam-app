@@ -1,0 +1,20 @@
+.wrapper {
+  display: block;
+  cursor: pointer;
+  user-select: none;
+  font-size: .9rem;
+  margin: 1rem 0;
+}
+
+.wrapper > li {
+  display: inline-block;
+}
+
+.wrapper > *:not(:last-child) {
+  opacity: .8;
+}
+
+.wrapper > *:not(:last-child)::after {
+  content: '/';
+  margin: 0 .5rem;
+}

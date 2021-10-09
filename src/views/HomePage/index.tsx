@@ -103,7 +103,9 @@ const MenuPage = function() {
           </li>)}
         </ul>
       </div>
-      <Footer />
+      <div className="mobile-only">
+        <Footer />
+      </div>
       <Modal 
         isOpen={isOpenLearnMenuModal}
         handleOutsideClick={() => setOpenLearnMenuModal(false)}

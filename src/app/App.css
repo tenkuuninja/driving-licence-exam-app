@@ -17,7 +17,8 @@
   --cancel-color: #e74c3c;
   --primary-background-color: #fff;
   --secondary-background-color: #fff;
-  --text-color: #000;
+  --title-color: #000;
+  --text-color: #030303;
   --divider-color: rgba(0, 0, 0, .3);
 }
 
@@ -30,7 +31,8 @@
   --click-color: rgba(0, 0, 0, .2);
   --primary-background-color: #18191a;
   --secondary-background-color: #242526;
-  --text-color: #fff;
+  --title-color: #fff;
+  --text-color: #aaa;
   --divider-color: rgba(255, 255, 255, .3)
 }
 

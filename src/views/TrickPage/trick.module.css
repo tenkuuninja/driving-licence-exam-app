@@ -1,0 +1,61 @@
+.title {
+  margin: 2rem 0;
+  font-size: 2rem;
+  color: var(--title-color);
+}
+
+.tab {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tab > span {
+  width: 47%;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, .5);
+  border-radius: 9999px;
+  cursor: pointer;
+  padding: .2rem;
+}
+
+.tab > span:hover,
+.tab > span.active {
+  color: #2ecc71;
+}
+
+.tab > span.active {
+  border-color: #2ecc71;
+}
+
+.image {
+  display: block;
+  margin: auto;
+}
+
+.mt{
+  font-weight: 600;
+  margin-top: 1rem;
+  color: var(--title-color);
+}
+
+.bold {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.pl {
+  padding-left: 1rem;
+}
+
+
+@media (min-width: 992px) {
+  .title {
+    font-size: 3rem;
+  }
+  .tab {
+    width: 50%;
+    margin: auto;
+  }
+  
+}
+

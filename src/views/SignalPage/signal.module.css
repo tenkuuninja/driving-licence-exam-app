@@ -1,10 +1,11 @@
 .title {
   padding: 2rem 0;
-  font-size: 3rem;
+  font-size: 2rem;
+  color: var(--title-color);
 }
 
 .select {
-  width: 20rem;
+  max-width: 20rem;
   color: #000;
 }
 
@@ -21,24 +22,39 @@
 
 .item-image {
   flex-grow: 0;
-  width: 8rem;
-  height: 8rem;
   margin-right: 1rem;
 }
 
 .item-image > img {
-  width: 8rem;
+  width: 4rem;
   height: auto;
 }
 
 .item-title {
   margin: .5rem 0;
+  color: var(--title-color);
+}
+
+.item-description {
+  text-align: justify;
+}
+
+@media (min-width: 576px) {
+  .text-logo {
+    display: block;
+  }
+  .item-image > img {
+    width: 8rem;
+  }
 }
 
 @media (min-width: 992px) {
   .list-item {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+  }
+  .title {
+    font-size: 3rem;
   }
   
 }

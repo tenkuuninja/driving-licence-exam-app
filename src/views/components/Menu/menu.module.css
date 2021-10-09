@@ -2,6 +2,7 @@
   font-size: 1.8rem;
   font-weight: 700;
   margin: .5rem 0;
+  color: var(--title-color);
 }
 
 
@@ -49,6 +50,10 @@
   margin-bottom: .5rem;
   gap: 1rem;
   padding-top: 1rem;
+}
+
+.list-item a {
+  color: var(--title-color);
 }
 
 .list-item .paper {

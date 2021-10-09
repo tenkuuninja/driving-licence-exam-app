@@ -3,13 +3,16 @@ import { useHistory, useLocation } from 'react-router';
 import { FaChevronLeft } from 'react-icons/fa';
 import ScrollToTop from '../components/ScrollToTop';
 import st from './law.module.css';
+import Header from '../components/Header';
+import Breadcrumb from '../components/Breadcrumb';
+import { BiHomeAlt } from 'react-icons/bi';
 
 interface DataLaw {
   code: string
   text: string
 }
 
-const data: DataLaw[] = require('./data.json')
+const data: DataLaw[] = require('./text.json')
 
 const top = [
   'Căn cứ Luật Tổ chức Chính phủ ngày 19 tháng 6 năm 2015;',
@@ -57,62 +60,69 @@ export default function () {
 
   return(
     <React.Fragment>
-      <div className={st.header} onClick={() => history.goBack()}>
-        <FaChevronLeft />
-        <p style={{ margin: '1rem 0' }}>Căn cứ pháp lý</p>
-      </div>
+      <Header />
       <div className={`${st.wrapper} container`}>
-        <table style={{ textAlign: 'center' }} >
-          <tbody> 
-            <tr>
-              <td width="223" valign="top">
-                <p><b>CHÍNH PHỦ<br/>-------</b></p>
-              </td>
-              <td width="367" valign="top">
-                <p><b>CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM<br/>Độc lập - Tự do - Hạnh phúc <br/>---------------</b></p>
-              </td>
-            </tr>
-            <tr>
-              <td width="223" valign="top"><br/>
-                <p>Số: 100/2019/NĐ-CP</p>
-              </td>
-              <td width="367" valign="top"><br/>
-                <p><i>Hà Nội, ngày 30 tháng 12 năm 2019</i></p>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-        <br/><br/><br/>
-        <p className={st.center}><b>NGHỊ ĐỊNH</b></p>
-        <p className={st.center}>QUY ĐỊNH XỬ PHẠT VI PHẠM HÀNH CHÍNH TRONG LĨNH VỰC GIAO THÔNG ĐƯỜNG BỘ VÀ ĐƯỜNG SẮT</p>
-        {top.map((item, i) => <p key={i}><i>{item}</i></p>)}
-        <br/>
-        {data.map((item, i) => item.code.length === 0 ? 
-          <p key={i}>{item.text}</p> : 
-          <p id={item.code} className={/^chuong_\d_name$/g.test(item.code) ? st.center : ''} key={i}>
-            {/^(chuong_)|(dieu_)/g.test(item.code) ? <b>{item.text}</b> : item.text}
-          </p>
-        )}
-        <table style={{ margin: '2rem 0' }} >
-          <tbody>
-            <tr>
-              <td width="334" valign="top">
-                <p >&nbsp;</p>
-                <p >&nbsp;</p>
-                <p ><b><i>Nơi nhận:</i></b><br/>
-                  <span style={{ fontSize: '.7rem' }} >
-                    {bot.map((item, i) => <React.Fragment key={i}>
-                      - {item}<br/>
-                    </React.Fragment>)}
-                  </span>
-                </p>
-              </td>
-              <td style={{textAlign: 'center'}}  width="256" valign="top">
-                <p ><b>TM. CHÍNH PHỦ<br/>THỦ TƯỚNG<br/><br/><br/><br/><br/>Nguyễn Xuân Phúc</b></p>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+        <Breadcrumb 
+          item={[
+            { label: 'Trang chủ', icon: <BiHomeAlt />, url: '/' },
+            { label: 'Luật đường bộ', url: '/luat-duong-bo.html' },
+            { label: 'Căn cứ pháp lý' },
+          ]}
+        />
+        <h1 className={`${st.title}`}>Căn cứ pháp lý</h1>
+        <div className={st.content}>
+          <table style={{ textAlign: 'center' }} >
+            <tbody>
+              <tr>
+                <td width="223" valign="top">
+                  <p><b>CHÍNH PHỦ<br/>-------</b></p>
+                </td>
+                <td width="367" valign="top">
+                  <p><b>CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM<br/>Độc lập - Tự do - Hạnh phúc <br/>---------------</b></p>
+                </td>
+              </tr>
+              <tr>
+                <td width="223" valign="top"><br/>
+                  <p>Số: 100/2019/NĐ-CP</p>
+                </td>
+                <td width="367" valign="top"><br/>
+                  <p><i>Hà Nội, ngày 30 tháng 12 năm 2019</i></p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <br/><br/><br/>
+          <p className={st.center}><b>NGHỊ ĐỊNH</b></p>
+          <p className={st.center}>QUY ĐỊNH XỬ PHẠT VI PHẠM HÀNH CHÍNH TRONG LĨNH VỰC GIAO THÔNG ĐƯỜNG BỘ VÀ ĐƯỜNG SẮT</p>
+          {top.map((item, i) => <p key={i}><i>{item}</i></p>)}
+          <br/>
+          {data.map((item, i) => item.code.length === 0 ? 
+            <p key={i}>{item.text}</p> : 
+            <p id={item.code} className={/^chuong_\d_name$/g.test(item.code) ? st.center : ''} key={i}>
+              {/^(chuong_)|(dieu_)/g.test(item.code) ? <b>{item.text}</b> : item.text}
+            </p>
+          )}
+          <table style={{ margin: '2rem 0' }} >
+            <tbody>
+              <tr>
+                <td width="334" valign="top">
+                  <p >&nbsp;</p>
+                  <p >&nbsp;</p>
+                  <p ><b><i>Nơi nhận:</i></b><br/>
+                    <span style={{ fontSize: '.7rem' }} >
+                      {bot.map((item, i) => <React.Fragment key={i}>
+                        - {item}<br/>
+                      </React.Fragment>)}
+                    </span>
+                  </p>
+                </td>
+                <td style={{textAlign: 'center'}}  width="256" valign="top">
+                  <p ><b>TM. CHÍNH PHỦ<br/>THỦ TƯỚNG<br/><br/><br/><br/><br/>Nguyễn Xuân Phúc</b></p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
       <ScrollToTop />
     </React.Fragment>

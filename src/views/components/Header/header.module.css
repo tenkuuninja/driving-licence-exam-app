@@ -20,6 +20,7 @@
 }
 
 .text-logo {
+  display: none;
   color: #fff;
   font-size: xx-large;
   font-weight: 700;
@@ -37,9 +38,81 @@
   margin-left: 2rem;
 }
 
-.header-right > div > span {
+.header-right > div span {
   padding: 1.5rem 0;
   cursor: pointer;
+  color: white;
+  font-weight: 600;
+}
+
+.sidebar-trigger {
+  padding: .5rem;
+  border: 1px solid white;
+  border-radius: .3rem;
+  line-height: 1;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: white;
+}
+
+.sidebar-mask {
+  /* display: none; */
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: opacity ease-in-out 150ms;
+  background-color: rgba(0,0,0,0.8);
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1;
+}
+
+.sidebar-mask.active {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+.sidebar-content {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateX(-100%);
+  transition: transform ease-in-out 150ms;
+  width: 15rem;
+  background-color: var(--primary-background-color);
+  z-index: 1;
+}
+
+.sidebar-content a {
+  color: var(--title-color);
+}
+
+.sidebar-content.active {
+  transform: translateX(0%);
+}
+
+.sidebar-content > * {
+  display: block;
+  padding: 1rem;
+  opacity: .8;
+}
+
+.sidebar-content > *:hover {
+  opacity: 1;
+}
+
+.close {
+  cursor: pointer;
+}
+
+@media (min-width: 576px) {
+  .text-logo {
+    display: block;
+  }
 }
 
 @media (min-width: 992px) {

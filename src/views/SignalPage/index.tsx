@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
+import { BiHomeAlt } from 'react-icons/bi';
 import Select from 'react-select';
 import { getSignalsByTypeCode, getSignalTopic } from '../../data';
 import { ISign, ITopic } from '../../interface';
+import Breadcrumb from '../components/Breadcrumb';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import ScrollToTop from '../components/ScrollToTop';
@@ -25,6 +27,12 @@ const SignPage = function() {
     <React.Fragment>
       <Header />
       <div className="container">
+        <Breadcrumb
+          item={[
+            { label: 'Trang chủ', icon: <BiHomeAlt />, url: '/' },
+            { label: 'Biển báo giao thông' },
+          ]}
+        />
         <h1 className={`${st.title}`}>Biển báo giao thông</h1>
         <div>
           <Select 

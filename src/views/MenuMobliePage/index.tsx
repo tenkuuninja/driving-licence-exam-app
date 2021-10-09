@@ -5,6 +5,7 @@ import { LearnMenu, ExamMenu } from '../components/Menu';
 import { BiHomeAlt } from 'react-icons/bi';
 import st from './menu.module.css';
 import Footer from '../components/Footer';
+import Breadcrumb from '../components/Breadcrumb';
 
 const MenuPage = function() {
   const match = useRouteMatch();
@@ -25,13 +26,12 @@ const MenuPage = function() {
     <React.Fragment> 
       <Header />
       <div className={st.wrapper}>
-        <div className={st.bc}>
-          <Link to="/" >
-            <BiHomeAlt className={st.icon} />
-            <span>Trang chủ</span>
-          </Link>
-          <div>{title}</div>
-        </div>
+        <Breadcrumb 
+          item={[
+            { label: 'Trang chủ', icon: <BiHomeAlt />, url: '/' },
+            { label: title },
+          ]}
+        />
         {element}
       </div>
       <Footer />

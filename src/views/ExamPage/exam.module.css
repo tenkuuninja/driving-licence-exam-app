@@ -208,6 +208,7 @@
   font-size: larger;
   font-weight: 600;
   padding: .5rem 0;
+  color: var(--title-color);
 }
 
 .question-image {
@@ -270,6 +271,7 @@
   display: block;
   cursor: pointer;
   padding: .8rem 1rem;
+  color: var(--title-color);
   transition: all ease-in-out 50ms;
 }
 
