@@ -6,7 +6,7 @@ const ScrollToTop = function() {
   const [y, setY] = useState<number>(0);
 
   function scrollToTop() {
-    window.scroll({top: 0, left: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
   useEffect(function() {
