@@ -7,7 +7,7 @@
   appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none;
-  transition: color ease-out 300ms;
+  transition: color ease-out 200ms;
   --primary-color: #2ecc71;
   --secondary-color: #2980b9;
   --success-color: #2ecc71;
