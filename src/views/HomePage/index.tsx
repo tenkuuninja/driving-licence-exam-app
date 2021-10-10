@@ -91,13 +91,13 @@ const MenuPage = function() {
             {item.url !== undefined &&
               <Link to={item.url} className={st.paper}  style={{ color: item.color }}>
                 <div className={`${st.icon}`}>{item.icon}</div>
-                <h3>{item.text}</h3>
+                <h3 className={st.title}>{item.text}</h3>
               </Link>
             }
             {item.url === undefined &&
               <div className={st.paper}  style={{ color: item.color }} onClick={item.action}>
                 <div className={`${st.icon}`}>{item.icon}</div>
-                <h3>{item.text}</h3>
+                <h3 className={st.title}>{item.text}</h3>
               </div>
             }
           </li>)}
