@@ -22,7 +22,7 @@
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  padding: .2rem 2rem ;
+  padding: .2rem .5rem ;
   margin: 1rem 0;
   border-radius: 1rem;
   border: 1px solid rgba(0, 0, 0, .3);
@@ -32,12 +32,16 @@
   background-color: var(--secondary-background-color);
   -webkit-transition: all ease-in-out 150;
   -o-transition: all ease-in-out 150;
-  transition: all ease-in-out 150
+  transition: all ease-in-out 150;
+  height: auto;
 }
 
 .list-topic .paper:hover {
   opacity: 1;
   border-color: rgba(0, 0, 0, .5);
+}
+.list-topic span {
+  line-height: 1;
 }
 .list-topic p {
   margin-top: -.5rem;
@@ -88,6 +92,10 @@
 @media (min-width: 992px) {
   .list-item {
     grid-template-columns: repeat(4, 1fr);
+  }
+  .list-topic .paper {
+    padding: .2rem 2rem ;
+    margin: 1rem 0;
   }
 }
 

@@ -27,15 +27,14 @@
 
 .logo > img {
   width: auto;
-  height: 100%;
+  height: 90%;
 }
 
 .text-logo {
-  display: none;
   color: #fff;
-  font-size: xx-large;
+  font-size: large;
   font-weight: 700;
-  margin-left: -2rem;
+  margin-left: -1.5rem;
 }
 
 .header-right {
@@ -136,13 +135,28 @@
 }
 
 @media (min-width: 576px) {
+  .logo > img {
+    width: auto;
+    height: 100%;
+  }
+  
   .text-logo {
-    display: block;
+    font-size: xx-large;
+    font-weight: 700;
+    margin-left: -1.5rem;
   }
 }
 
 @media (min-width: 992px) {
   .wrapper, .logo {
     height: 4.5rem;
+  }
+  .logo > img {
+    width: auto;
+    height: 100%;
+  }
+  
+  .text-logo {
+    margin-left: -2rem;
   }
 }
