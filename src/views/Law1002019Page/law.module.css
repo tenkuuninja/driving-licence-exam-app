@@ -1,13 +1,13 @@
-.wrapper {
-  font-size: 1.2rem;
-}
-
 .title {
   padding: 1rem 0;
   font-size: 2rem;
   margin-bottom: 3rem;
   border: 1px solid rgba(0, 0, 0, .3);
   border-width: 0 0 1px 0;
+}
+
+.content {
+  font-size: 1.2rem;
 }
 
 .content > p {

@@ -63,7 +63,7 @@ export default function () {
   return(
     <React.Fragment>
       <Header />
-      <div className={`${st.wrapper} container`}>
+      <div className={`container`}>
         <Breadcrumb 
           item={[
             { label: 'Trang chủ', icon: <BiHomeAlt />, url: '/' },
