@@ -35,7 +35,7 @@ const Header = function() {
       <Link to='/' >
         <div className={`${st.logo}`}>
           <img src="/images/logo.png" />
-          <span className={`${st['text-logo']}`}>Motovjppro</span>
+          <span className={`${st['text-logo']}`}>HocA1</span>
         </div>
       </Link>
       <div className={`${st['header-right']}`}>

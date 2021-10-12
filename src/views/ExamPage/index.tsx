@@ -14,7 +14,8 @@ export default () => (<div>
     <p style={{
       fontSize: '1.5rem',
       fontWeight: 600,
-      marginBottom: '1rem'
+      marginBottom: '1rem',
+      color: '#000'
     }}>Chức năng đang trong thời gian phát triển</p>
     <img 
       src="https://s199.imacdn.com/ta/2018/08/13/f5dedc9a0aba2622_42d70e01b3b6a216_6932715341334693185710.jpg" 

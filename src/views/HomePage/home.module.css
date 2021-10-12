@@ -112,7 +112,7 @@
 
   .banner {
     display: block;
-    background-image: url("https://danviet.mediacdn.vn/2020/5/31/dua-xe-may-1590927983936836721904.jpg");
+    background-image: url("https://giaotrinhoto.com/wp-content/uploads/2020/06/thi-b%C4%83ng-lai-xe-may-can-nhung-gi-1.jpg");
     background-size: cover;
     background-position: center center;
     height: calc(100vh - 4.5rem);
@@ -129,8 +129,9 @@
     color: white;
     width: 75rem;
     height: 70%;
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 800;
+    text-align: center;
     opacity: .8;
   }
 
