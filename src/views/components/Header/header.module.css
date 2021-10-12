@@ -28,6 +28,7 @@
 .logo > img {
   width: auto;
   height: 90%;
+  transform: rotate(-10deg);
 }
 
 .text-logo {
