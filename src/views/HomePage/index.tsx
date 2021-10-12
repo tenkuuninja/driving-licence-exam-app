@@ -81,7 +81,7 @@ const MenuPage = function() {
         <div className={`${st.mask}`}></div>
         <div className={`${st.content}`}>
           <p style={{ fontSize: '5rem', fontWeight: 900 }}>Luyện thi bằng xe máy A1</p>
-          <p>Uy tín, chất lượng</p>
+          <p>Uy tín - Chất lượng - Đảm bảo</p>
         </div>
         {/* <img src="http://media.baophutho.vn/dataimages/2021/04/07/123-1617762316.jpg" alt="" /> */}
       </div>
