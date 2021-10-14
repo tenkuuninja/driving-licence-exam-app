@@ -1,12 +1,9 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { 
-  useRouteMatch,
-  useHistory
-} from 'react-router-dom';
+import { useRouteMatch, useHistory } from 'react-router-dom';
 import { IAnswer, IQuestion, IResult } from '../../interface';
 import st from './exam.module.css';
 import { 
-  getOneHitQuestions, 
+  getImportantQuestions, 
   getQuestionsByCode, 
   getQuestionsByIds, 
   getQuestionsByTopicId 
@@ -100,7 +97,7 @@ const ExamPage = function() {
     if (!isSubmitted && isExam) {
       setQuestions(questions.map((item: IQuestion) => {
         if (item.id === questionId) {
-          item.yourAnswer = answerIndex;
+          item.userAnswer = answerIndex;
         }
         return item;
       }));
@@ -112,14 +109,14 @@ const ExamPage = function() {
     let oneHit = false
     let failId: number[] = JSON.parse(localStorage.getItem('fail-id-test') || '[]');
     for (let question of questions) {
-      if (question.yourAnswer !== undefined && question.answer[question.yourAnswer].isCorrect) {
+      if (question.userAnswer !== undefined && question.traLoi[question.userAnswer].laCauDung) {
         score++;
         if (failId.indexOf(question.id) !== -1) {
           failId = failId.filter(i => i !== question.id)
         }
         continue;
       }
-      if (question.isCritical) {
+      if (question.laCauDiemLiet) {
         oneHit = true
       }
       if (!failId.includes(question.id)) {
@@ -143,7 +140,7 @@ const ExamPage = function() {
   }
 
   const handleReset = () => {
-    setQuestions(questions.map(i => ({...i, yourAnswer: undefined})));
+    setQuestions(questions.map(i => ({...i, userAnswer: undefined})));
     setCurrentQuestion(0);
     setSubmitted(false);
     setTimeRemaining(TIME)
@@ -152,31 +149,31 @@ const ExamPage = function() {
 
   const getResultClassNameOfChoice = (question: IQuestion, choiceIndex: number): keyof typeof st | '' => {
     if (!isExam) {
-      return question.answer[choiceIndex].isCorrect ? st.correct : '';
+      return question.traLoi[choiceIndex].laCauDung ? st.correct : '';
     }
     if (isSubmitted) {
-      if (question.answer[choiceIndex].isCorrect) {
+      if (question.traLoi[choiceIndex].laCauDung) {
         return  st.correct
       }
-      return question.yourAnswer === choiceIndex ? st.wrong : ''
+      return question.userAnswer === choiceIndex ? st.wrong : ''
     } 
-    return question.yourAnswer === choiceIndex ? st.correct : ''
+    return question.userAnswer === choiceIndex ? st.correct : ''
   }
 
   const getColorClassNameOfButton = (question: IQuestion): keyof typeof st | '' => {
     if (!isExam) {
-      return question.isCritical ? st['bg-warning'] : st['bg-success'];
+      return question.laCauDiemLiet ? st['bg-warning'] : st['bg-success'];
     }
     if (isSubmitted) {
-      if (question.yourAnswer === undefined) {
+      if (question.userAnswer === undefined) {
         return st['bg-error']
       }
-      if (question.answer[question.yourAnswer].isCorrect) {
+      if (question.traLoi[question.userAnswer].laCauDung) {
         return  st['bg-success']
       }
       return st['bg-error']
     } 
-    return question.yourAnswer === undefined ? st['bg-empty'] : st['bg-success']
+    return question.userAnswer === undefined ? st['bg-empty'] : st['bg-success']
   }
 
   const getHumanTimeString = (seconds: number): string => {
@@ -195,8 +192,6 @@ const ExamPage = function() {
   }
 
   const handleDragStart = (e: React.MouseEvent | React.TouchEvent) => {
-    // e.persist();
-    // e.preventDefault();
     let clientX = getPageX(e);
     isDragRef.current = true;
     
@@ -209,8 +204,6 @@ const ExamPage = function() {
   }
 
   const handleDragMove = (e: React.MouseEvent | React.TouchEvent) => {
-    // e.persist();
-    // e.preventDefault();
     if (isDragRef.current) {
       let clientX = getPageX(e);
       let move = clientX - clientXStart.current;
@@ -220,8 +213,6 @@ const ExamPage = function() {
   }
 
   const handleDragEnd = (e: React.MouseEvent | React.TouchEvent) => {
-    // e.persist();
-    // e.preventDefault();
     if (!isDragRef.current) return;
     let moved = currentPosition.current - startPosition.current
     let currentIndex = currnetQuestion;
@@ -302,7 +293,7 @@ const ExamPage = function() {
       case '/on-tap-cau-diem-liet.html':
         setIsExam(false);
         setTitle('Ôn tập câu điểm liệt')
-        setQuestions(getOneHitQuestions())
+        setQuestions(getImportantQuestions())
         break;
       case '/on-tap-cau-sai.html':
         setIsExam(false);
@@ -400,15 +391,15 @@ const ExamPage = function() {
               {questions.map((question: IQuestion) => <li key={question.id}>
                 <div className={`${st['question-box']}`}>
                   <p className={st['question-text']}>
-                    {question.text}
+                    {question.noiDung}
                   </p>
                   {/* {question.image.length !== 0 && <img src={question.image} className={`${st['question-image']}`} draggable={false} />} */}
-                  {question.image.length !== 0 && <div className={`${st['question-image']}`}>
-                    <img src={question.image} alt="" />
+                  {question.hinhAnh.length !== 0 && <div className={`${st['question-image']}`}>
+                    <img src={question.hinhAnh} alt="" />
                     <div className={st['image-mask']}></div>
                   </div>}
                   <ul className={`${st['choice-box']}`}>
-                    {question.answer.map((choice: IAnswer, i: number) => <li key={i}>
+                    {question.traLoi.map((choice: IAnswer, i: number) => <li key={i}>
                       <div 
                         className={`${st['choice-item']} ${getResultClassNameOfChoice(question, i)}`} 
                         onClick={() => chooseAnswer(question.id, i)}
@@ -417,14 +408,14 @@ const ExamPage = function() {
                           {i+1}
                         </span>
                         <span>
-                          {choice.text}
+                          {choice.noiDung}
                         </span>
                       </div>
                     </li>)}
                   </ul>
                   {(!isExam || isSubmitted) && <div className={`${st['question-explain']}`}>
                     <span><ImInfo /></span>
-                    <p>{question.explain}</p>
+                    <p>{question.giaiThich}</p>
                   </div>}
                 </div>
               </li>)}

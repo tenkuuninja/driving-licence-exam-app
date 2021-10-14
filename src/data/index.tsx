@@ -29,15 +29,15 @@ export const getQuestionTopic = (): ITopic[] => {
 export const getAllQuestions = (): IQuestion[] => questionsData
 
 export const getQuestionsByTopicId = (id: number): IQuestion[] => {
-  return questionsData.filter((item: IQuestion) => item.topicId === id)
+  return questionsData.filter((item: IQuestion) => item.chuDeId === id)
 }
 
 export const getQuestionsByCode = (id: number): IQuestion[] => {
-  return questionsData.filter((item: IQuestion) => item.testCode === id).map(i => ({...i, yourAnswer: undefined}))
+  return questionsData.filter((item: IQuestion) => item.maDeThi === id).map(i => ({...i, userAnswer: undefined}))
 }
 
-export const getOneHitQuestions = (): IQuestion[] => {
-  return questionsData.filter((item: IQuestion) => item.isCritical === true)
+export const getImportantQuestions = (): IQuestion[] => {
+  return questionsData.filter((item: IQuestion) => item.laCauDiemLiet === true)
 }
 
 export const getQuestionsByIds = (ids: number[]): IQuestion[] => {
