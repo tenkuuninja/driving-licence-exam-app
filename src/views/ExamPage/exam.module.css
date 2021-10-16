@@ -392,8 +392,12 @@ button.submit-btn:active {
 .modal-content {
   width: 80vw;
   padding: 2rem 0;
-  display: flex;
-  justify-content: center;
+}
+
+.modal-content > * {
+  margin: auto;
+  text-align: center;
+  font-size: 1.2rem;
 }
 
 .modal-action {
@@ -441,6 +445,16 @@ button.submit-btn:active {
 }
 .bg-empty {
   background-color: var(--empty-color);
+}
+
+.success {
+  color: var(--success-color);
+}
+.error {
+  color: var(--error-color);
+}
+.warning {
+  color: var(--warning-color);
 }
 
 

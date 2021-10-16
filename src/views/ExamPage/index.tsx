@@ -68,25 +68,25 @@ const ExamPage = function() {
       case 'prev':
         if (currnetQuestion > 0) {
           setCurrentQuestion(currnetQuestion-1)
-          setPositionByQuestionId(currnetQuestion-1)
+          setPositionByQuestionIndex(currnetQuestion-1)
         }
         break;
         case 'next':
           if (currnetQuestion < questions.length-1) {
             setCurrentQuestion(currnetQuestion+1)
-            setPositionByQuestionId(currnetQuestion+1)
+            setPositionByQuestionIndex(currnetQuestion+1)
         }
         break;
       default:
         if (arg < 0) {
           setCurrentQuestion(0);
-          setPositionByQuestionId(0);
+          setPositionByQuestionIndex(0);
         } else if (arg > questions.length-1) {
           setCurrentQuestion(questions.length-1)
-          setPositionByQuestionId(questions.length-1)
+          setPositionByQuestionIndex(questions.length-1)
         } else {
           setCurrentQuestion(Math.round(arg))
-          setPositionByQuestionId(Math.round(arg))
+          setPositionByQuestionIndex(Math.round(arg))
         }
         setOpenAsideDrawer(false);
         break;
@@ -127,9 +127,9 @@ const ExamPage = function() {
     localStorage.setItem('fail-id-test', JSON.stringify(failId));
 
     if (oneHit) {
-      setResult({ isPass: false, score, text: 'Bạn đã sai câu điểm liệt, Bạn đã lạc lúi' })
+      setResult({ isPass: false, score, text: 'Bạn đã sai câu điểm liệt' })
     } else if (score < 21) {
-      setResult({ isPass: false, score, text: 'Bạn đã thiếu điểm rồi' })
+      setResult({ isPass: false, score, text: 'Bạn đã bị thiếu điểm' })
     } else {
       setResult({ isPass: true, score, text: 'Bạn đã vượt qua bài thi' })
     }
@@ -200,6 +200,7 @@ const ExamPage = function() {
 
     if (galleryRef.current !== null) {
       galleryRef.current.style.cursor = 'grabbing';
+      galleryRef.current.style.transition = 'none';
     }
   }
 
@@ -213,6 +214,10 @@ const ExamPage = function() {
   }
 
   const handleDragEnd = (e: React.MouseEvent | React.TouchEvent) => {
+    if (galleryRef.current !== null) {
+      galleryRef.current.style.cursor = 'grab';
+      galleryRef.current.style.transition = 'all ease-out 300ms';
+    }
     if (!isDragRef.current) return;
     let moved = currentPosition.current - startPosition.current
     let currentIndex = currnetQuestion;
@@ -224,13 +229,10 @@ const ExamPage = function() {
       currentIndex--
     }
 
-    setPositionByQuestionId(currentIndex);
+    setPositionByQuestionIndex(currentIndex);
     gotoQuesttion(currentIndex)
     isDragRef.current = false;
 
-    if (galleryRef.current !== null) {
-      galleryRef.current.style.cursor = 'grab';
-    }
   }
 
   const getPageX = (e: React.MouseEvent | React.TouchEvent) => {
@@ -253,9 +255,9 @@ const ExamPage = function() {
     }
   }
 
-  const setPositionByQuestionId = (id: number) => {
+  const setPositionByQuestionIndex = (index: number) => {
     if (galleryRef.current !== null) {
-      currentPosition.current = -id*getWidthSlider();
+      currentPosition.current = -index*getWidthSlider();
       updateCurrentPosition();
     }
   }
@@ -317,7 +319,7 @@ const ExamPage = function() {
 
   useEffect(function() {
     const handleResize = () => {
-      setPositionByQuestionId(currnetQuestion)
+      setPositionByQuestionIndex(currnetQuestion)
     }
     window.addEventListener('resize', handleResize);
     return () => {
@@ -391,9 +393,8 @@ const ExamPage = function() {
               {questions.map((question: IQuestion) => <li key={question.id}>
                 <div className={`${st['question-box']}`}>
                   <p className={st['question-text']}>
-                    {question.noiDung}
+                    {question.noiDung} {((!isExam || isSubmitted) && question.laCauDiemLiet) && <span className={st.warning}>(Câu điểm liệt)</span>}
                   </p>
-                  {/* {question.image.length !== 0 && <img src={question.image} className={`${st['question-image']}`} draggable={false} />} */}
                   {question.hinhAnh.length !== 0 && <div className={`${st['question-image']}`}>
                     <img src={question.hinhAnh} alt="" />
                     <div className={st['image-mask']}></div>
@@ -476,6 +477,7 @@ const ExamPage = function() {
       >
         <div className={`${st['modal-paper']}`}>
           <div className={st['modal-content']}>
+            <p>Bạn đã làm {questions.filter(q => typeof q.userAnswer === 'number').length}/{questions.length} câu</p>
             <p>Bạn muốn nộp bài?</p>
           </div>
           <div className={st['modal-action']}>
@@ -494,7 +496,12 @@ const ExamPage = function() {
       >
         <div className={`${st['modal-paper']}`}>
           <div className={st['modal-content']}>
-            diem {result.score}/25, {result.isPass ? 'qua': 'truot'}, ly do: {result.text}
+            <p className={`${result.isPass ? st.success : st.error}`} style={{ fontSize: '3rem', fontWeight: 900, marginBottom: '1rem' }}>
+              {result.isPass ? 'Đạt': 'Không đạt'}
+            </p>
+            <p>Điểm: <span style={{ fontWeight: 700 }}>{result.score}/25</span></p>
+            {!result.isPass && <p>Bạn trượt vì lý do: {result.text}</p>}
+            {result.isPass && <p>{result.text}</p>}
           </div>
           <div className={st['modal-action']}>
             <span className={st.cancel}  onClick={() => history.push('/')}>
@@ -511,7 +518,11 @@ const ExamPage = function() {
       >
         <div className={`${st['modal-paper']}`}>
           <div className={st['modal-content']}>
-            Thong bao khi bat dau lam bai
+            <div>
+              <p>Số câu: {questions.length} câu</p>
+              <p>Thời gian: 19 phút</p>
+              <p>Điều kiện hoàn thành: Đúng tối thiếu 21 câu và không bị sai câu điểm liệt</p>
+            </div>
           </div>
           <div className={st['modal-action']}>
             <span className={st.confirm} onClick={startTheExam}>
@@ -526,14 +537,15 @@ const ExamPage = function() {
       >
         <div className={`${st['modal-paper']}`}>
           <div className={st['modal-content']}>
-            Bạn có chắc mún thoát?
+            <p>Bạn đã làm {questions.filter(q => typeof q.userAnswer === 'number').length}/{questions.length} câu</p>
+            <p>Bạn có chắc muốn thoát?</p>
           </div>
           <div className={st['modal-action']}>
             <span className={st.cancel}  onClick={() => setOpenConfirmExitModal(false)}>
-              Thôi
+              Ở lại
             </span>
             <span className={st.confirm}  onClick={() => history.push('/')}>
-              Ừh
+              Thoát
             </span>
           </div>
         </div>
