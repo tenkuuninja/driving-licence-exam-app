@@ -4,7 +4,7 @@ import { IAnswer, IQuestion, IResult } from '../../interface';
 import st from './exam.module.css';
 import { 
   getImportantQuestions, 
-  getQuestionsByCode, 
+  getQuestionsByTestCode, 
   getQuestionsByIds, 
   getQuestionsByTopicId 
 } from '../../data';
@@ -16,7 +16,7 @@ import NoMatchPage from '../NoMatchPage';
 import ToggleDarkMode from '../components/ToggleDarkMode';
 
 type Params = {
-  [index: string]: string
+  [key: string]: string
 }
 
 const TIME = 1140;
@@ -52,14 +52,14 @@ const ExamPage = function() {
   const [isOpenAsideDrawer, setOpenAsideDrawer] = useState<boolean>(false);
   const [result, setResult] = useState<IResult>({ isPass: false, score: 0, text: '' });
   const [is404, set404] = useState<boolean>(false);
-  // slider
+  
   const contentRef = useRef<HTMLDivElement>(null);
   const galleryRef = useRef<HTMLUListElement>(null);
   const isDragRef = useRef<boolean>(false);
   const clientXStart = useRef<number>(0);
   const startPosition = useRef<number>(0);
   const currentPosition = useRef<number>(0);
-  // console.log('current question', currnetQuestion, currnetQuestion*100) 
+  // console.log('current question', currnetQuestion) 
   
   
   
@@ -106,7 +106,7 @@ const ExamPage = function() {
 
   const handleSubmit = () => {
     let score = 0
-    let oneHit = false
+    let isFail = false
     let failId: number[] = JSON.parse(localStorage.getItem('fail-id-test') || '[]');
     for (let question of questions) {
       if (question.userAnswer !== undefined && question.traLoi[question.userAnswer].laCauDung) {
@@ -117,7 +117,7 @@ const ExamPage = function() {
         continue;
       }
       if (question.laCauDiemLiet) {
-        oneHit = true
+        isFail = true
       }
       if (!failId.includes(question.id)) {
         failId.push(question.id)
@@ -126,7 +126,7 @@ const ExamPage = function() {
     failId.sort((a, b) => a-b)
     localStorage.setItem('fail-id-test', JSON.stringify(failId));
 
-    if (oneHit) {
+    if (isFail) {
       setResult({ isPass: false, score, text: 'Bạn đã sai câu điểm liệt' })
     } else if (score < 21) {
       setResult({ isPass: false, score, text: 'Bạn đã bị thiếu điểm' })
@@ -246,6 +246,7 @@ const ExamPage = function() {
   }
 
   const getWidthSlider = () => {
+    console.log('client witch',contentRef.current?.clientWidth)
     return contentRef.current?.clientWidth || 1
   }
 
@@ -256,10 +257,8 @@ const ExamPage = function() {
   }
 
   const setPositionByQuestionIndex = (index: number) => {
-    if (galleryRef.current !== null) {
-      currentPosition.current = -index*getWidthSlider();
-      updateCurrentPosition();
-    }
+    currentPosition.current = -index*getWidthSlider();
+    updateCurrentPosition();
   }
 
 
@@ -273,7 +272,7 @@ const ExamPage = function() {
         if ((+match.params[0]) >= 1 && (+match.params[0]) <= 8) {
           setIsExam(true);
           setOpenHelpModal(true)
-          setQuestions(getQuestionsByCode(+match.params[0]))
+          setQuestions(getQuestionsByTestCode(+match.params[0]))
           setSubmitted(false);
           setTitle('Đề thi thử số '+match.params[0])
         }
@@ -372,7 +371,7 @@ const ExamPage = function() {
               <GrPrevious />
             </span>
             <span>
-              Câu {Math.round(currnetQuestion+1)}/{questions.length}
+              Câu {currnetQuestion+1}/{questions.length}
             </span>
             <span className={`${st.next}`} onClick={() => gotoQuesttion('next')}>
               <GrNext />
