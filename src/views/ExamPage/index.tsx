@@ -316,15 +316,6 @@ const ExamPage = function() {
     }
   }, [timeRemaining]);
 
-  useEffect(function() {
-    const handleResize = () => {
-      setPositionByQuestionIndex(currnetQuestion)
-    }
-    window.addEventListener('resize', handleResize);
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    }
-  }, []);
 
   if (is404) {
     return (<NoMatchPage />);
