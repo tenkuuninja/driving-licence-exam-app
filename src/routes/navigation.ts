@@ -18,6 +18,7 @@ const navigation: RouteProps[] =  [
   {
     path: [
       '/on-tap-cau-sai.html',
+      '/on-tap-cau-diem-liet.html',
       '/thi-sat-hach-de-so-(\\d).html',
       '/hoc-ly-thuyet-chu-de-([a-z-]+).html'
     ],

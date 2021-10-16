@@ -12,7 +12,6 @@ import { GrPrevious, GrNext } from 'react-icons/gr';
 import { ImInfo } from 'react-icons/im';
 import { FaChevronLeft } from 'react-icons/fa';
 import Modal from '../components/Modal';
-import NoMatchPage from '../NoMatchPage';
 import ToggleDarkMode from '../components/ToggleDarkMode';
 
 type Params = {
@@ -51,7 +50,6 @@ const ExamPage = function() {
   const [isOpenConfirmExitModal, setOpenConfirmExitModal] = useState<boolean>(false);
   const [isOpenAsideDrawer, setOpenAsideDrawer] = useState<boolean>(false);
   const [result, setResult] = useState<IResult>({ isPass: false, score: 0, text: '' });
-  const [is404, set404] = useState<boolean>(false);
   
   const contentRef = useRef<HTMLDivElement>(null);
   const galleryRef = useRef<HTMLUListElement>(null);
@@ -61,6 +59,41 @@ const ExamPage = function() {
   const currentPosition = useRef<number>(0);
   // console.log('current question', currnetQuestion) 
   
+
+  useEffect(function() {
+    setOpenHelpModal(false);
+    setOpenConfirmSubmidModal(false);
+    setOpenResultModal(false);
+    switch (match.path) {
+      case '/thi-sat-hach-de-so-(\\d).html':
+        setIsExam(true);
+        setOpenHelpModal(true);
+        setQuestions(getQuestionsByTestCode(+match.params[0]));
+        setSubmitted(false);
+        setTitle('Đề thi thử số '+match.params[0]);
+        break;
+      case '/hoc-ly-thuyet-chu-de-([a-z-]+).html':
+        let topicSlug = match.params[0];
+        setIsExam(false);
+        setQuestions(getQuestionsByTopicId(slug.indexOf(topicSlug)+1));
+        setTitle(topicTitle[slug.indexOf(topicSlug)] || 'Chủ đề không tồn tại');
+        break;
+      case '/on-tap-cau-diem-liet.html':
+        setIsExam(false);
+        setTitle('Ôn tập câu điểm liệt');
+        setQuestions(getImportantQuestions());
+        break;
+      case '/on-tap-cau-sai.html':
+        setIsExam(false);
+        setTitle('Ôn tập câu hay sai');
+        const failId = JSON.parse(localStorage.getItem('fail-id-test') || '[]');
+        setQuestions(getQuestionsByIds(failId));
+        break;
+      default:
+        break;
+    }
+    return () => clearInterval(countDownInterval);
+  }, [match.url]);
   
   
   const gotoQuesttion = (arg: number | 'prev' | 'next') => {
@@ -71,10 +104,10 @@ const ExamPage = function() {
           setPositionByQuestionIndex(currnetQuestion-1)
         }
         break;
-        case 'next':
-          if (currnetQuestion < questions.length-1) {
-            setCurrentQuestion(currnetQuestion+1)
-            setPositionByQuestionIndex(currnetQuestion+1)
+      case 'next':
+        if (currnetQuestion < questions.length-1) {
+          setCurrentQuestion(currnetQuestion+1)
+          setPositionByQuestionIndex(currnetQuestion+1)
         }
         break;
       default:
@@ -261,54 +294,6 @@ const ExamPage = function() {
     updateCurrentPosition();
   }
 
-
- 
-  useEffect(function() {
-    setOpenHelpModal(false);
-    setOpenConfirmSubmidModal(false);
-    setOpenResultModal(false)
-    switch (match.path) {
-      case '/thi-sat-hach-de-so-(\\d).html':
-        if ((+match.params[0]) >= 1 && (+match.params[0]) <= 8) {
-          setIsExam(true);
-          setOpenHelpModal(true)
-          setQuestions(getQuestionsByTestCode(+match.params[0]))
-          setSubmitted(false);
-          setTitle('Đề thi thử số '+match.params[0])
-        }
-        else {
-          set404(true);
-        }
-        break;
-      case '/hoc-ly-thuyet-chu-de-([a-z-]+).html':
-        let topicSlug = match.params[0]
-        if (slug.indexOf(topicSlug) !== -1) {
-          setIsExam(false);
-          setQuestions(getQuestionsByTopicId(slug.indexOf(topicSlug)+1))
-          setTitle(topicTitle[slug.indexOf(topicSlug)])
-        }
-        else {
-          set404(true);
-        }
-        break;
-      case '/on-tap-cau-diem-liet.html':
-        setIsExam(false);
-        setTitle('Ôn tập câu điểm liệt')
-        setQuestions(getImportantQuestions())
-        break;
-      case '/on-tap-cau-sai.html':
-        setIsExam(false);
-        setTitle('Ôn tập câu hay sai')
-        const failId = JSON.parse(localStorage.getItem('fail-id-test') || '[]')
-        setQuestions(getQuestionsByIds(failId))
-        break;
-    
-      default:
-        break;
-    }
-    return () => clearInterval(countDownInterval)
-  }, [match.url]);
-
   useEffect(function() {
     if (timeRemaining <= 0) {
       clearInterval(countDownInterval);
@@ -317,9 +302,18 @@ const ExamPage = function() {
   }, [timeRemaining]);
 
 
-  if (is404) {
-    return (<NoMatchPage />);
-  }
+  if (questions.length === 0) return <div className={st.wrapper} >
+    <div className={st.header}>
+      <div className={st.title} onClick={() => history.push('/')}><FaChevronLeft /> {title}</div>
+      <ToggleDarkMode />
+    </div>
+    <div className={st.paper}>
+      <div style={{ position: 'absolute', left: '50%', top: '50%', transform: 'translateX(-50%) translateY(-50%)' }}>
+        <p style={{ textAlign: 'center', marginBottom: '2rem', fontSize: '2rem' }}>Không có nội dung</p>
+        <button className={st['submit-btn']} onClick={() => history.push('/')}>Quay lại trang chủ</button>
+      </div>
+    </div>
+  </div>
 
   return(
     <div className={`${st.wrapper}`}>

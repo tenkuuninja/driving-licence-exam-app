@@ -40,7 +40,7 @@ const menu = [
   },
   {
     text: 'Các câu điểm liệt',
-    url: '/cac-cau-diem-liet',
+    url: '/on-tap-cau-diem-liet.html',
     color: '#eb3b5a',
     icon: <RiErrorWarningLine />
   },
