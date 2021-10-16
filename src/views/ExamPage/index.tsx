@@ -26,14 +26,14 @@ const slug = [
   'ky-thuat-lai-xe',
   'bien-bao-duong-bo',
   'sa-hinh',
-]
+];
 const topicTitle = [
   'Khái niệm và quy tắc',
   'Văn hoá đạo đức lái xe',
   'Kỹ thuật lái xe',
   'Biển báo đường bộ',
   'Sa hình',
-]
+];
 
 const ExamPage = function() {
   const match = useRouteMatch<Params>();
@@ -100,14 +100,14 @@ const ExamPage = function() {
     switch (arg) {
       case 'prev':
         if (currnetQuestion > 0) {
-          setCurrentQuestion(currnetQuestion-1)
-          setPositionByQuestionIndex(currnetQuestion-1)
+          setCurrentQuestion(currnetQuestion-1);
+          setPositionByQuestionIndex(currnetQuestion-1);
         }
         break;
       case 'next':
         if (currnetQuestion < questions.length-1) {
-          setCurrentQuestion(currnetQuestion+1)
-          setPositionByQuestionIndex(currnetQuestion+1)
+          setCurrentQuestion(currnetQuestion+1);
+          setPositionByQuestionIndex(currnetQuestion+1);
         }
         break;
       default:
@@ -115,11 +115,11 @@ const ExamPage = function() {
           setCurrentQuestion(0);
           setPositionByQuestionIndex(0);
         } else if (arg > questions.length-1) {
-          setCurrentQuestion(questions.length-1)
-          setPositionByQuestionIndex(questions.length-1)
+          setCurrentQuestion(questions.length-1);
+          setPositionByQuestionIndex(questions.length-1);
         } else {
-          setCurrentQuestion(Math.round(arg))
-          setPositionByQuestionIndex(Math.round(arg))
+          setCurrentQuestion(Math.round(arg));
+          setPositionByQuestionIndex(Math.round(arg));
         }
         setOpenAsideDrawer(false);
         break;
@@ -138,46 +138,46 @@ const ExamPage = function() {
   }
 
   const handleSubmit = () => {
-    let score = 0
-    let isFail = false
+    let score = 0;
+    let isFail = false;
     let failId: number[] = JSON.parse(localStorage.getItem('fail-id-test') || '[]');
     for (let question of questions) {
       if (question.userAnswer !== undefined && question.traLoi[question.userAnswer].laCauDung) {
         score++;
         if (failId.indexOf(question.id) !== -1) {
-          failId = failId.filter(i => i !== question.id)
+          failId = failId.filter(i => i !== question.id);
         }
         continue;
       }
       if (question.laCauDiemLiet) {
-        isFail = true
+        isFail = true;
       }
       if (!failId.includes(question.id)) {
-        failId.push(question.id)
+        failId.push(question.id);
       }
     }
-    failId.sort((a, b) => a-b)
+    failId.sort((a, b) => a-b);
     localStorage.setItem('fail-id-test', JSON.stringify(failId));
 
     if (isFail) {
-      setResult({ isPass: false, score, text: 'Bạn đã sai câu điểm liệt' })
+      setResult({ isPass: false, score, text: 'Bạn đã sai câu điểm liệt' });
     } else if (score < 21) {
-      setResult({ isPass: false, score, text: 'Bạn đã bị thiếu điểm' })
+      setResult({ isPass: false, score, text: 'Bạn đã bị thiếu điểm' });
     } else {
-      setResult({ isPass: true, score, text: 'Bạn đã vượt qua bài thi' })
+      setResult({ isPass: true, score, text: 'Bạn đã vượt qua bài thi' });
     }
     setSubmitted(true);
     setOpenConfirmSubmidModal(false);
     setOpenResultModal(true);
-    clearInterval(countDownInterval)
+    clearInterval(countDownInterval);
   }
 
   const handleReset = () => {
     setQuestions(questions.map(i => ({...i, userAnswer: undefined})));
     setCurrentQuestion(0);
     setSubmitted(false);
-    setTimeRemaining(TIME)
-    setOpenHelpModal(true)
+    setTimeRemaining(TIME);
+    setOpenHelpModal(true);
   }
 
   const getResultClassNameOfChoice = (question: IQuestion, choiceIndex: number): keyof typeof st | '' => {
@@ -186,11 +186,11 @@ const ExamPage = function() {
     }
     if (isSubmitted) {
       if (question.traLoi[choiceIndex].laCauDung) {
-        return  st.correct
+        return  st.correct;
       }
-      return question.userAnswer === choiceIndex ? st.wrong : ''
+      return question.userAnswer === choiceIndex ? st.wrong : '';
     } 
-    return question.userAnswer === choiceIndex ? st.correct : ''
+    return question.userAnswer === choiceIndex ? st.correct : '';
   }
 
   const getColorClassNameOfButton = (question: IQuestion): keyof typeof st | '' => {
@@ -199,20 +199,20 @@ const ExamPage = function() {
     }
     if (isSubmitted) {
       if (question.userAnswer === undefined) {
-        return st['bg-error']
+        return st['bg-error'];
       }
       if (question.traLoi[question.userAnswer].laCauDung) {
-        return  st['bg-success']
+        return  st['bg-success'];
       }
-      return st['bg-error']
+      return st['bg-error'];
     } 
-    return question.userAnswer === undefined ? st['bg-empty'] : st['bg-success']
+    return question.userAnswer === undefined ? st['bg-empty'] : st['bg-success'];
   }
 
   const getHumanTimeString = (seconds: number): string => {
     let second = seconds%60;
     let minute = Math.floor(seconds/60);
-    return `${minute<10?'0':''}${minute}:${second<10?'0':''}${second}`
+    return `${minute<10?'0':''}${minute}:${second<10?'0':''}${second}`;
   }
 
   const timer = function() {
@@ -252,18 +252,18 @@ const ExamPage = function() {
       galleryRef.current.style.transition = 'all ease-out 300ms';
     }
     if (!isDragRef.current) return;
-    let moved = currentPosition.current - startPosition.current
+    let moved = currentPosition.current - startPosition.current;
     let currentIndex = currnetQuestion;
     let movedRequire = 120; // px
     if (moved < -movedRequire && currnetQuestion < questions.length-1) {
-      currentIndex++
+      currentIndex++;
     }
     if (moved > movedRequire && currnetQuestion > 0) {
-      currentIndex--
+      currentIndex--;
     }
 
     setPositionByQuestionIndex(currentIndex);
-    gotoQuesttion(currentIndex)
+    gotoQuesttion(currentIndex);
     isDragRef.current = false;
 
   }
@@ -271,16 +271,15 @@ const ExamPage = function() {
   const getPageX = (e: React.MouseEvent | React.TouchEvent) => {
     let x: number;
     if (e.nativeEvent instanceof MouseEvent) {
-      x = e.nativeEvent.clientX || 0
+      x = e.nativeEvent.clientX || 0;
     } else {
-      x = e.nativeEvent.touches[0]?.clientX || 0
+      x = e.nativeEvent.touches[0]?.clientX || 0;
     }
     return x;
   }
 
   const getWidthSlider = () => {
-    console.log('client witch',contentRef.current?.clientWidth)
-    return contentRef.current?.clientWidth || 1
+    return contentRef.current?.clientWidth || 1;
   }
 
   const updateCurrentPosition = () => {
@@ -302,18 +301,20 @@ const ExamPage = function() {
   }, [timeRemaining]);
 
 
-  if (questions.length === 0) return <div className={st.wrapper} >
-    <div className={st.header}>
-      <div className={st.title} onClick={() => history.push('/')}><FaChevronLeft /> {title}</div>
-      <ToggleDarkMode />
-    </div>
-    <div className={st.paper}>
-      <div style={{ position: 'absolute', left: '50%', top: '50%', transform: 'translateX(-50%) translateY(-50%)' }}>
-        <p style={{ textAlign: 'center', marginBottom: '2rem', fontSize: '2rem' }}>Không có nội dung</p>
-        <button className={st['submit-btn']} onClick={() => history.push('/')}>Quay lại trang chủ</button>
+  if (questions.length === 0) return (
+    <div className={st.wrapper} >
+      <div className={st.header}>
+        <div className={st.title} onClick={() => history.push('/')}><FaChevronLeft /> {title}</div>
+        <ToggleDarkMode />
+      </div>
+      <div className={st.paper}>
+        <div style={{ position: 'absolute', left: '50%', top: '50%', transform: 'translateX(-50%) translateY(-50%)' }}>
+          <p style={{ textAlign: 'center', marginBottom: '2rem', fontSize: '2rem' }}>Không có nội dung</p>
+          <button className={st['submit-btn']} onClick={() => history.push('/')}>Quay lại trang chủ</button>
+        </div>
       </div>
     </div>
-  </div>
+  );
 
   return(
     <div className={`${st.wrapper}`}>
