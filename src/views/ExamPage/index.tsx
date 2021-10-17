@@ -233,7 +233,7 @@ const ExamPage = function() {
 
     if (galleryRef.current !== null) {
       galleryRef.current.style.cursor = 'grabbing';
-      galleryRef.current.style.transition = 'none';
+      galleryRef.current.style.transitionDuration = '0ms';
     }
   }
 
@@ -249,9 +249,10 @@ const ExamPage = function() {
   const handleDragEnd = (e: React.MouseEvent | React.TouchEvent) => {
     if (galleryRef.current !== null) {
       galleryRef.current.style.cursor = 'grab';
-      galleryRef.current.style.transition = 'all ease-out 300ms';
+      galleryRef.current.style.transitionDuration = '300ms';
     }
     if (!isDragRef.current) return;
+    isDragRef.current = false;
     let moved = currentPosition.current - startPosition.current;
     let currentIndex = currnetQuestion;
     let movedRequire = 120; // px
@@ -261,9 +262,7 @@ const ExamPage = function() {
     if (moved > movedRequire) {
       currentIndex--;
     }
-
     gotoQuesttion(currentIndex);
-    isDragRef.current = false;
 
   }
 
