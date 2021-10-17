@@ -180,7 +180,7 @@ const ExamPage = function() {
     setOpenHelpModal(true);
   }
 
-  const getResultClassNameOfChoice = (question: IQuestion, choiceIndex: number): keyof typeof st | '' => {
+  const getColorClassNameOfChoice = (question: IQuestion, choiceIndex: number): keyof typeof st | '' => {
     if (!isExam) {
       return question.traLoi[choiceIndex].laCauDung ? st.correct : '';
     }
@@ -386,7 +386,7 @@ const ExamPage = function() {
                   <ul className={`${st['choice-box']}`}>
                     {question.traLoi.map((choice: IAnswer, i: number) => <li key={i}>
                       <div 
-                        className={`${st['choice-item']} ${getResultClassNameOfChoice(question, i)}`} 
+                        className={`${st['choice-item']} ${getColorClassNameOfChoice(question, i)}`} 
                         onClick={() => chooseAnswer(question.id, i)}
                       >
                         <span className={`${st.bullet}`}>
