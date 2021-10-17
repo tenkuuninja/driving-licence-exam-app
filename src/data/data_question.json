@@ -281,7 +281,7 @@
   },
   {
     "id": 12,
-    "chuDeId": 1,
+    "chuDeId": 3,
     "maDeThi": 1,
     "soCau": 12,
     "noiDung": "Khi điều khiển xe mô tô tay ga xuống đường dốc dài, độ dốc cao, người lái xe cần thực hiện các thao tác nào dưới đây để đảm bảo an toàn?",
@@ -305,7 +305,7 @@
   },
   {
     "id": 13,
-    "chuDeId": 1,
+    "chuDeId": 3,
     "maDeThi": 1,
     "soCau": 13,
     "noiDung": "Tay ga trên xe mô tô hai bánh có tác dụng gì trong các trường hợp dưới đây?",
@@ -333,7 +333,7 @@
   },
   {
     "id": 14,
-    "chuDeId": 1,
+    "chuDeId": 4,
     "maDeThi": 1,
     "soCau": 14,
     "noiDung": "Biển nào cấm xe rẽ trái?",
@@ -357,7 +357,7 @@
   },
   {
     "id": 15,
-    "chuDeId": 1,
+    "chuDeId": 4,
     "maDeThi": 1,
     "soCau": 15,
     "noiDung": "Biển nào dưới đây các phương tiện không được phép đi vào?",
@@ -381,7 +381,7 @@
   },
   {
     "id": 16,
-    "chuDeId": 1,
+    "chuDeId": 4,
     "maDeThi": 1,
     "soCau": 16,
     "noiDung": "Biển nào xe mô tô hai bánh không được đi vào?",
@@ -405,7 +405,7 @@
   },
   {
     "id": 17,
-    "chuDeId": 1,
+    "chuDeId": 4,
     "maDeThi": 1,
     "soCau": 17,
     "noiDung": "Biển nào báo hiệu nguy hiểm giao nhau với đường sắt?",
@@ -433,7 +433,7 @@
   },
   {
     "id": 18,
-    "chuDeId": 1,
+    "chuDeId": 4,
     "maDeThi": 1,
     "soCau": 18,
     "noiDung": "Biển nào báo hiệu “Đường giao nhau” của các tuyến đường cùng cấp?",
@@ -457,7 +457,7 @@
   },
   {
     "id": 19,
-    "chuDeId": 1,
+    "chuDeId": 4,
     "maDeThi": 1,
     "soCau": 19,
     "noiDung": "Biển nào chỉ dẫn nơi bắt đầu đoạn đường dành cho người đi bộ?",
@@ -481,7 +481,7 @@
   },
   {
     "id": 20,
-    "chuDeId": 1,
+    "chuDeId": 4,
     "maDeThi": 1,
     "soCau": 20,
     "noiDung": "Biển nào dưới đây báo hiệu hết cấm vượt?",
@@ -509,7 +509,7 @@
   },
   {
     "id": 21,
-    "chuDeId": 1,
+    "chuDeId": 4,
     "maDeThi": 1,
     "soCau": 21,
     "noiDung": "Vạch kẻ đường nào dưới đây là vạch phân chia hai chiều xe chạy (vạch tim đường), xe không được lấn làn, không được đè lên vạch?",
@@ -537,7 +537,7 @@
   },
   {
     "id": 22,
-    "chuDeId": 1,
+    "chuDeId": 5,
     "maDeThi": 1,
     "soCau": 22,
     "noiDung": "Xe nào được quyền đi trước trong trường hợp này?",
@@ -557,7 +557,7 @@
   },
   {
     "id": 23,
-    "chuDeId": 1,
+    "chuDeId": 5,
     "maDeThi": 1,
     "soCau": 23,
     "noiDung": "Xe tải kéo mô tô ba bánh như hình này có đúng quy tắc giao thông không?",
@@ -577,7 +577,7 @@
   },
   {
     "id": 24,
-    "chuDeId": 1,
+    "chuDeId": 5,
     "maDeThi": 1,
     "soCau": 24,
     "noiDung": "Theo hướng mũi tên, những hướng nào xe mô tô được phép đi?",
@@ -605,7 +605,7 @@
   },
   {
     "id": 25,
-    "chuDeId": 1,
+    "chuDeId": 5,
     "maDeThi": 1,
     "soCau": 25,
     "noiDung": "Các xe đi theo hướng mũi tên, xe nào vi phạm quy tắc giao thông?",
@@ -917,7 +917,7 @@
   },
   {
     "id": 37,
-    "chuDeId": 1,
+    "chuDeId": 3,
     "maDeThi": 2,
     "soCau": 12,
     "noiDung": "Khi quay đầu xe, người lái xe cần phải quan sát và thực hiện các thao tác nào để đảm bảo an toàn giao thông?",
@@ -937,7 +937,7 @@
   },
   {
     "id": 38,
-    "chuDeId": 1,
+    "chuDeId": 3,
     "maDeThi": 2,
     "soCau": 13,
     "noiDung": "Gương chiếu hậu của xe mô tô hai bánh, có tác dụng gì trong các trường hợp dưới đây?",
@@ -965,7 +965,7 @@
   },
   {
     "id": 39,
-    "chuDeId": 1,
+    "chuDeId": 4,
     "maDeThi": 2,
     "soCau": 14,
     "noiDung": "Khi gặp biển nào xe được rẽ trái?",
@@ -989,7 +989,7 @@
   },
   {
     "id": 40,
-    "chuDeId": 1,
+    "chuDeId": 4,
     "maDeThi": 2,
     "soCau": 15,
     "noiDung": "Khi gặp biển nào xe ưu tiên theo luật định vẫn phải dừng lại?",
@@ -1013,7 +1013,7 @@
   },
   {
     "id": 41,
-    "chuDeId": 1,
+    "chuDeId": 4,
     "maDeThi": 2,
     "soCau": 16,
     "noiDung": "Biển báo nào báo hiệu bắt đầu đoạn đường vào phạm vi khu dân cư, các phương tiện tham gia giao thông phải tuân theo các quy định đi đường được áp dụng ở khu đông dân cư?",
@@ -1033,7 +1033,7 @@
   },
   {
     "id": 42,
-    "chuDeId": 1,
+    "chuDeId": 4,
     "maDeThi": 2,
     "soCau": 17,
     "noiDung": "Biển nào báo hiệu Đường sắt giao nhau với đường bộ không có rào chắn?",
@@ -1061,7 +1061,7 @@
   },
   {
     "id": 43,
-    "chuDeId": 1,
+    "chuDeId": 4,
     "maDeThi": 2,
     "soCau": 18,
     "noiDung": "Biển nào báo hiệu “Đường đôi”?",
@@ -1085,7 +1085,7 @@
   },
   {
     "id": 44,
-    "chuDeId": 1,
+    "chuDeId": 4,
     "maDeThi": 2,
     "soCau": 19,
     "noiDung": "Biển báo này có ý nghĩa gì",
@@ -1105,7 +1105,7 @@
   },
   {
     "id": 45,
-    "chuDeId": 1,
+    "chuDeId": 4,
     "maDeThi": 2,
     "soCau": 20,
     "noiDung": "Trong các biển dưới đây biển nào là biển “Hết mọi lệnh cấm”?",
@@ -1133,7 +1133,7 @@
   },
   {
     "id": 46,
-    "chuDeId": 1,
+    "chuDeId": 4,
     "maDeThi": 2,
     "soCau": 21,
     "noiDung": "Vạch kẻ đường nào dưới đây là vạch phân chia hai chiều xe chạy (vạch tim đường)?",
@@ -1161,7 +1161,7 @@
   },
   {
     "id": 47,
-    "chuDeId": 1,
+    "chuDeId": 5,
     "maDeThi": 2,
     "soCau": 22,
     "noiDung": "Theo tín hiệu đèn, xe nào được phép đi?",
@@ -1181,7 +1181,7 @@
   },
   {
     "id": 48,
-    "chuDeId": 1,
+    "chuDeId": 5,
     "maDeThi": 2,
     "soCau": 23,
     "noiDung": "Xe nào được quyền đi trước trong trường hợp này?",
@@ -1201,7 +1201,7 @@
   },
   {
     "id": 49,
-    "chuDeId": 1,
+    "chuDeId": 5,
     "maDeThi": 2,
     "soCau": 24,
     "noiDung": "Trong trường hợp này, thứ tự xe đi như thế nào là đúng quy tắc giao thông?",
@@ -1225,7 +1225,7 @@
   },
   {
     "id": 50,
-    "chuDeId": 1,
+    "chuDeId": 5,
     "maDeThi": 2,
     "soCau": 25,
     "noiDung": "Các xe đi theo hướng mũi tên, xe nào chấp hành đúng quy tắc giao thông?",
@@ -1525,7 +1525,7 @@
   },
   {
     "id": 62,
-    "chuDeId": 1,
+    "chuDeId": 3,
     "maDeThi": 3,
     "soCau": 12,
     "noiDung": "Khi tránh nhau trên đường hẹp, người lái xe cần phải chú ý những điểm nào để đảm bảo an toàn giao thông?",
@@ -1553,7 +1553,7 @@
   },
   {
     "id": 63,
-    "chuDeId": 1,
+    "chuDeId": 3,
     "maDeThi": 3,
     "soCau": 13,
     "noiDung": "Để đảm bảo an toàn khi tham gia giao thông, người lái xe mô tô hai bánh cần điều khiển tay ga như thế nào trong các trường hợp dưới đây?",
@@ -1581,7 +1581,7 @@
   },
   {
     "id": 64,
-    "chuDeId": 1,
+    "chuDeId": 4,
     "maDeThi": 3,
     "soCau": 14,
     "noiDung": "Biển nào cấm các phương tiện giao thông đường bộ rẽ phải?",
@@ -1609,7 +1609,7 @@
   },
   {
     "id": 65,
-    "chuDeId": 1,
+    "chuDeId": 4,
     "maDeThi": 3,
     "soCau": 15,
     "noiDung": "Biển nào cấm tất cả các loại xe cơ giới và thô sơ đi lại trên đường, trừ xe ưu tiên theo luật định (nếu đường vẫn cho xe chạy được)?",
@@ -1633,7 +1633,7 @@
   },
   {
     "id": 66,
-    "chuDeId": 1,
+    "chuDeId": 4,
     "maDeThi": 3,
     "soCau": 16,
     "noiDung": "Gặp biển nào người lái xe phải nhường đường cho người đi bộ?",
@@ -1661,7 +1661,7 @@
   },
   {
     "id": 67,
-    "chuDeId": 1,
+    "chuDeId": 4,
     "maDeThi": 3,
     "soCau": 17,
     "noiDung": "Biển nào báo hiệu sắp đến chỗ giao nhau giữa đường bộ và đường sắt?",
@@ -1689,7 +1689,7 @@
   },
   {
     "id": 68,
-    "chuDeId": 1,
+    "chuDeId": 4,
     "maDeThi": 3,
     "soCau": 18,
     "noiDung": "Biển nào báo hiệu “Đường đôi”?",
@@ -1713,7 +1713,7 @@
   },
   {
     "id": 69,
-    "chuDeId": 1,
+    "chuDeId": 4,
     "maDeThi": 3,
     "soCau": 19,
     "noiDung": "Biển nào (đặt trước ngã ba, ngã tư) cho phép xe được rẽ sang hướng khác?",
@@ -1737,7 +1737,7 @@
   },
   {
     "id": 70,
-    "chuDeId": 1,
+    "chuDeId": 4,
     "maDeThi": 3,
     "soCau": 20,
     "noiDung": "Biển nào chỉ dẫn cho người đi bộ sử dụng cầu vượt qua đường?",
@@ -1765,7 +1765,7 @@
   },
   {
     "id": 71,
-    "chuDeId": 1,
+    "chuDeId": 4,
     "maDeThi": 3,
     "soCau": 21,
     "noiDung": "Các vạch dưới đây có tác dụng gì?",
@@ -1785,7 +1785,7 @@
   },
   {
     "id": 72,
-    "chuDeId": 1,
+    "chuDeId": 5,
     "maDeThi": 3,
     "soCau": 22,
     "noiDung": "Các xe đi theo hướng mũi tên, xe nào vi phạm quy tắc giao thông?",
@@ -1809,7 +1809,7 @@
   },
   {
     "id": 73,
-    "chuDeId": 1,
+    "chuDeId": 5,
     "maDeThi": 3,
     "soCau": 23,
     "noiDung": "Thứ tự các xe đi như thế nào là đúng quy tắc giao thông?",
@@ -1837,7 +1837,7 @@
   },
   {
     "id": 74,
-    "chuDeId": 1,
+    "chuDeId": 5,
     "maDeThi": 3,
     "soCau": 24,
     "noiDung": "Trong hình dưới, những xe nào vi phạm quy tắc giao thông?",
@@ -1865,7 +1865,7 @@
   },
   {
     "id": 75,
-    "chuDeId": 1,
+    "chuDeId": 5,
     "maDeThi": 3,
     "soCau": 25,
     "noiDung": "Các xe đi theo thứ tự nào là đúng quy tắc giao thông đường bộ?",
@@ -2149,7 +2149,7 @@
   },
   {
     "id": 86,
-    "chuDeId": 1,
+    "chuDeId": 2,
     "maDeThi": 4,
     "soCau": 11,
     "noiDung": " Khái niệm về văn hóa giao thông được hiểu như thế nào là đúng?",
@@ -2173,7 +2173,7 @@
   },
   {
     "id": 87,
-    "chuDeId": 1,
+    "chuDeId": 3,
     "maDeThi": 4,
     "soCau": 12,
     "noiDung": " Khi điều khiển xe trên đường vòng người lái xe cần phải làm gì để đảm bảo an toàn?",
@@ -2193,7 +2193,7 @@
   },
   {
     "id": 88,
-    "chuDeId": 1,
+    "chuDeId": 3,
     "maDeThi": 4,
     "soCau": 13,
     "noiDung": "Kỹ thuật cơ bản để giữ thăng bằng khi điều khiển xe mô tô đi trên đường gồ ghề như thế nào trong các trường hợp dưới đây?",
@@ -2217,7 +2217,7 @@
   },
   {
     "id": 89,
-    "chuDeId": 1,
+    "chuDeId": 4,
     "maDeThi": 4,
     "soCau": 14,
     "noiDung": " Biển nào cấm các phương tiện giao thông đường bộ rẽ trái?",
@@ -2245,7 +2245,7 @@
   },
   {
     "id": 90,
-    "chuDeId": 1,
+    "chuDeId": 4,
     "maDeThi": 4,
     "soCau": 15,
     "noiDung": "Gặp biển nào xe xích lô được phép đi vào?",
@@ -2273,7 +2273,7 @@
   },
   {
     "id": 91,
-    "chuDeId": 1,
+    "chuDeId": 4,
     "maDeThi": 4,
     "soCau": 16,
     "noiDung": "Biển nào chỉ đường dành cho người đi bộ, các loại xe không được đi vào khi gặp biển này?",
@@ -2301,7 +2301,7 @@
   },
   {
     "id": 92,
-    "chuDeId": 1,
+    "chuDeId": 4,
     "maDeThi": 4,
     "soCau": 17,
     "noiDung": " Biển nào báo hiệu, chỉ dẫn xe đi trên đường này được quyền ưu tiên qua nơi giao nhau?",
@@ -2329,7 +2329,7 @@
   },
   {
     "id": 93,
-    "chuDeId": 1,
+    "chuDeId": 4,
     "maDeThi": 4,
     "soCau": 18,
     "noiDung": " Biển nào báo hiệu “Giao nhau với đường hai chiều”?",
@@ -2353,7 +2353,7 @@
   },
   {
     "id": 94,
-    "chuDeId": 1,
+    "chuDeId": 4,
     "maDeThi": 4,
     "soCau": 19,
     "noiDung": "Biển nào báo hiệu “Hướng đi thẳng phải theo”?",
@@ -2373,7 +2373,7 @@
   },
   {
     "id": 95,
-    "chuDeId": 1,
+    "chuDeId": 4,
     "maDeThi": 4,
     "soCau": 20,
     "noiDung": "Biển nào chỉ dẫn cho người đi bộ sử dụng hầm chui qua đường?",
@@ -2401,7 +2401,7 @@
   },
   {
     "id": 96,
-    "chuDeId": 1,
+    "chuDeId": 4,
     "maDeThi": 4,
     "soCau": 21,
     "noiDung": " Khi gặp vạch kẻ đường nào các xe được phép đè vạch?",
@@ -2429,7 +2429,7 @@
   },
   {
     "id": 97,
-    "chuDeId": 1,
+    "chuDeId": 5,
     "maDeThi": 4,
     "soCau": 22,
     "noiDung": "Thứ tự các xe đi như thế nào là đúng quy tắc giao thông?",
@@ -2457,7 +2457,7 @@
   },
   {
     "id": 98,
-    "chuDeId": 1,
+    "chuDeId": 5,
     "maDeThi": 4,
     "soCau": 23,
     "noiDung": "Xe nào được quyền đi trước trong trường hợp này?",
@@ -2477,7 +2477,7 @@
   },
   {
     "id": 99,
-    "chuDeId": 1,
+    "chuDeId": 5,
     "maDeThi": 4,
     "soCau": 24,
     "noiDung": "Trong hình dưới, những xe nào vi phạm quy tắc giao thông?",
@@ -2505,7 +2505,7 @@
   },
   {
     "id": 100,
-    "chuDeId": 1,
+    "chuDeId": 5,
     "maDeThi": 4,
     "soCau": 25,
     "noiDung": "Các xe đi theo thứ tự nào là đúng quy tắc giao thông đường bộ?",
@@ -2781,7 +2781,7 @@
   },
   {
     "id": 111,
-    "chuDeId": 1,
+    "chuDeId": 2,
     "maDeThi": 5,
     "soCau": 11,
     "noiDung": "Trong các hành vi dưới đây, người lái xe mô tô có văn hóa giao thông phải ứng xử như thế nào?",
@@ -2805,7 +2805,7 @@
   },
   {
     "id": 112,
-    "chuDeId": 1,
+    "chuDeId": 3,
     "maDeThi": 5,
     "soCau": 12,
     "noiDung": "Để đạt được hiệu quả phanh cao nhất, người lái xe mô tô phải sử dụng các kỹ năng như thế nào dưới đây?",
@@ -2829,7 +2829,7 @@
   },
   {
     "id": 113,
-    "chuDeId": 1,
+    "chuDeId": 4,
     "maDeThi": 5,
     "soCau": 13,
     "noiDung": "Biển nào dưới đây xe gắn máy được phép đi vào?",
@@ -2853,7 +2853,7 @@
   },
   {
     "id": 114,
-    "chuDeId": 1,
+    "chuDeId": 4,
     "maDeThi": 5,
     "soCau": 14,
     "noiDung": "Biển nào cho phép xe rẽ trái?",
@@ -2877,7 +2877,7 @@
   },
   {
     "id": 115,
-    "chuDeId": 1,
+    "chuDeId": 4,
     "maDeThi": 5,
     "soCau": 15,
     "noiDung": "Gặp biển nào xe lam, xe xích lô máy được phép đi vào?",
@@ -2901,7 +2901,7 @@
   },
   {
     "id": 116,
-    "chuDeId": 1,
+    "chuDeId": 4,
     "maDeThi": 5,
     "soCau": 16,
     "noiDung": "Biển nào báo hiệu “Đường dành cho xe thô sơ”?",
@@ -2925,7 +2925,7 @@
   },
   {
     "id": 117,
-    "chuDeId": 1,
+    "chuDeId": 4,
     "maDeThi": 5,
     "soCau": 17,
     "noiDung": "Biển nào báo hiệu “Giao nhau với đường không ưu tiên”?",
@@ -2953,7 +2953,7 @@
   },
   {
     "id": 118,
-    "chuDeId": 1,
+    "chuDeId": 4,
     "maDeThi": 5,
     "soCau": 18,
     "noiDung": "Biển nào báo hiệu “Đường hai chiều”?",
@@ -2977,7 +2977,7 @@
   },
   {
     "id": 119,
-    "chuDeId": 1,
+    "chuDeId": 4,
     "maDeThi": 5,
     "soCau": 19,
     "noiDung": "Biển nào báo hiệu “Đường một chiều”?",
@@ -3001,7 +3001,7 @@
   },
   {
     "id": 120,
-    "chuDeId": 1,
+    "chuDeId": 4,
     "maDeThi": 5,
     "soCau": 20,
     "noiDung": "Biển nào báo hiệu “Nơi đỗ xe dành cho người tàn tật”?",
@@ -3025,7 +3025,7 @@
   },
   {
     "id": 121,
-    "chuDeId": 1,
+    "chuDeId": 4,
     "maDeThi": 5,
     "soCau": 21,
     "noiDung": "Vạch dưới đây có ý nghĩa gì?",
@@ -3049,7 +3049,7 @@
   },
   {
     "id": 122,
-    "chuDeId": 1,
+    "chuDeId": 5,
     "maDeThi": 5,
     "soCau": 22,
     "noiDung": "Trong trường hợp này xe nào đỗ vi phạm quy tắc giao thông?",
@@ -3077,7 +3077,7 @@
   },
   {
     "id": 123,
-    "chuDeId": 1,
+    "chuDeId": 5,
     "maDeThi": 5,
     "soCau": 23,
     "noiDung": "Xe nào vi phạm quy tắc giao thông?",
@@ -3105,7 +3105,7 @@
   },
   {
     "id": 124,
-    "chuDeId": 1,
+    "chuDeId": 5,
     "maDeThi": 5,
     "soCau": 24,
     "noiDung": "Bạn có được phép vượt xe mô tô phía trước không?",
@@ -3125,7 +3125,7 @@
   },
   {
     "id": 125,
-    "chuDeId": 1,
+    "chuDeId": 5,
     "maDeThi": 5,
     "soCau": 25,
     "noiDung": "Bạn xử lý như thế nào trong trường hợp này?",
@@ -3393,7 +3393,7 @@
   },
   {
     "id": 136,
-    "chuDeId": 1,
+    "chuDeId": 2,
     "maDeThi": 6,
     "soCau": 11,
     "noiDung": "Trong các hành vi dưới đây, người lái xe ô tô, mô tô có văn hóa giao thông phải ứng xử như thế nào?",
@@ -3417,13 +3417,13 @@
   },
   {
     "id": 137,
-    "chuDeId": 1,
+    "chuDeId": 3,
     "maDeThi": 6,
     "soCau": 12,
     "noiDung": "Khi đang lái xe mô tô và ô tô, nếu có nhu cầu sử dụng điện thoại để nhắn tin hoặc gọi điện, người lái xe phải thực hiện như thế nào trong các tình huống nêu dưới đây?",
     "hinhAnh": "",
     "giaiThich": "Muốn nghe điện thoại khi đang chạy xe thì tấp vào lề, dừng lại rồi nghe thoải mái. Vừa chạy vừa nghe dễ mất tập trung và không an toàn.",
-    "laCauDiemLiet": false,
+    "laCauDiemLiet": true,
     "traLoi": [
       {
         "noiDung": "Giảm tốc độ để đảm bảo an toàn với xe phía trước và sử dụng điện thoại để liên lạc.",
@@ -3441,7 +3441,7 @@
   },
   {
     "id": 138,
-    "chuDeId": 1,
+    "chuDeId": 4,
     "maDeThi": 6,
     "soCau": 13,
     "noiDung": "Biển nào báo hiệu cấm xe mô tô hai bánh đi vào?",
@@ -3465,7 +3465,7 @@
   },
   {
     "id": 139,
-    "chuDeId": 1,
+    "chuDeId": 4,
     "maDeThi": 6,
     "soCau": 14,
     "noiDung": "Biển nào xe quay đầu không bị cấm?",
@@ -3489,7 +3489,7 @@
   },
   {
     "id": 140,
-    "chuDeId": 1,
+    "chuDeId": 4,
     "maDeThi": 6,
     "soCau": 15,
     "noiDung": "Biển báo này có ý nghĩa như thế nào?",
@@ -3509,7 +3509,7 @@
   },
   {
     "id": 141,
-    "chuDeId": 1,
+    "chuDeId": 4,
     "maDeThi": 6,
     "soCau": 16,
     "noiDung": "Biển nào báo hiệu sắp đến chỗ giao nhau nguy hiểm?",
@@ -3537,7 +3537,7 @@
   },
   {
     "id": 142,
-    "chuDeId": 1,
+    "chuDeId": 4,
     "maDeThi": 6,
     "soCau": 17,
     "noiDung": " Biển nào báo hiệu “Giao nhau với đường ưu tiên”?",
@@ -3561,7 +3561,7 @@
   },
   {
     "id": 143,
-    "chuDeId": 1,
+    "chuDeId": 4,
     "maDeThi": 6,
     "soCau": 18,
     "noiDung": "Biển nào báo hiệu “Giao nhau với đường hai chiều”?",
@@ -3585,7 +3585,7 @@
   },
   {
     "id": 144,
-    "chuDeId": 1,
+    "chuDeId": 4,
     "maDeThi": 6,
     "soCau": 19,
     "noiDung": "Trong các biển dưới đây biển nào là biển “Hết tốc độ tối đa cho phép”?",
@@ -3613,7 +3613,7 @@
   },
   {
     "id": 145,
-    "chuDeId": 1,
+    "chuDeId": 4,
     "maDeThi": 6,
     "soCau": 20,
     "noiDung": "Gặp biển báo này, người tham gia giao thông phải xử lý như thế nào?",
@@ -3637,7 +3637,7 @@
   },
   {
     "id": 146,
-    "chuDeId": 1,
+    "chuDeId": 5,
     "maDeThi": 6,
     "soCau": 21,
     "noiDung": "Thứ tự các xe đi như thế nào là đúng quy tắc giao thông?",
@@ -3665,7 +3665,7 @@
   },
   {
     "id": 147,
-    "chuDeId": 1,
+    "chuDeId": 5,
     "maDeThi": 6,
     "soCau": 22,
     "noiDung": "Theo hướng mũi tên, những hướng nào xe gắn máy đi được?",
@@ -3689,7 +3689,7 @@
   },
   {
     "id": 148,
-    "chuDeId": 1,
+    "chuDeId": 5,
     "maDeThi": 6,
     "soCau": 23,
     "noiDung": "Các xe đi như thế nào là đúng quy tắc giao thông?",
@@ -3713,7 +3713,7 @@
   },
   {
     "id": 149,
-    "chuDeId": 1,
+    "chuDeId": 5,
     "maDeThi": 6,
     "soCau": 24,
     "noiDung": "Theo tín hiệu đèn của xe cơ giới, xe nào vi phạm quy tắc giao thông?",
@@ -3741,7 +3741,7 @@
   },
   {
     "id": 150,
-    "chuDeId": 1,
+    "chuDeId": 5,
     "maDeThi": 6,
     "soCau": 25,
     "noiDung": "Xe nào dừng đúng theo quy tắc giao thông?",
@@ -4013,7 +4013,7 @@
   },
   {
     "id": 161,
-    "chuDeId": 1,
+    "chuDeId": 2,
     "maDeThi": 7,
     "soCau": 11,
     "noiDung": "Khi xảy ra tai nạn giao thông, có người bị thương nghiêm trọng, người lái xe và người có mặt tại hiện trường vụ tai nạn phải thực hiện các công việc gì dưới đây?",
@@ -4037,7 +4037,7 @@
   },
   {
     "id": 162,
-    "chuDeId": 1,
+    "chuDeId": 3,
     "maDeThi": 7,
     "soCau": 12,
     "noiDung": "Những thói quen nào dưới đây khi điều khiển xe mô tô tay ga tham gia giao thông dễ gây tai nạn nguy hiểm?",
@@ -4061,7 +4061,7 @@
   },
   {
     "id": 163,
-    "chuDeId": 1,
+    "chuDeId": 4,
     "maDeThi": 7,
     "soCau": 13,
     "noiDung": "Khi gặp biển nào thì xe mô tô hai bánh được đi vào?",
@@ -4089,7 +4089,7 @@
   },
   {
     "id": 164,
-    "chuDeId": 1,
+    "chuDeId": 4,
     "maDeThi": 7,
     "soCau": 14,
     "noiDung": "Biển nào xe được phép quay đầu nhưng không được rẽ trái?",
@@ -4113,7 +4113,7 @@
   },
   {
     "id": 165,
-    "chuDeId": 1,
+    "chuDeId": 4,
     "maDeThi": 7,
     "soCau": 15,
     "noiDung": "Chiều dài đoạn đường 500 m từ nơi đặt biển này, người lái xe có được phép bấm còi không?",
@@ -4133,7 +4133,7 @@
   },
   {
     "id": 166,
-    "chuDeId": 1,
+    "chuDeId": 4,
     "maDeThi": 7,
     "soCau": 16,
     "noiDung": "Biển nào báo hiệu “Giao nhau với đường sắt có rào chắn”?",
@@ -4157,7 +4157,7 @@
   },
   {
     "id": 167,
-    "chuDeId": 1,
+    "chuDeId": 4,
     "maDeThi": 7,
     "soCau": 17,
     "noiDung": "Biển nào báo hiệu “Đường bị thu hẹp”?",
@@ -4185,7 +4185,7 @@
   },
   {
     "id": 168,
-    "chuDeId": 1,
+    "chuDeId": 4,
     "maDeThi": 7,
     "soCau": 18,
     "noiDung": "Biển nào báo hiệu “Chú ý chướng ngại vật”?",
@@ -4209,7 +4209,7 @@
   },
   {
     "id": 169,
-    "chuDeId": 1,
+    "chuDeId": 4,
     "maDeThi": 7,
     "soCau": 19,
     "noiDung": "Hiệu lực của biển “Tốc độ tối đa cho phép” hết tác dụng khi gặp biển nào dưới đây?",
@@ -4237,7 +4237,7 @@
   },
   {
     "id": 170,
-    "chuDeId": 1,
+    "chuDeId": 4,
     "maDeThi": 7,
     "soCau": 20,
     "noiDung": "Biển số 1 có ý nghĩa gì?",
@@ -4261,7 +4261,7 @@
   },
   {
     "id": 171,
-    "chuDeId": 1,
+    "chuDeId": 5,
     "maDeThi": 7,
     "soCau": 21,
     "noiDung": "Thứ tự các xe đi như thế nào là đúng quy tắc giao thông?",
@@ -4289,7 +4289,7 @@
   },
   {
     "id": 172,
-    "chuDeId": 1,
+    "chuDeId": 5,
     "maDeThi": 7,
     "soCau": 22,
     "noiDung": "Xe nào đỗ vi phạm quy tắc giao thông?",
@@ -4317,7 +4317,7 @@
   },
   {
     "id": 173,
-    "chuDeId": 1,
+    "chuDeId": 5,
     "maDeThi": 7,
     "soCau": 23,
     "noiDung": "Theo hướng mũi tên, xe nào được phép đi?",
@@ -4345,7 +4345,7 @@
   },
   {
     "id": 174,
-    "chuDeId": 1,
+    "chuDeId": 5,
     "maDeThi": 7,
     "soCau": 24,
     "noiDung": "Các xe đi theo hướng mũi tên, xe nào vi phạm quy tắc giao thông?",
@@ -4369,7 +4369,7 @@
   },
   {
     "id": 175,
-    "chuDeId": 1,
+    "chuDeId": 5,
     "maDeThi": 7,
     "soCau": 25,
     "noiDung": "Xe của bạn đang di chuyển gần đến khu vực giao cắt với đường sắt, khi rào chắn đang dịch chuyển, bạn điều khiển xe như thế nào là đứng quy tắc giao thông?",
@@ -4649,7 +4649,7 @@
   },
   {
     "id": 186,
-    "chuDeId": 1,
+    "chuDeId": 2,
     "maDeThi": 8,
     "soCau": 11,
     "noiDung": "Trên đường đang xảy ra ùn tắc những hành vi nào sau đây là thiếu văn hóa khi tham gia giao thông?",
@@ -4677,7 +4677,7 @@
   },
   {
     "id": 187,
-    "chuDeId": 1,
+    "chuDeId": 3,
     "maDeThi": 8,
     "soCau": 12,
     "noiDung": "Khi điều khiển xe mô tô quay đầu người lái xe cần thực hiện như thế nào để đảm bảo an toàn?",
@@ -4705,7 +4705,7 @@
   },
   {
     "id": 188,
-    "chuDeId": 1,
+    "chuDeId": 4,
     "maDeThi": 8,
     "soCau": 13,
     "noiDung": "Biển nào cấm quay đầu xe?",
@@ -4733,7 +4733,7 @@
   },
   {
     "id": 189,
-    "chuDeId": 1,
+    "chuDeId": 4,
     "maDeThi": 8,
     "soCau": 14,
     "noiDung": "Biển nào là biển “Cấm đi ngược chiều”?",
@@ -4757,7 +4757,7 @@
   },
   {
     "id": 190,
-    "chuDeId": 1,
+    "chuDeId": 4,
     "maDeThi": 8,
     "soCau": 15,
     "noiDung": "Biển nào xe mô tô hai bánh được đi vào?",
@@ -4781,7 +4781,7 @@
   },
   {
     "id": 191,
-    "chuDeId": 1,
+    "chuDeId": 4,
     "maDeThi": 8,
     "soCau": 16,
     "noiDung": "Biển nào báo hiệu nguy hiểm giao nhau với đường sắt?",
@@ -4809,7 +4809,7 @@
   },
   {
     "id": 192,
-    "chuDeId": 1,
+    "chuDeId": 4,
     "maDeThi": 8,
     "soCau": 17,
     "noiDung": "Khi gặp biển nào, người lái xe phải giảm tốc độ, chú ý xe đi ngược chiều, xe đi ở phía đường bị hẹp phải nhường đường cho xe đi ngược chiều?",
@@ -4837,7 +4837,7 @@
   },
   {
     "id": 193,
-    "chuDeId": 1,
+    "chuDeId": 4,
     "maDeThi": 8,
     "soCau": 18,
     "noiDung": "Gặp biển nào người tham gia giao thông phải đi chậm và thận trọng đề phòng khả năng xuất hiện và di chuyển bất ngờ của trẻ em trên mặt đường?",
@@ -4857,7 +4857,7 @@
   },
   {
     "id": 194,
-    "chuDeId": 1,
+    "chuDeId": 4,
     "maDeThi": 8,
     "soCau": 19,
     "noiDung": "Trong các biển dưới đây biển nào là biển “Hết hạn chế tốc độ tối thiểu” ?",
@@ -4885,7 +4885,7 @@
   },
   {
     "id": 195,
-    "chuDeId": 1,
+    "chuDeId": 4,
     "maDeThi": 8,
     "soCau": 20,
     "noiDung": "Vạch kẻ đường nào dưới đây là vạch phân chia các làn xe cùng chiều?",
@@ -4913,7 +4913,7 @@
   },
   {
     "id": 196,
-    "chuDeId": 1,
+    "chuDeId": 5,
     "maDeThi": 8,
     "soCau": 21,
     "noiDung": "Trường hợp này xe nào được quyền đi trước?",
@@ -4933,7 +4933,7 @@
   },
   {
     "id": 197,
-    "chuDeId": 1,
+    "chuDeId": 5,
     "maDeThi": 8,
     "soCau": 22,
     "noiDung": "Xe nào đỗ vi phạm quy tắc giao thông?",
@@ -4961,7 +4961,7 @@
   },
   {
     "id": 198,
-    "chuDeId": 1,
+    "chuDeId": 5,
     "maDeThi": 8,
     "soCau": 23,
     "noiDung": "Trong hình dưới đây, xe nào chấp hành đúng quy tắc giao thông?",
@@ -4985,7 +4985,7 @@
   },
   {
     "id": 199,
-    "chuDeId": 1,
+    "chuDeId": 5,
     "maDeThi": 8,
     "soCau": 24,
     "noiDung": "Các xe đi theo hướng mũi tên, xe nào vi phạm quy tắc giao thông?",
@@ -5009,7 +5009,7 @@
   },
   {
     "id": 200,
-    "chuDeId": 1,
+    "chuDeId": 5,
     "maDeThi": 8,
     "soCau": 25,
     "noiDung": "Trong tình huống dưới đây, xe đầu kéo kéo rơ moóc (xe container) đang rẽ phải, xe con màu xanh và xe máy phía sau xe container đi như thế nào để đảm bảo an toàn?",
