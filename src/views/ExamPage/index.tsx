@@ -121,9 +121,9 @@ const ExamPage = function() {
           setCurrentQuestion(Math.round(arg));
           setPositionByQuestionIndex(Math.round(arg));
         }
-        setOpenAsideDrawer(false);
         break;
-    }
+      }
+    setOpenAsideDrawer(false);
   }
 
   const chooseAnswer = (questionId: number, answerIndex: number) => {
@@ -255,14 +255,13 @@ const ExamPage = function() {
     let moved = currentPosition.current - startPosition.current;
     let currentIndex = currnetQuestion;
     let movedRequire = 120; // px
-    if (moved < -movedRequire && currnetQuestion < questions.length-1) {
+    if (moved < -movedRequire) {
       currentIndex++;
     }
-    if (moved > movedRequire && currnetQuestion > 0) {
+    if (moved > movedRequire) {
       currentIndex--;
     }
 
-    setPositionByQuestionIndex(currentIndex);
     gotoQuesttion(currentIndex);
     isDragRef.current = false;
 
