@@ -142,14 +142,14 @@ const ExamPage = function() {
     let isFail = false;
     let failId: number[] = JSON.parse(localStorage.getItem('fail-id-test') || '[]');
     for (let question of questions) {
-      if (question.userAnswer !== undefined && question.traLoi[question.userAnswer].laCauDung) {
+      if (question.userAnswer !== undefined && question.answer[question.userAnswer].isCorrect) {
         score++;
         if (failId.indexOf(question.id) !== -1) {
           failId = failId.filter(i => i !== question.id);
         }
         continue;
       }
-      if (question.laCauDiemLiet) {
+      if (question.isCritical) {
         isFail = true;
       }
       if (!failId.includes(question.id)) {
@@ -182,10 +182,10 @@ const ExamPage = function() {
 
   const getColorClassNameOfChoice = (question: IQuestion, choiceIndex: number): keyof typeof st | '' => {
     if (!isExam) {
-      return question.traLoi[choiceIndex].laCauDung ? st.correct : '';
+      return question.answer[choiceIndex].isCorrect ? st.correct : '';
     }
     if (isSubmitted) {
-      if (question.traLoi[choiceIndex].laCauDung) {
+      if (question.answer[choiceIndex].isCorrect) {
         return  st.correct;
       }
       return question.userAnswer === choiceIndex ? st.wrong : '';
@@ -195,13 +195,13 @@ const ExamPage = function() {
 
   const getColorClassNameOfButton = (question: IQuestion): keyof typeof st | '' => {
     if (!isExam) {
-      return question.laCauDiemLiet ? st['bg-warning'] : st['bg-success'];
+      return question.isCritical ? st['bg-warning'] : st['bg-success'];
     }
     if (isSubmitted) {
       if (question.userAnswer === undefined) {
         return st['bg-error'];
       }
-      if (question.traLoi[question.userAnswer].laCauDung) {
+      if (question.answer[question.userAnswer].isCorrect) {
         return  st['bg-success'];
       }
       return st['bg-error'];
@@ -376,14 +376,14 @@ const ExamPage = function() {
               {questions.map((question: IQuestion) => <li key={question.id}>
                 <div className={`${st['question-box']}`}>
                   <p className={st['question-text']}>
-                    {question.noiDung} {((!isExam || isSubmitted) && question.laCauDiemLiet) && <span className={st.warning}>(Câu điểm liệt)</span>}
+                    {question.text} {((!isExam || isSubmitted) && question.isCritical) && <span className={st.warning}>(Câu điểm liệt)</span>}
                   </p>
-                  {question.hinhAnh.length !== 0 && <div className={`${st['question-image']}`}>
-                    <img src={question.hinhAnh} alt="" />
+                  {question.image.length !== 0 && <div className={`${st['question-image']}`}>
+                    <img src={question.image} alt="" />
                     <div className={st['image-mask']}></div>
                   </div>}
                   <ul className={`${st['choice-box']}`}>
-                    {question.traLoi.map((choice: IAnswer, i: number) => <li key={i}>
+                    {question.answer.map((choice: IAnswer, i: number) => <li key={i}>
                       <div 
                         className={`${st['choice-item']} ${getColorClassNameOfChoice(question, i)}`} 
                         onClick={() => chooseAnswer(question.id, i)}
@@ -392,14 +392,14 @@ const ExamPage = function() {
                           {i+1}
                         </span>
                         <span>
-                          {choice.noiDung}
+                          {choice.text}
                         </span>
                       </div>
                     </li>)}
                   </ul>
                   {(!isExam || isSubmitted) && <div className={`${st['question-explain']}`}>
                     <span><ImInfo /></span>
-                    <p>{question.giaiThich}</p>
+                    <p>{question.explain}</p>
                   </div>}
                 </div>
               </li>)}

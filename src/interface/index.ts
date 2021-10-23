@@ -1,37 +1,19 @@
-// export interface IQuestion {
-//   id: number
-//   topicId: number
-//   testCode: number
-//   order: number
-//   text: string
-//   image: string
-//   explain: string
-//   isCritical: boolean
-//   answer: IAnswer[]
-//   yourAnswer?: number
-// }
-
 export interface IQuestion {
   id: number
-  chuDeId: number
-  maDeThi: number
-  soCau: number
-  noiDung: string
-  hinhAnh: string
-  giaiThich: string
-  laCauDiemLiet: boolean
-  traLoi: IAnswer[]
+  topicId: number
+  testCode: number
+  order: number
+  text: string
+  image: string
+  explain: string
+  isCritical: boolean
+  answer: IAnswer[]
   userAnswer?: number
 }
 
-// export interface IAnswer {
-//   text: string
-//   isCorrect: boolean
-// }
-
 export interface IAnswer {
-  noiDung: string
-  laCauDung: boolean
+  text: string
+  isCorrect: boolean
 }
 
 export interface ISign {

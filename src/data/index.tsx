@@ -24,15 +24,15 @@ export const getLawByVehicleCodeAndTopicId = (vehicleCode: number, topicId: numb
 export const getAllQuestions = (): IQuestion[] => questionsData
 
 export const getQuestionsByTopicId = (id: number): IQuestion[] => {
-  return questionsData.filter((item: IQuestion) => item.chuDeId === id)
+  return questionsData.filter((item: IQuestion) => item.topicId === id)
 }
 
 export const getQuestionsByTestCode = (id: number): IQuestion[] => {
-  return questionsData.filter((item: IQuestion) => item.maDeThi === id).map(i => ({...i, userAnswer: undefined}))
+  return questionsData.filter((item: IQuestion) => item.testCode === id).map(i => ({...i, userAnswer: undefined}))
 }
 
 export const getImportantQuestions = (): IQuestion[] => {
-  return questionsData.filter((item: IQuestion) => item.laCauDiemLiet === true)
+  return questionsData.filter((item: IQuestion) => item.isCritical === true)
 }
 
 export const getQuestionsByIds = (ids: number[]): IQuestion[] => {
