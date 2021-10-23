@@ -12,6 +12,7 @@ function DarkModeProvider(props: { children: JSX.Element }) {
     } else {
       document.getElementById('root')?.classList.remove('dark-mode')
     }
+    // eslint-disable-next-line
   }, [state.isDarkMode]);
 
   return (

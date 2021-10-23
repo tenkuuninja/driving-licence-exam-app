@@ -1,13 +1,11 @@
 import React, { useEffect } from 'react';
-import { useHistory, useLocation } from 'react-router';
-import { FaChevronLeft } from 'react-icons/fa';
+import { useLocation } from 'react-router';
 import ScrollToTop from '../components/ScrollToTop';
 import st from './law.module.css';
 import Header from '../components/Header';
 import Breadcrumb from '../components/Breadcrumb';
 import { BiHomeAlt } from 'react-icons/bi';
 import Footer from '../components/Footer';
-import { Link } from 'react-router-dom';
 
 interface DataLaw {
   code: string
@@ -47,9 +45,8 @@ const bot = [
   'Lưu: VT, CN (2).'
 ];
 
-export default function () {
+const Law100 = () => {
   const { hash } = useLocation();
-  const history = useHistory();
 
   useEffect(function() {
     let element = document.getElementById(hash.replace('#', ''));
@@ -131,3 +128,5 @@ export default function () {
     </React.Fragment>
   );
 }
+
+export default Law100;

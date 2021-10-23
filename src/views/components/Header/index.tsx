@@ -34,7 +34,7 @@ const Header = function() {
       </div>
       <Link to='/' >
         <div className={`${st.logo}`}>
-          <img src="/images/logo.png" />
+          <img src="/images/logo.png" alt="logo" />
           <span className={`${st['text-logo']}`}>Motovjppro</span>
         </div>
       </Link>

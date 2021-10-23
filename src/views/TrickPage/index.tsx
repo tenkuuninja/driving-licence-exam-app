@@ -30,7 +30,7 @@ const TrickPage = function() {
             let re = /^<img:(.+)>$/g
             if(re.test(str)) {
               console.log(re.exec(str)?.[1], re.test(str), str.match(re))
-              return <img className={st.image} src={re.exec(str)?.[1]} key={i} />
+              return <img className={st.image} src={re.exec(str)?.[1]} alt="img" key={i} />
             } else {
               let classNames = [st.pa]
               if (/^\d\.\s/g.test(str)) classNames.push(st.bold)

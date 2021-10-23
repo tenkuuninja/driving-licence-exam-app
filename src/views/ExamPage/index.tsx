@@ -93,6 +93,7 @@ const ExamPage = function() {
         break;
     }
     return () => clearInterval(countDownInterval);
+    // eslint-disable-next-line
   }, [match.url]);
   
   
@@ -296,6 +297,7 @@ const ExamPage = function() {
       clearInterval(countDownInterval);
       handleSubmit();
     }
+    // eslint-disable-next-line
   }, [timeRemaining]);
 
 

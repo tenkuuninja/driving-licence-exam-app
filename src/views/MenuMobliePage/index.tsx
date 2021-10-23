@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link, useRouteMatch } from 'react-router-dom';
+import { useRouteMatch } from 'react-router-dom';
 import Header from '../components/Header'
 import { LearnMenu, ExamMenu } from '../components/Menu';
 import { BiHomeAlt } from 'react-icons/bi';
